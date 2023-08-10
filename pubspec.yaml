@@ -72,21 +72,6 @@ dependencies:
   sizer_pro: ^2.1.0
   flutter_native_splash: ^2.3.1
 
-dev_dependencies:
-  flutter_launcher_icons: "^0.13.0"
-  flutter_test:
-    sdk: flutter
-flutter_native_splash:
-  image: "assets/logo_small.png"
-  color: "ffffff"
-
-flutter_icons:
-  android: true
-  ios: true
-  adaptive_icon_foreground: "assets/logo_small.png"
-  adaptive_icon_background: "#ffffff"
-  remove_alpha_ios: true
-  image_path: "assets/logo_small.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
