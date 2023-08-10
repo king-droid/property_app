@@ -1,0 +1,16 @@
+Noida,
+Greater Noida,
+New Delhi,
+Ghaziabad,
+Gurgaon,
+Faridabad,
+Narnaul,
+Rewari,
+Jaipur,
+Sonipat,
+Panipat,
+Karnal,
+Mahendragarh,
+Chandigarh,
+Panchkula
+

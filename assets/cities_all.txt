@@ -1,0 +1,2586 @@
+Mandapeta,Mangalagiri,Mangampeta,Mangasamudram,Markapur,Maruteru,Medarametla,Medikonduru,Meliaputti,Moragudi,Morampudi,Muddanur,Mulaguntapadu,Mulakuddu,Mummidivaram,Murakambattu,Muttukuru,Mydukur,Mylavaram,Nadim Tiruvuru,Nagaram,Nagari,Nagireddipalle,Nakkapalle,Nallajerla,Nandigama,Nandyal,Narasannapeta,Narasapur,Narasapuram,Narasaraopet,Narayanapuram,Vizianagaram District,Narayanavanam,Narsipatnam,Nayudupeta,Nellimarla,Nellore
+,Nidadavole
+,NTPC Simhadri,Nuzvid
+,Ongole
+,Paderu
+,Palacole
+,Palakonda
+,Palamaner
+,Palasa Kasibugga,Pamidi
+,Pamur
+,Paravada ,Parvathipuram,Pathapatnam,Payakaraopeta,Peda Boddepalle,Pedana,Pedatadepalli,Peddapuram,Pentapadu,Perecherla,Phirangipuram,Piduguralla,Pileru,Pippara,Pithapuram,Podalakur,Podili,Pondura,Ponnekallu,Ponnur,Porumamilla,Prattipadu,Proddatur,Pulivendula,Pulla,Punganur,Puttaparthi,Puttur,ajahmundry,ajam,ajampet,amabhadrapuram,amachandrapuram,amapuram,amathirtham,AMCO Cement,Dharmavarappadu,ameswaram,ampachodavaram,ayachoti,ayadurg,azole,epalle,ushikonda APIIC,Salur Samalkot,Sanivarapupeta,Santhanuthalapadu,Satrampadu,Sattenapalle,Singarayakonda,Somandepalle,Sompeta,Sricity,Srikakulam,Srikalahasti,Sriramnagar,Srisailam,Srungavarapukota,Sulluru,Sunnipenta,Tada,Tadepalle,Tadepalligudem,Tadpatri,Tangellamudi,Tanuku,Tekkali,Tenali,Thagarapuvalasa,Thatipaka,Thullur,Thumakunta,,Tiruchanur,Tirumala,Tirupati,Tummikapalle,Tuni,Unguturu,Uppada,Upper Sileru,Project Site Camp,Uravakonda,Vaddeswaram,Vavilla,Velvadam,Venkatachalam,,Venkatagiri,Veparala,Vetapalem,Vijayapuri South,Vijayawada,Vinnamala,Vinukonda,Visakhapatnam,Vissannapet,Vizianagaram,VSP Township,Vuyyuru,Yanam,Yelamanchili,Yemmiganur,Yenumalapalle,Yernagudem,Yerraguntla,Along,AninI,Basar,Boleng,Bomdila,Changlang,Daporijo,Deomali,Dirang,Hawai,Itanagar,Jairampur,Khonsa,Koloriang,Longding,Miao,Naharlagun,Namsai,Pasighat,oing,upa,Sagalee,Seppa,Tawang,Tezu,Yingkiong,Yupia,Ziro,Abhayapuri,Amguri,Anand Nagar,Asudubi,Azara,Badarpur,Badarpur,ly Town,Bamun Sualkuchi,Bandardewa IID,Bangaon,Barpathar,Barpeta,Barpeta,oad,Basugaon,BCPL Township,Behiating AIDC,Belsor,Bhomoraguri AIDC,Bhuragaon,Bihpuria,Bijni,Bilasipara,Biswanath Chariali,Bohari,Bokajan,Bokakhat,Bongaigaon,Bongaigaon,PCL Township
+,Borgolai Gt 11,Borpukhuri,Chabua,Chalantapara Pt IV,Chandrapur Bagicha,Changsari,Chapakhowa Town,Chapar,Charingia Gaon,Chekonidhara,Dahali,Dalgaon,Damara Patpara,Dergaon,Dhakuakhana,Dharapur,Dhekiajuli,Dhekorgorha,Dhemaji,Dhing,Dhubri,Dibrugarh,Digaru Gaon,Digboi,Diphu,Dispur,Doboka,Dokmoka,Donkamokam,Doom Dooma,Dudhpatil Pt V,Dudhpatil Pt VI,Duliajan,Duliajan No 1,Durga Nagar Part-V,Garal,Gauripur,Goalpara,Gohpur,Golaghat,Golokganj,Goreswar,Gossaigaon,Guwahati,Haflong,Hailakandi,Hamren,Hindustan Paper,Corporation Ltd Township,Panchgram
+,Hojai
+,Howli
+,Howraghat
+,Irongmara
+,Jagiroad,Jamunamukh,Jhagra Pt III
+,Jonai Bazar
+,Jorhat
+,Kakaya
+,Kalaigaon Town Part,Kamalabaria NC,Kampur Town,Kanisail Pt I,Karimganj
+,Khaira Bari,Kharijapikon,Kharupatia
+,Kochpara
+,Kokrajhar
+,Kumar Kaibarta Gaon,Lakhipur
+,Lakhipur, Cachar District,Lala, Lanka,Lido Tikok,Lido Town,Lumding,Lumding,ly Colony,Mahur
+,Maibong
+,Majgaon
+,Makum,Mangaldoi,Mankachar,Margherita,Mariani
+,Marigaon
+,Marowa
+,Moran Town,Moranhat
+,Mornoi ,Mushalpur,Nagaon,Naharkatiya,Nahira
+,Nalbari
+,Namrup,Narayanpur,Naubaisa Gaon,Nazira
+,New Bongaigaon,Railway Colony,Niz Bahjani,Niz Hajo,Niz Katigorah Pt III,Niz Mankata,North Guwahati,North Lakhimpur,Numaligarh,Refinery Township,Palasbari,Pathsala,Pub Dhaniram Pather,aha,angapara,angia
+,angia IIDC,ani
+,upahi Town,upiabathan,Salakati
+,Salpara Molandubi Pt I,Sanpara,Sapatgram,Sarbhog
+,Sarthebari,Sarupathar,Sarupathar Bengali,Sepon, Sibsagar,Silapathar,Silchar,Sonapur Gaon,Sonari,Sualkuchi,Takhlibilar Pathar,Tangla,Tegheria,Teok,Tezpur,Thekashu Pt I,Thekashu Pt II,Tihu,Tinsukia,Titabor Town,Udalguri,Umrangso,Amarpur,Anwari,Araria,Areraj
+,Arrah
+,Arwal
+,Asarganj,Aurangabad,Bagaha,Bahadurganj,Bahadurpur,Bairgania
+,Bakhri,Bakhtiarpur,Balia
+,Banka,Banmankhi Bazar,Bara
+,Barahiya
+,Barauli
+,Barauni IOC Township,Barbigha,Barh,Baruni,Baruni Thremal,Power Station Township,Begusarai
+,Behea
+,Belsand,Benipur,Bettiah,Bhabua,Bhagalpur,Bhagirathpur,Biharsharif,Bihta,Bihta,Bikram,Bikramganj,Birpur,Bodh Gaya,Buxar,Chakia,Chanari,Chand Chaur,Chanpatia,Chapra,Dalsinghsarai,Darbhanga,Dariapur,Daudnagar,Dehri,Dhaka,Dighwara,Dumari,Dumraon,Ekangar Sarai,Fatwah,Forbesganj,Gaya,Gazipur,Ghoghardiha,Gogri Jamalpur,Gopalganj,Habibpur,Hajipur,Hanspura,Harnaut,Hathua,Hilsa,Hisua,Islampur,Jagdishpur,Jainagar,Jamalpur,Jamhaur,Jamui,Bilaigarh
+,Bilaspur
+,Bilha
+,Birkoni IIDC
+,Bodri
+,Borai CSIDC
+,Century Cement Baikunth,Champa,Chandrapur,Charama,Chharchha,Chhuikhadan,Chhura,Chhurikala,Chhuriya kalan,Chikhal Kasa,Chirmiri,Dabhra,Dalli,ajhara,Dantewada,Daundi Lohara,Deori,Devkar,Dhamdha,Dhamtari,Dharamjaigarh,Dipka,Dongargaon,Dongargarh,Dornapal,Doundi,Durg,Farasgaon,Fingeshwar,Gandai,Gariaband,Gaurela,Gharghoda,Gidam,Girwarganj IIDC,Gobra Nawapara,Govindapur,Gunderdehi,Gurur,Hatkachora,Hirmi,Jagdalpur,Jaijepur,Janjgir,Jarhi,Jarwe,Jashpurnagar,Jhagrakhand,Kanker,Kasdol,Katghora,Katkona,Kawardha,Keskal,Khairagarh,Khamharia,Kharod,Kharora,Kharsia,Khongapani,Kirandul,Kondagaon,Koni,Konta,Korba,Kota,Kotba,Kumhari,Kunkuri,Kurasia
+,Kurud
+,Kusmi
+,Lafarge Cement Factory,Arasmeta
+,Lafarge Cement Factory,Sonadhi
+,Lailunga
+,Lakhnapur
+,Lawan
+,Lormi
+,Magarlod,Mahasamund,Mahendragarh,Malhar
+,Mandhar ,Mandir Hasaud,Maro,Mehmand,Mungeli,Nagari,Nai Ledri,Namna Kalan,Narayanpur,Narharpur,Nawagarh,Nawagarh Janjgir - Champa District,Naya Baradwar,New,aipur,NTPC Sipat,Pakhanjur,Palari,Pali,Pandaria,Pandatarai,Paratappur,Parpodi,Patan,Pathalgaon,Patharia,Pathariya,Pendra,Phunderdihari,Pipariya,Pithora,Pusaur,ahaud,aigarh,aipur,ajgamar,ajnandgaon,ajpur,amanujganj,ani Durgavati, Anjani,atanpur,awan Ambuja,Cement Plant,Sahaspur Lohara,Saja
+,Sakari
+,Sakti
+,Saragaon
+,Saraipali
+,Sarangarh
+,Sargaon
+,Sariya,Sheorinarayan,
+Silpahari ,Simga,Sirgitti,Sitapur,Sukma,Janakpur,oad,Janpur,Jehanabad,Jhajha,Jhanjharpur,Jogabani,Kahalgaon,Kanti,Kargahia Purab,Kasba,Kataiya,Katihar,Kesaria,Khagaria,Kharagpur,Khusrupur,Kishanganj,Koath,Koilwar,Kumarbagh,Lakhisarai,Lalganj,Laruara,Madhepura,Madhuban,Madhubani,Maharajganj,Mahnar Bazar,Mairwa,Makhdumpur,Malhipur,Maner,Manihari,Mansur Chak,Marhaura,Masaurhi,Mathurapur,RMehsi,Mirganj,Mohiuddinagar,Mokameh,Motihari,Motipur,Munger,Murliganj,Muzaffarpur,Nabinagar,Narkatiaganj,Nasrigagnj,Naubatpur,Naugachhia,Nawada,Nirmali,Nokha,NTPC Barh,Obra,Padri,Pakri Dayal,Pandual,Pareo,Paria,Patna,Piro,Puraini,Purnia,afiganj,aghunathpur,ajauli,ajgir,amgarh,amnagar,axaul Bazar,evelganj,osera,Saharsa
+,Sahebganj
+,Sahebganj,Saidpura
+,Samastipur
+,Saraiya
+,Sasaram
+,Satghara
+,Shahpur
+,Sheikhpura
+,Sheohar
+,Sherghati
+,Silao
+,Singhesar Asthan,
+Sitamarhi
+,Siwan
+,Sonepur
+,Sugauli
+,Sultanganj
+,Supaul
+,Teghra
+,Telkap
+,Thakurganj
+,Tikari
+,Tola Baliadih
+,Tola Chain
+,Tola Mansaraut,Tola Pairamatihana,Vaishali
+,Warisaliganj,Chandigarh Metro,Chandigarh,Mohali,Panchkula,Aamdi,Abhanpur,Adawal,Adbhar,Ahiwara,Akaltara,Ambagarh Chowki,Ambikapur,Antagarh,Arang,Arjunda,Bade Bacheli,Badla,Bagbahara,Bagicha,Baikunthpur,Balod,Baloda,Baloda Bazar,Balrampur,Banarsi,Banki Mongra,Baramkela,Barsur,Basna,Bastar,Bemetra,Berla,Bhairamgarh,Bhakhara,Bhanupratappur,Bhatapara,Bhatgaon,Bhilai,Bhopalpattanam,Bijapur,Bhat,Bhavnagar,Bhayavadar,Bhilad,Bhiloda,Bhuj,Bhurivel,Bilimora,Bodeli,Boriavi,Borsad,Botad,Chaklasi,Chalala,Chalthan,Chanasma,Changodar GIDC,Chanod,Chhapi,Chhapra,Chhatral,Chhiri,Chhota Udaipur,Chikhli,Chorwad,Chotila,Dabhoi,Dahej SIR,Dakor,Damnagar,Dediapada,Deesa,Dehari,Dehgam,Deodar,Devgadbaria,Devsar,Dhandhuka,Dhanera,Dharampur,Dhasa Vishi,Dhola
+,Dholka
+,Dhoraji,Dhrangadhra,Dhrol,Digvijaygram,Dohad,Dungarpur,Dungarpur Bhavnagar,District,Dwarka,Gadhada,Gamdi,Gandevi,Gandhidham,Gandhinagar,Gariadhar,Ghogha,GIDC Antaliya,GIDC Panoli,GIDC Por,GIDC Savli,Godhra,Gondal,GSFC Motikhavdi,Sikka INA
+,GSFC,eliance Complex,GWC Township Kovaya,Hajira
+,Halol
+,Halvad
+,Hansalpur
+,Harij,Himmatnagar,Ichchhapor,Ichhapor,Idar,Jafrabad,Jalalpore,Jamavala,Jambusar,Jamjodhpur,Jamnagar,Jarod,Jasdan,Jetalsar,Jetpur,Jetpur Navagadh,Jhalod,Joshipura,Junagadh,Kadi,Kadodara,Kakoshi,Kalavad,Kalol,Kalol, Panch,Mahals,District,Kandla,Kanjari,Kanodar,Kapadvanj,Karamsad,Karjan,Kathlal,Katpar,Kavant,Keshod,Kevadiya,Khambhalia,Khambhat,khapat,Kharach,Kharaghoda,Kheda,Khedbrahma,Kheralu,Kim,Kodinar,Kosamba,Kothria,Kutiyana,Lathi,Lavachha,Lilia,Limbdi,Limkheda,Limla,Lodhikas,Lunawada,Madhapar,Mahesana,Mahudha,Mahuva,Mahuvar,Malanka,Maliya,Malpur,Manavadar,Mandvi,Mandvi Surat District,Mangrol,Mankuva,Mansa,Meghraj,Mehmedabad,Mithapur,Surajpur
+,Takhatpur
+,Telgaon
+,Tendua IID
+,Tifra
+,Tilda
+,Tumgaon
+,Tundra
+,Ultratech Cement Plant,awan,Utai,Vishrampur,Vishrampuri,Wadrafnagar,Dadra & Nagar Haveli,Alok City,Amli,Dungra,Masat ,Naroli,Silvassa,Surangi,Delhi,New Delhi,Dadhel,Daman,Diu,Ghoghla,Kachigam,Goa,Aldona,Anjuna,Aquem,Arambol,Bambolim,Bandora,Benaulim,Bicholim,Borim,Calangute,Calapor,Canacona,Candola,Candolim,Carapur,Chicalim,Chimbel,Chinchinim,Colva,Colvale,Cumbarjua,Cuncolim,Curchorem,Curti,Curtorim,Davorlim,Guirim,Jua,Mandrem,Mapusa,Marcaim,Margao,Mercurim,Moira,Morjim,Navelim,Nerul,Nuvem,Old Goa,Onda,Orgao,Pale,Panaji,Parcem,Penha De Franca,Pernem,Ponda,Porvorim,Priol,Quepem,Queula,aia,eis Magos,Saligao,Sancoale,Sanguem,Sanquelim,Sanvordem,Sao Jose de Areal,Siolim,Usgao,Valpoi,Varca,Vasco Da Gama,Xeldem,Abrama,Adalaj,Adityana,Ahmedabad,Ahwa,Alang,Alikherva,Ambaji,Ambaliyasan,Amboli,Amod,Amreli,Anand,Anandpar,Anandpar,Andada
+,Anjar
+,Anklav,Ankleshwar,Antaliya,Arambhada,Arsodiya
+,Atul
+,Baben
+,Babra
+,Bagasara
+,Balasinor
+,Baliyasan
+,Bansda
+,Bantwa
+,Bardoli
+,Bareja
+,Barwala
+,Bavla
+,Bayad
+,Bechar Alias Becharaji,Bedi,Bhabhar
+,Bhachau,Bhadkodara,Bhagal
+,Bhagal Valsad District,Bhalpara
+,Bhanvad
+,Bharuch,Ellenabad
+,Farakhpur
+,Faridabad
+,Farrukhnagar
+,Fatehabad
+,Ferozepur Jhirka
+,Ganaur
+,Gangwa
+,Garhi Harsaru
+,Gharaunda
+,Gohana
+,Gurgaon,
+Gurugram
+,Haileymandi
+,Hansi
+,Hassanpur
+,Hathin
+,Hisar,
+Rewari,
+,Hodal
+,HSIIDC Dudhola ,Nagal Chaudhry,Nangal Chaudhry,
+,HSIIDC Manakpur,,Indri
+,Industrial Estate Barwala,Ismailabad,Jakhalmandi
+,Jhajjar,Jind,
+Julana,Kabri,
+Kachrauli,Kaithal,
+Kakar Majra,Kalanaur,
+Kalanwali,Kalayat,Kalka,
+Nagina,Naraingarh,Narnaul,
+Narnaund,Narwana,Nilokheri,
+Nissing,Nuh,Palwal,Panchkula,
+Panipat,
+Pataudi,Pehowa,Piala,Pinagwan,Pinjore,
+Kanina,Karnal,Kharkhoda,Khori Kalan,Kundli,Kurukshetra,Ladrawan,
+Ladwa,Loharu,Maham,Mahendragarh,Majra,Mandi
+Dabwali,Manethi,Mayyer,Mustafabad,Punahana,Pundri,
+adaur,ai ,aipur,ani,am Garh,ania,atia,ewari,
+ohtak,oz Ka Meo,,Sadaura,Safidon,Saha,Salamba,
+Samalkha,Sampla,Sankhol,Shahbad,Sikri ,Sirsa,Siwani,
+Sohna,Sonipat,Sunari Kalan,Taoru,Taraori,Tohana,Tosham,Uchana,
+Ugra Kheri,Uklanamandi,Uncha Siwana,
+Jagadhri,
+Yamunanagar,
+ Amb,Arki
+,Baddi
+,Baddi ,Badhal ,Bagbania ,Bain Attarian ,
+,Bakloh
+,Banjar
+,Barotiwala ,Bhambla ,Bhota
+,Bhuntar
+,Bilaspur
+,Chail
+,Chamba
+,Chaupal
+,Chuari Khas
+,Dagshai
+,Dalhousie
+,Daulatpur
+,Dera Gopipur,Dharampur Industrial Estate
+,Dharmsala
+,Gagret
+,Gagret ,Garnota ,Ghumarwin
+,Golthai ,Gondpur ,Hamirpur,Hatil ,Hill Top Industrial Estate,Indora
+,Jais ,Jawalamukhi,Jhakhri,Modasa,Modhera,Morbi,Mundra,Nadiad,Nalsarovar,Nandej,Nari,Nasvadi,Nava Bhildi,Navlakhi SIR,Navsari,Ode,Okha Port,Orvad,Paddhari,Padra,Palaj,Palanpur,Palej,Palitana,Panoli INA,Parabada,Pardi,Parnera,Patan,Patdi,Pethapur,Petlad,Porbandar,Prantij,adhanpur,ajkot,ajpipla,ajula,anavav,anpur,aval,avapara,Sagbara
+,Salaya
+,Salvav
+,Sanand
+,Sanand GIDC,Sanjan
+,Sanjeli,Santrampur,Saputara
+,Sarigam,Sathamba,Savarkundla,Savli
+,Sayan
+,Selamba
+,Shapur
+,Shapur,ajkot District,Shehera
+,Sidhpur
+,Sidsar
+,Sihor
+,Sikka
+,Simar SIR,Sojitra
+,Somnath
+,Songadh
+,Songadh Bhavnagar District,Sukhpar,Surajkaradi,Surat,Surendranagar,Sutrapada,Talaja,Talala
+,Talod
+,Tarsadi,Thangadh,Thara
+,Tharad
+,Thasra
+,Ukai,Umbergaon,Umrala
+,Umreth
+,Una
+,Undach
+,Unjha
+,Upleta
+,Vadali
+,Vadia
+,Vadnagar
+,Vadodara
+,Vaghodia
+,Valia,Vallabhipur,Valsad
+,Vanthali
+,Vapi
+,Vartej
+,Vasna
+,Veraval
+,Veraval,ajkot District,Vijalpor,Vijapur,Vijaynagar,Vilayat GIDC,Viramgam,Virpur,Virpur,ajkot District,Visavadar,Visnagar,Vyara,Wadhwan,Waghai,Wankaner,Adampur,Ambala,Asankhurd,Assandh,Ateli,Badh Malak,Badli,Baghola,Bahadurgarh,Barara,Barhi ,Barwala,Bawal,Bawani Khera,Beri,Bhakali,Bhiwani,Bhondsi,Bhuran,Bilaspur,Binola ,Boh,Buria,Chandi Mandir,Chandimandir Bir,Ghaggar,Charkhi Dadri,Cheeka,Chhachhrauli,Dharuhera,AEC Complex,Akdoni Khurd,Alagdiha
+,Amlabad,Angarpathar,Ara
+,Bachra,Baharagora,Baliapur
+,Baliari
+,Balkundra
+,Barajamda
+,Bardubhi
+,Barharwa
+,Barhi
+,Barkakana
+,Barki Saraiya,Barora
+,Barughutu
+,Barwadih
+,Basaria
+,Basukinath
+,Baua Kalan
+,Bekobar
+,Berhait Bazar,Bermo
+,Bhagatdih
+,Bhandra
+,Bhandra Bokaro District,Bhim Kanari,Bhojudih,Bhowrah,Bhuli,Bishnugarh,Bishrampur,Bishrampur Latehar,District,Bokaro Steel City,Bokaro Thermal,Bongabar,Borio,Bundu,Bursera,Chaibasa,Chain Pur,Chakradharpur,Chakulia,Chandaur,Chandil,Chandrapura,Chandwa,Charhi,Chatra,Chauparan,Chhatatanr,Chhotaputki,Chiria,Chirkunda,Churi,Daltonganj,Danguwapasi,Dari,Deoghar,Deorikalan,Dhanbad,Dhanwar,Dhaunsar,Domchanch,Dugda,Dumarkunda,Dumka,Egarkunr,Garhwa,Ghagra,Ghatshila,Gidi,Giridih,Gobindpur,Godda,Godhar,Gomoh,Gua,Gumia,Gumla,Haludpukhur,Hariharpur,Harina,Hasir,Hazaribagh,Hesla,Hussainabad,Irba,Isri,Jadugora,Jagannathpur,Jai Nagar,Jamadoba,Jamshedpur,Jamtara,Jangalpur,Jaridih Bazar,Jasidih,Jena,Jharia,Jharia Khas,Jhinghipahari,Jhinkpani,Jhumri Tilaiya,Jorapokhar,Kailudih
+,Kalikapur,Kandra,Kanke,Karma,Karma Chatra District,Karma Tanr,Karmatanr,Kathhara,Katras,Kedla,Kenduadih,Kharkhari,Kharsawan,Khelari,Khunti,Kiriburu,Kodarma,Kuju,Kumarpur,Kumarpur Sahibganj District
+,Kurpania,Kustai,Lakarka,Lalpania,Lapanga,Latehar,Lohardaga,Loyabad,Madhuban,Madhupur,Mahagma,Mahesh Mundi,Mahuda,Maithon,Majhion,Makoli
+,Jharmajri EPIP Phase 1,Jogindarnagar,Jubbal
+,Jutogh
+,Kala Amb ,Kangra
+,Kasauli
+,Kasol
+,Keylong
+,Keylong Industrial Estate,Khajjiar
+,Kinnaur
+,Kotkhai
+,Kullu
+,Lodhi Majra 
+,Manali
+,Mandi
+,Manikaran
+,Mehatpur
+,Moginand ,Nadaun
+,Nagri ,Nagrota Bagwan,Nahan
+,Naina Devi
+,Nalagarh
+,Narkanda
+,Nurpur
+,Palampur
+,Paonta Sahib,Parel Industrial Estate,Parwanoo
+,Pragpur
+,aja Ka Bagh 
+,ajgarh,ampur,atti , Rawalsar
+,eckong Peo
+,enuka
+,ohru
+,Sabathu
+,Sansarpur Terrace GrowthRBhaderwah
+,Centre ,Santokhgarh
+,Sarkaghat
+,Sauli Khad ,Seoni
+,Shamshi ,Shimla
+,Shivnagari Holi Industrial Estate
+,Shoghi
+,Shoghi ,Solan
+,Solang,Sundarnagar,Tahliwala ,Talai
+,Theog
+,Tira Sujanpur,Una
+,YOI
+,Achabal,Akhnoor,Anantnag,Arnia,Arwani,Ashmuji Khalsa,Awantipora,Bandipore,Banihal,Baramula
+,Bijbehara,Billawar,Bishna,Chenani,Choglamsar,Dachigam,Doda,Dras,Duru Verinag,Ganderbal,Gho Manhasan,Gorah Salathian,Gulmarg,Hajan,Handwara,Hanle,Hiranagar,Jammu,Jourian,Kargil,Kathua,Katra,Khan Sahib,Khilanmarg,Khour,Khrew,Kishtwar,Kud,Kukernag,Kulgam,Kunzer
+,Bari Brahmana EPIP Industrial Estate
+,Kupwara,Leh,Magam,Mattan,Mohmmad Pora,Nowgam,Nowshehra,Pahalgam,Parole,Patnitop,Pattan,Pulwama,Punch,Qaimoh,Qazigund,ajauri,amban,amgarh,amnagar,anbirsinghpora,easi,ehambal,Samba,Seer Hamdan,Shangus,Shopian,Soolkoot,Sopore,Srinagar,Sumbal,Sunderbani,Talwara,Thanamandi,Tral,Udhampur,Uri,Vijay Pore
+,Bashohli,Batote,Beerwah
+,Dandeli,Dargajogihalli,Davanagere,Devadurga,Devanahalli
+,Dharwad
+,Dobaspet ,Dod Ballapur,Doddaballapur 
+,Doddaballapura Apparel
+,Haralahalli,Haralapura,Harapanahalli,Harihar
+,Harohalli ,Hassan
+,Hatti
+,Hatti Gold Mines,Haveri
+,HD Kote
+,Heroor
+,Hirehally ,Hirekerur
+,Hiriyur
+,Holalkere
+,Hole Narsipur,Homnabad
+,Honaga ,Honavar
+,Honnali
+,Jog Falls,JSW Steel Plant,Kadakola,Kadur,Kadwad,Kairangala,Kakati ,Kalghatgi,Kamalapuram,Kamalnagar,Kamatgi,Kampli,Kanakapura,Kariyangala,Karkal,Karwar,Kemmannugundi,Kerur,Khanapur,Khangaon,Kodiyal,Kolambe,Kolar,Kollegal,Kollur,Konnur,Koppa,Koppal,Koratagere,Koteshwar,Kotturu,Krishnaraja Sagara,Krishnarajanagara,Krishnarajpet,Kudchi,Kudligi,Kudremukh
+,Kudur
+,Kumta,Kundapura,Kundgol
+,Kunigal
+,Kunigal ,Kurekuppa,Kurgunta,Kushalanagara,Kushtagi
+,Kuvettu,Lakshmeshwar,Lingsugur
+,Londa
+,Machche
+,Maddur
+,Madhugiri
+,Madikeri
+,Magadi,Mahalingpur,Malavalli
+,Mallar
+,Malur
+,Malur ,Mandya
+,Mandya ,Mangalore
+,Manipura,Manjanady,Manjunath Township,Basavkalyan,Manvi,Manvi ,Mellahalli,Molakalmuru,Moodabettu,Mouje Nandgad Park
+,Donimalai Township
+,Elwala
+,Gadag Betigeri
+,Gajendragarh
+,Gangawati
+,Ganjimutt
+,Gargeswari
+,Gauribidanur
+,Gejjalagere RHoovina Hadagalli,Gogipeth,Gokak,Gokak Falls,Gonikoppal,Gubbi,Gudibanda,Gudur,Gulbarga,Guledgudda,Gundlupet,Gurmatkal,Halga,Haliyal,Hampi,Hangal,Hanur,Hosanagara,Hosdurga
+,Hoskote
+,Hoskote ,Hospet,Hubli
+,Hukeri
+,Huliyar
+,Humnabad ,Hungund,Hunsur,Ilkal,Indi,Jagalur,Jamkhandi,Jevargi
+,Malkera
+,Mandu
+,Manohar Pur,Marar
+,Marma
+,Matigara
+,Mera
+,Meru
+,Mihijam
+,Mugma
+,Muraidih
+,Muri
+,Musabani
+,Nagri Kalan,Narra
+,Netarhat
+,Nirsa,Noamundi,Okni No 2
+,Orla
+,Pakaur
+,Palawa
+,Panchet
+,Panrra
+,Paratdih
+,Pathardih
+,Patra
+,Patratu
+,Phusro,Pondarkanali,ajbhita
+,ajmahal
+,amgarh Cantonment,anchi,Ratu,ehla,eligara,Rohraband,Sahibganj,Sahnidih,Sanri,Saraidhela,Saram,Sarauni,Satgawan,Saunda,Seraikela,Sewai,Shahpur,Sijhua,Sijua,Simdega,Sindri,Sinduria,Sini,Sirka,Siuliban,Suranga,Tapin,Tati,Telo,Telodih,Tenu,Tin Pahar,Tisra,Topa,Topchanchi,Torpa,Toto,Tundiul,UrimariAddur
+,Adityapatna
+,Adyar
+,Afzalpur
+,Agumbe
+,Aland
+,Alevoor
+,Allipura
+,Alnavar
+,Alur
+,Amaravathi,Ambikanagara,Amble ,Aminagad
+,Ankola
+,Annigeri
+,Arasinakunte
+,Arkalgud
+,Arkula
+,Arsikere
+,Athni
+,Aurad
+,Aversa
+,Bada,Badagaulipady,Badami
+,Bagalkot
+,Bagepalli
+,Bail Hongal
+,Bandipur
+,Bangarapet
+,Bangarpet ,Bankapura
+,Bannur,Bantval,Basavakalyan,Basavana Bagevadi,Belgaum
+,Bellary,Beltangadi,Belur
+,Belur ,Benakanahalli,Bengaluru,Bethamangala,Bhadravati,Bhalki
+,Bhatkal,Bhimarayanagudi,Bidadi
+,Bidadi ,Bidar
+,Bijapur
+,Bilgi
+,Birur,Bobruwada,Byadgi,Challakere,Chamarajanagar,Channagiri,Channapatna,Channarayapatna,Chelur
+,Chik Ballapur,Chikballapur ,Chikkajajur,Chikmagalur,Chiknayakanhalli,Chikodi,Chincholi,Chintamani,Chitapur,Chitgoppa,Chitradurga,Angadipuram,Angamaly,Anthicad,Ariyallur,Arookutty,Aroor,Athirampuzha,Athiyannur,Atholi,Attingal,Avanur,Avinissery,Avittathur,Ayancheri,Ayanivelikulangara,Azhikode,Azhiyur,Azhoor,Balusseri,Bangramanjeshwar,Beypore,Bharanikkavu,Brahmakulam,Chala,Chalakudy,Changanacherry,Chavakkad,Chavara,Chekkiad,Chelakkara,Chelannur,Cheleri,Chelora,Chemancheri,Chendamangalam,Chendrappini,Chengala
+,Chengamanad,Chengannur,Chennithala
+,Cheppad
+,Cheranallur,Cheriyamundam,Cherthala
+,Cherukavu,Cheruthazham,Cheruthuruthi,Chevvoor
+,Chingoli
+,Chirakkal,Chiramanangad,Chiranellur
+,Chittanda,Chittur-Thathamangalam,Chockli
+,Choolissery,Choondal,Choornikkara,Chowwara,Desamangalam,Dharmadom,Edacheri,Edakkode,Edappal,Edathala,Edathirinji,Edathiruthy,Edavilangu,Elampalloor,Elayavoor,Eloor,Enkakkad,Eramala,Eramalloor
+,Eranellur
+,Eranholi
+,Erattupetta
+,Eravattur
+,Eravu
+,Ernakulam
+,Eruvatti
+,Ettumanoor
+,Eyyal
+,Feroke
+,Guruvayur
+,Haripad
+,Hosabettu
+,Idukki Township,Irikkur
+,Irimbiliyam
+,Iringal
+,Iringaprom
+,Irinjalakuda
+,Iriveri
+,Iroopara
+,Kadachira,Kadamakkudy,Kadannappalli,Kadavallur
+,Kadikkad
+,Kadirur
+,Kadungalloor,Kaipamangalam,Kalady
+,Kalady Ernakulam District,Kalamassery,Kallelibhagom,Kallettumkara,Kalliasseri
+,Kalliyoor,Kallur- Thekkummuri
+,Kalpetta,Kandamkunnu,Kandanassery,Kanhangad
+,Kanhirode,Kaniyarkode,Kanjikkuzhi
+,Kanjikode ,Kanjiramkulam,Kannadiparamba,Kannamangalam,Kannamangalam
+,Alappuzha District,Kannapuram,Kannur
+,Karamuck
+,Karikkad
+,Karivellur,Kariyannur,Karthikappally,Karunagappally,Karuvanthuruthy,Kasaragod,Kattakampal,Kattanam,Kattappana,Kattipparuthi,Kattur,Kayamkulam,Keekan
+,Keerikkad,Keezhallur,Keezhariyur,Kinfra Small Industries Park,Kizhakkummuri,Kizhuparamba
+,Mudalgi
+,Mudbidri
+,Muddebihal
+,Mudgal
+,Mudhol
+,Mudigere
+,Muduperar
+,Mulbagal
+,Mulgund
+,Mulki
+,Mulur
+,Mundargi
+,Mundargi ,Mundgod
+Munirabad Project Area,Munnuru
+,Mutga
+,Mutga Gulbarga District,Mysore
+Pavagada,Periyapatna,Pudu
+,Puttur,abkavi-Banhatti,aichur
+,aichur Growth Centre,,amanagara,amdurg,anebennur,aybag,obertsonpet,on,Sadalgi,Sagagur,Sagar,Sajipanadu,Sakleshpur,Saligram,Sambra,Sandur,Shirhatti
+,Shorapur,Shravanabelgola,Siddapur,Sidlaghatta,Sindgi
+,Sindhnur
+,Sira,Siralkoppa,Sirsi,Siruguppa,Solebhavi,Somanahalli 
+,Somvarpet
+,Sorab
+,Sringeri
+,Srinivaspur
+,Srirampura,Srirangapatna,Sulya
+,T Narsipura
+,Talikota
+,Talipady
+,Tarikere
+,Tattilli
+,Tekkalakote
+,Terdal
+,Thandya Industrial Estate,Thimmenahalli ,Thumbe,Tiptur,Tirthahalli,Tumkur,Turuvekere,Udupi,Ullal,Uppinangady,Vaddu,Varamballi,Vasantha Narasapura ,Venkatapura,Vijayapura,Virajpete,Vittal,Wadi,Yadgir,Yelandur,Yelbarga,Yellapur,Yellur Abdu,ahiman Nagar,Adat,Adichanalloor,Adinad,Adoor,Aimanam,Ajanur,Akathiyoor,Ala,Alamcode,Alamcode
+,District,Alappuzha,Alathur,Alur,Aluva,Amballur,Ancharakandy
+,Nadsal
+,Nagamangala
+,Nandi
+,Nandur Kesartigi ,
+Sankeshwar
+						
+
+,Nanjangud,Narasapura ,Narasimharajapura,Naregal,Nargund,Narikombu,Navalgund,Navoor,Nelamangala,Nipani,Pandavapura,Pattadakal, Sanoor,Sathyamangala,Sattur,Saundatti-Yellamma,Savanur
+,Sedam
+,Shahabad
+,Shahabad ACC,Shahpur
+,Shaktinagar
+,Shiggaon
+,Shikarpur
+,Shimoga
+,Shirawad 
+,Parakkad,Parappukkara,Parappur,Parassala,Parasuvaikkal,Paravoor,Paravur,Pariyaram,Pathanamthitta,Pathirappally,Pathiriyad,Pathiyoor,Pattiom,Pavaratty,Payyannur,Pazhanji,Peermade,Perakam,Peralasseri,Perinad,Peringathur,Perinjanam,Perinthalmanna,Perole,Perumanna,Perumbaikad,Perumbavoor,Peruvallur,Pilicode,Pinarayi,Ponmundam,Ponnani,Poomangalam,Poothakkulam,Porathissery,Pottore,Pudussery Central
+,Pudussery West,Pullur,Punalur,Punnayur,Punnayurkulam,Puranattukara,Puthencruz,Puthukkad,Puthunagaram,Puthuppally,Puthur,Puzhathi,Quilandy,amanattukara,Shiriya,Shoranur,South - Thrikkaripur,Talakkad,Talikkulam,Taliparamba,Tanalur,Thaikattussery,Thaikkad,Thalakkulathur,Thalassery,Thangalur,Thanniyam,Thazhakara,Thazhecode,Thazhuthala,Thekkumkara,Thennala,Thikkody,Thirumittacode-II,Thirunavaya,Thiruvalla,Thiruvananthapuram
+,Thiruvankulam,Thodiyoor,Thodupuzha,Thottada,Thrikkadavoor,Thrikkaruva,Thrikkovilvattom,Thrippunithura,Thrissur,Thrithala,Thuneri,Thurayur,Tirur,Tirurangadi,Trikkur,Triprangode,Udma,Uliyazhathura,Ulliyeri,Uppala,Urakam,Vadakara,Vadakkekad,Vadakkumkara,Vadakkummuri,Vadakkumthala,Vadama,Vadanappally,Vaikom,Vakkom,Valapattanam,Valayam,Vallachira,Vandiperiyar,Vaniyamkulam-II,Varam,Varappuzha
+,Varkala,Vattappara,Vayalar,Vazhakkala,Vazhakulam,Vazhayur,Veiloor,Vellanikkara,Velur,Veluthur,Venganoor,Vengara,Vengola,Venkitangu,Venmanad,Vilappil,Villiappally,Vylathur,Vythiri,Wadakkanchery
+,Agatti,Amini,Kavaratti,Minicoy								
+,Madhya Pradesh
+,Agar
+,Ahirkhedi
+,Ahirkhedi, Indore District,Ajaygarh
+,Akoda
+,Akodia
+,Alampur
+,Alirajpur
+,Alot
+,Kizhuppillikkara,Kizhuvalam -Koonthalloor,Kochi
+,Kodungallur
+,Kodur
+,Koipady
+,Kolacherry
+,Kolavelloor
+,Kolazhy
+,Kollam,Komalapuram,Kondotty
+,Koodali
+,Koothali,Koothuparamba,Koottilangadi
+,Koratty,Kothamangalam,Kottakal
+,Kottamkara
+,Kottappally,Kottappuram,Kottarakkara
+,Kottayam,Kottayam-Malabar,Kottuvally
+,Kovalam
+,Kozhenchery,Kozhikode,Kozhukkallur,Kozhukkully,Krishnapuram,Kudlu,Kulasekharapuram,Kulathummal,Kumarakom,Kumaranellur
+,Kumarapuram,Kumbalangy,Kumily,Kunjathur,Kunnamkulam,Kunnathunad,Kunnummal,Kurattissery,Kureekkad,Kurumathur,Kurumpilavu,Kuruvattur,Kuthiathode,Kuttiattoor,Kuttippuram,Madhur,Malappuram,Manakkody,Manakunnam,Manalur,Manantheri,Manavalassery,Mangalpady,Mangattidam,Maniyat,Maniyoor,Maniyur,Manjeri,Manjeshwar,Mannanchery,Mannar,Mannarkad-I,Marampilly,Marancheri,Marathakkara,Mattannur,Mavelikkara
+,Mavilayi,Mavoor,Mayyanad,Mayyil,Meenad,Menhaniam,Meppayyur,Mokeri,Moonniyur,Muhamma,Mulamthuruthy,Mulavukad,Mullassery,Mundathikode,Munderi,Munnar,Muthukulam,Muthuthala,Muvattupuzha,Muzhappilangad,Nadapuram,Nadathara,Naduvannur,Naduvattom,Nanmanda,Nannambra,Narath,Nattakam,Nedumangad,Nedumpana,Nedumpura,Neduva,Nelluwaya,Nenmenikkara,New Mahe,Neyyattinkara,Nilambur
+,Njarackal,North -Thrikkaripur,Oachira,Olavanna,Ongallur- I,Ongallur- II,Othukkungal,Ottappalam,Padiyam,Padiyur,Paduvilayi,Palai,Palakkad,Palayad,Palissery,Pallichal,Pallikkal,Pallikkara,Pallikkunnu,Pallippuram,Pallippuram, Thiruvananthapuram District,Pallippuram Thrissur District
+,Paluvai,Panachikkad,Panangad,Panangad Kozhikode District
+,Panayam,Panmana,Panniyannur,Panoor,Pantheeramkavu,Pappinisseri,Pappinivattom
+,Ghansaur
+,Ghoda Dongri,yt
+,Ghuwara
+,Gogapur
+,Gohad
+,Gormi
+,Govindgarh
+,Guna
+,Gurh
+,Gwalior
+,Hanumana
+,Harda
+,Harduli
+,Harpalpur
+,Harrai
+,Harsud
+,Hat Piplia
+,Hatod
+,Hatpiplya
+,Hatta
+,Hindoria
+,Hirapur
+,Hirdepur
+,Hoshangabad
+,Ichhawar
+,Iklehra
+,Indergarh
+,Indore
+, Jagakhedi
+,Isagarh
+,Itarsi
+,Jabalpur
+,Jabera
+,Jaisinghnagar
+,Jaithari
+,Jaitpur
+,Jaitpur Chhatarpur DistrictRKhaniyadhana
+,Jaitwara
+,Jamai
+,Jaora
+,Jata Chhapar,Jatara
+,Jawad
+,Jawar
+,Jaypee Nagar,Jeron Khalsa,Jhabua
+,Jhundpura
+,Jiran
+,Jirapur
+,Jobat
+,Joura
+,Kailaras
+,Kakarhati
+,Kali Chhapar,Kanad
+,Kannod
+,Kantaphod
+,Kareli
+,Karera
+,Kari
+,Karnawad
+,Karrapur
+,Kasrawad
+,Katangi
+,Katangi, Jabalpur District,Kelhauri
+,Khargapur,Khargone,Khategaon,Khetia,Khilchipur,Khirkiya,Khor,Khujner,Khurai,Kirnapur,Kolar,Kolaras,Kosmi,Kotar,Kothi,Kothri,Kotma,Kukdeshwar,Kukshi,Kumbhraj,Kundam,Kurwai,Kymore,Ladhaura,Lahar,Lakhnadon,Lanji,Lateri,Laundi,Lodhikheda,Loharda,Machalpur,Madai,Madhawgdha,Maharajpur,Maheshwar,Mahidpur
+,Mahura
+,Maihar
+,Maihar Cement Factory,Sarlanagar,Majhgawan,Majhgawan Jabalpur District
+,Majhgawan Township,Majholi
+,Makdon
+,Makronia Buzurg,Maksi
+,Malajkhand
+,Malanpur ,Malhargarh
+,Maliya Guda,Manasa
+,Manawar
+,Mandideep
+,Mandla,Mandleshwar,Mandsaur
+,Mandu
+,Maneri Industrial Growth
+								
+Centre,Mangalya,Mangawan,Manpur,Mau,Mauganj,Meghnagar,Mehgaon,Mhow,Mihona,Mohgaon,Morar Cantt,Morena
+,Keolari,Khacharod,Khairi,Khajuraho,Khand,Khandwa
+							
+,Amanganj,Amarkantak,Amarpatan,Amarwara,Ambada,Ambah,Amkhera,Amla,Amlai,Anjad,Antari,Anuppur,Aron,Ashoknagar,Ashta,Athner,Babai,Bada-Malhera,Badarwas,Badi,Badkuhi,Badnagar,Badnawar,Badod,Badoni,Badra,Bagh,Bagli,Baihar,Baikunthpur,Balaghat,Baldeogarh,Bamhani,Bamor,Bamor Morena,Bamora,Banda
+,Bandhawagarh,Bangarda Bada,Bangawan,Bank,Bansatar Kheda,Baragaon,Baragaon Shajapur,Barauda,Barela,Bareli,Barghat,Bargi,Barhi,Barigarh,Barman Kalan,Baroda,Barwaha,Barwaha Kasba,Barwani,Basoda,Begamganj,Beohari,Berasia,Betma,Betul,Betul Bazar,Bhainsa,Bhainsdehi,Bhander,Bhanpura,Bharveli,Bhavra,Bhedaghat,Bhicholi Hapsi,Bhikangaon,Bhilakhedi,Bhind
+,Bhitarwar
+,Bhonrasa
+,Bhopal
+,Biaora
+,Bichhiya
+,Bichhiya Vidisha District,Bijawar
+,Bijuri,Bilaua,Bina,Birsinghpur,Boda,Borgaon,Budni,Burhanpur,Burhar,Buxwaha,Chachaura-Binaganj,Chakghat,Chandameta Butaria,Chanderi,Chandia,Chandla,Chaurai Khas,Chhapiheda,Chhatarpur,Chhattarpur,Chhindwara,Chhipabad,Chhota Chhindwara,Chichli,Chicholi,Chitrakoot,Churhat,Daboh,Dabra,Dahi
+,Damoh
+,Damua
+,Datia,Dehrisaray,Deodara
+,Deohara
+,Deori
+,Deori, Shahdol District,Depalpur,Devendranagar,Dewas
+,Dhamnod
+,Dhamnod,atlam District,Dhana
+,Dhanpuri Nargada Hari,Dafai
+,Dhar,Dharampuri,Dhodaramohar Alias, Bhoura
+,Dighawani
+,Diken
+,Dindori
+,Dola
+,Dongar Parasia,Dumar Kachhar,Dungariya Chhapara,Emlikheda ,Gadarwara, Gairatganj,Gamiria Sagar,Gandhi Sagar Haidel,Garhakota,Garhi -Malhara,Garoth,Garra,Gautampura
+,Talen,Tarana,Taricharkalan,Tekanpur,Tendukheda,Tendukheda Damoh District
+,Teonthar
+,Thandla
+,Tikamgarh
+,Timarni
+,Tirodi
+,Tonk Khurd,Ubaidullahganj,Udaipura
+,Udaypur
+,Ujjain
+,Ukwa
+,Umaria
+,Unchahara
+,Unhel
+,Vidisha
+,Vijaypur Sheopur District,Vijayraghavgarh,Vindhya Nagar NTPC,Waraseoni
+								
+,Aamby Valley,Achalpur
+,Achalpur,Chandrapur,Aheri,Ahmadnagar,Ahmadpur,Ahmadpur
+,Ajanta
+,Ajara
+,Ajara,Akkalkot,Akkalkuwa,Akluj
+,Akola
+,Akot
+,Alandi
+,Alibag
+,Allapalli
+,Amalner
+,Amalner,Ambad,Ambarnath,Ambejogai,Ambepur
+,Ambivali Tarf Wankhal,Amboli
+,Amgaon
+,Amravati
+,Anjangaon
+,Anjarle
+,Arvi
+,Asangaon
+,Asangaon ,Ashta
+,Badlapur,Balapur,Balapur Akola District,Balapur,Ballarpur,Banda,Baramati,Barshi,Basmat ,Basmath,Bela,Bhabale ,Bhadgaon,Bhadravati,Bhadravati ,Bhalar Township,Bhandara ,Bhatkuli,Bhatkuli ,Bhiwandi,Bhiwapur,Bhiwapur ,Bhokar,Bhokardan,Bhor,Bhum,Bhusawal,Bhusawal ,Bid,Biloli
+,Borkhedi
+,Borli Panchtan,Brahmanvel,Brahmapuri
+,Budhagon
+,Budhgaon
+,Buldana
+,Butibori
+,Butibori,Chakan
+,Chalisgaon
+,Chandgad
+,Chandrapur,Chandrapur CGGC,Chandrapur,Chandur
+,Chandur Amravati District,Chandurbazar,Chandvad
+,Chicholi
+,Chikhala
+,Chikhaldara
+,Chikhli
+,Chimur
+,Chinchani
+,Chincholi ,Chiplun
+,Chitegaon
+,Chopda
+,Chowk
+,Dabhol
+,Dadar
+,Dahanu
+,Dahivadi
+,Dandi
+,Dapoli
+,Dapoli Camp
+,Ashti
+,Ashti Gadchiroli District
+,Ashti 
+,Ashti Wardha District
+,Atgaon Industrial ComplexRBirwadi
+,Aurangabad,Ausa,Awalpur,Babhaleshwar,Babhulgaon
+,Bisur,Boisar,Borgaon,Bori,Borivali Tarf,ahur
+,Multai
+,Mundi
+,Mungaoli
+,Murwara Katni,Nagda
+,Nagod
+,Nagri
+,Nai-Garhi
+,Nainpur
+,Nalkheda
+,Namli
+,Nanpur,Narayangarh,Narsimhapur,Narsingarh,Narsinghgarh,Narwar,Nasrullaganj,Naudhia
+,Neemuch
+,Nepanagar
+,New Harsud,Newton Chikhli Kalan,Niwari
+,Niwas
+,Nowgong,Nowrozabad,Omkareshwar,Orchha
+,Ordnance Factory Itarsi,Pachmarhi
+,Pachore,Pal Chaurai,Palera,Palsud,Panagar,Panara
+,Pandhana
+,Pandhurna
+,Pandhurna ,Pankhedi
+,Panna
+,Pansemal
+,Pasan
+,Patan
+,Patharia
+,Pawai
+,Petlawad
+,Phuphkalan
+,Pichhore
+,Pichhore, Gwalior District,Pindrai
+,Pipalrawan
+,Pipariya
+,Pipariya Jabalpur District,Pipariya, Jabalpur District,Piplanarayanwar,Piploda
+,Piplya Mandi
+,Pipri
+,Pithampur
+,Pithampur Industrial Hub,Polaykalan
+,Porsa
+,Prithvipur
+,Purena
+,aghogarh
+,ahatgarh
+,aisen
+,ajakhedi
+,ajgarh
+,ajgarh, Dhar District,ajnagar
+,ajpur,Rampur
+,ampur Baghelan,ampura
+,anapur
+,anipur
+,atangarh
+,atlam
+,au
+,aymond Chhindwara,aymond Colony Vijay
+					
+,Gram
+,ehli
+,ehti
+,ewa
+,osera
+,Sabalgarh
+,Sabo
+,Sagar
+,Sailana
+,Sanawad
+,Sanchi
+,Sangvi
+,Sanjay Gandhi Thermal,Power Station,Sanwer,Sarangpur,Sardarpur,Sarni,Satai,Satna,Satwas,Sausar,Sehore,Semaria,Sendhwa,Seondha,Seoni,Seoni-Malwa,Sethiya
+,Shahdol
+,Shahgarh
+,Shahpur
+,Shahpur, Betul District,Shahpur, Sagar District,Shahpura
+,Shahpura, Jabalpur District
+,Shajapur
+,Shamgarh,Shamshabad,Sheopur
+,Shivpuri
+,Shujalpur
+,Sidgunwa ,Sidhi
+,Sihora,Silwani,Singoli,Singrauli,Sinhasa,Sirgora,Sirmaur,Sironj,Sitamau,Siya ,Sohagi,Sohagpur,Sonkatch,Soyatkalan,Sultanpur,Susner,Suswasara,Suthaliya,Tal
+,Khamari,Khamgaon,Khanapur,Khandala,Khandala Satara,Khandbara,Khapa,Khapar,Kharbav,Khardi,Khatav,Khed,Kherdi,Khopoli,Kinwat,Kolhapur,Kolki,Kondumal,Kopargaon,Koradi,Korchi,Koregaon,Koregaon Bhima,Korochi,Krushnoor,Kudal,Kudal ,Kudus,Kuhi,Kumbhari,Kundalwadi,Kurduwadi,Kurduwadi,Kurkheda,Kurkumbh ,Kurul,Kurundvad
+,Kusgaon Budruk,Lakhamapur ,Lakhandhur,Lakshmi Cooperative Industrial Estate,Lanja,Lasalgaon,Lat,Latur,Latur , Additional,Lavasa
+,Loha
+,Lohara
+,Lohara Osmanabad,Lonand
+,Lonar
+,Lonavala
+,Loni
+,Loni kalbhor,Lote Parshuram,Madangad,Madha,Madhavnagar,Mahabaleshwar
+,Mahad,Mahadula
+,Mahagaon,Mahagaon,Mahapoli
+,Mahoor
+,Maindargi
+,Majgaon
+,Makranifali
+,Malde
+,Malegaon
+,Malegaon Jahangir,Malegaon,Malkapur
+,Malkapur Buldana District,Malkapur,Malshiras
+,Malwan
+,Manchar
+,Mandur
+,Mangalvedha,Mangrulpir
+,Mangrulpir,Manjlegaon
+,Manmad
+,Manor
+,Manora
+,Mansar
+,Mantha
+,Manwath
+,Maregaon
+,Matheran
+,Mauda
+,Medha
+,Mehkar
+,Mehkar,Mhasla
+,Mhaswad
+,MIHAN
+,Mohadi
+,Mohadi,Mohol
+,Mohol
+,Mohpa
+,Mohpada Alias Wasambe,Mokhada
+,Morshi
+,Morshi,Motala
+,Mouje Anjanvel,Mowad
+,Mudkhed
+,Mukhed
+,Muktainagar
+,Mul
+,Mul
+,Mulchera
+,Mumbai
+,Murbad
+,Murbad,Murgud
+,Murmadi
+,Murtajapur
+,Murud
+,Murum
+,Musalgaon,Nagbhid,Nagbhind
+,Nagothana
+,Nagpur
+,Naigaon
+,Nakoda
+,Naldurg
+,Nampur
+,Nanda
+,Nanded Waghala,Nandgaon
+,Nandgaon Khandeshwar,Nandgaon Pode,Nandgaon Tarf Birwadi,Nandgaonpeth,Nandura
+,Nandurbar,Narkher
+,Darwha
+,Daryapur Banosa,Dattapur Dhamangaon,Daund
+,Deglur
+,Deglur,Dehu
+,Dehu Cantt,Deogiri
+,Deola
+,Deolali Pravara,Deoli
+,Deoni
+,Deori
+,Desaiganj
+,Deulgaon,aja,Deulgaon,aja,Devgad
+,Devrukh,Dharangaon,Dharmabad,Dharni
+,Dharni,Dharur
+,Dharur,Dhopatala
+,Dhule
+,Digras
+,Dindori
+,Dindori,Dodamarg,Dondaicha Warwade,Dudhani
+,Durgapur
+,Eklahare
+,Elephanta Caves,Ellora
+,Erandol,Etapalli,Faizpur,Gadchiroli,Gadhinglaj,Gadhinglaj,Gane ,Ganeshpur,Gangakhed,Gangapur,Ganpatipule,Gargoti,Genesis Industrial
+				
+,Hinganghat ,Hingna,Hingoli,Hingoli ,Honad ,Hudkeshwar,Hupari,Ichalkaranji,Igatpuri,Indapur,Indapur ,Jafrabad,Jafrabad ,Jalgaon,Jalgaon Jamod,Jalkot,Jalna,Jalochi,Jamkhed,Jamner,Jath,Jawhar,Jawharnagar,Jaysingpur,Jejuri
+				
+,Kalameshwar,Kalameshwar ,Kalamnuri,Kallam,Kalmath,Kalwan,Kalyan,Kamalapur ,Kambe,Kamptee,Kamptee Cantt,Kamshet,Kandari,Kandhar,Kandhar ,Kandri,Kandri Mines,Kandri Nagpur,Kanhan,Kanhe ,Kanholibara,Kankavli,Kannad,Karad,Karalewadi,Karanja,Karjat,Karjat Ahmadnagar
+					
+District,Karmala,Kasara,Katangi Kala,Katol,Katol ,Kavalapur,Kavathe Mahankal,Kelapur
+				
+			
+			
+				
+					
+Township
+,Georai
+,Ghansawangi
+,Ghatanji
+,Ghoti
+,Ghugus
+,Ghulewadi
+,Gokunda
+,Gondia 
+,Gondiya
+,Gondpipri
+,Goregaon
+,Goregaon Gondiya, Jejuri
+				
+			
+			
+,Goregaon ,Guhagar,Hadgaon,Hajarmachi,Halkarni ,Harihareshwar,Harsul,Hatkanangle,Himayatnagar,Hindnagar,Hinganghat
+				
+,Jintur,Jintur ,Jiwati,Junnar,Kabnur,Kadegaon,Kadegaon ,Kagal,Kagal ,Kaij,Kalamb
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Sinnar,Sinnar ,Sironcha,Solapur,Sonai,Sonegaon,Songirwadi,Sonpeth,Supa ,Surgana,Tadali,Takalghat,Takwe ,Tala,Talasari,Talegaon Dabhade,Talegaon ,Taloda,Tarapur,Tarapur Textile Park,Tasawade ,Tasgaon,Tekadi,Telhara,Tembhurni ,Thana,Thane,Tirora,Tirora ,Toranmal,Totaladoh,Trimbak,Tuljapur,Tumsar,Tumsar,oad,Udgir,Umarga
+							
+							
+,Umarga ,Umarkhed,Umarsara
+,Umbar Pada Nandade,Umred
+,Umred ,Umri,Uran Islampur,Urjagram,Usar ,Utekhol,Vada,Vadgaon,Vaduj,Vaibhawadi,Vaijapur,Vaijapur ,Vangani,Vanvadi,Varangaon,Vasai Virar,Vasantnagar,Vashind,Velhe,Vengurla,Vijay Durg,Vikramgad,Vile Bhagad ,Vinchur,Vinchur ,Visapur,Vita,Vita ,Wada,Wadgaon,Wadi,atnagiri,Wadwani
+							
+							
+,Waghapur
+,Waghoda
+,Wai
+,Wai 
+,Walani
+,Waluj 
+,Walwa
+,Wani
+,Wardha
+,Warora
+,Warora ,Warthi
+,Warud
+,Warud ,Washi
+,Washim
+,WCL Umred,Yavatmal
+,Yavatmal ,Yawal
+,Yeola,Yerkheda
+								
+Manipur
+,Andro,Bishnupur,Heirok,Imphal,Jiribam,Kakching,Kakching Khunou,Kangpokpi,Kumbi,Kwakta,Lamlai,Lamsang,Lilong
+							
+							
+,Lilong Imphal West,Lilong Thoubal,Mayang Imphal,Moirang
+,Moreh
+,Nambol,Ningthoukhong,Oinam
+,Samurou
+,Samurou, Imphal West District
+,Sekmai Bazar,Senapati
+,Sikhong Sekmai,Sugnu
+,Tamenglong,Thongkhong Laxmi Bazar,Thoubal
+,Torban
+,Ukhrul
+,Wangjing
+,Wangoi
+,Yairipok
+,Zenhang Lamka
+								
+Meghalaya
+,Baghmara,Cherrapunjee,Jowai,Mairang,Mawlai,Nongpoh,Nongstoin,esubelpara,Shillong,Tura,Umroi
+							
+						
+					
+
+			 			 			
+,Nashik,Natepute,Navapur,Navi Mumbai,Ner,Neral,Newasa,Nijampur,Nilanga,Nimbhore Budruk,Niphad,Nira,Ordnance Factory
+					
+Bhadravati,Osmanabad,Ozar,Pachora,Padagha,Padoli,Paithan,Palam,Palghar,Pali,Palus,Palus ,Pampalner,Panchgani,Pandare ,Pandharkaoda,Pandharpur,Panhala,Paranda,Paratwada,Parbhani,Parli,Parner,Parola
+				
+,Parshioni
+,Partur
+,Partur 
+,Patalganga 
+,Patan
+,Patan 
+,Pathan 
+,Pathardi
+,Pathri
+,Patoda
+,Patur
+,Pauni
+,Peint
+,Peint 
+,Pen
+,Phaltan
+,Pimpalgaon Baswant
+,Pimpri Chinchwad
+,Pipri
+,Pirangut
+,Poladpur
+,Pombhurna
+,Pulgaon
+,Pune
+,Purna
+,Purushottamnagar
+,Pusad
+,Pusad 
+,adhanagari
+,ahata
+,ahimatpur
+,ahuri
+,ajapur
+,ajgurunagar
+,ajur
+,ajur Ahmadnagar,Sawangi Megh,ajura,Sawantwadi
+				
+			
+			
+,alegaon,amtek,anjangaon,anjangaon ,asal ,atnagiri,aver,ees,enapur,IL Township,isod,oha Ashtami,oha ,Sadak Arjuni,Sadavali ,Saidapur,Sakoli,Sakri,Salekasa,Samudrapur,Samudrapur ,Sanaswadi,Sangameshwar,Sangamner,Sangamner ,Sangli Miraj Kupwad,Sangole,Saoner ,Sasti,Sasvad,Satana,Satara,Savda,Savner,Sawali
+				
+,Seloo,Selu,Sengaon,Shahada,Shahapur,Shahapur
+					
+Shani Shingnapur,Shegaon
+,Shendra ,Shendurjana,Shevgaon
+,Shikrapur
+,Shinde ,Shirala
+,Shirala ,Shirdi
+,Shirgaon
+,Shirgaon ,Shirol,
+					
+Shirpur
+,Shirur
+,Shirur Anantpal,Shirur Kasar,Shirwal
+,Shivaji Nagar,Shrigonda,Shrirampur,Shrivardhan,Sillewara
+,Sillod,Sindewahi,Sindewahi ,Sindi
+,Sindkhed,aja,Sindkheda,Singnapur Kopargaon
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Gourdanda,Gudari
+,Gunupur
+,Hinjilicut
+,Hirakud
+,IB Themal Power Plant,
+								
+Banharpali
+,IMFA Therubali,Indipur
+,Itamati,Jagatsinghapur,Jajanga
+,Jajapur
+,Jaleswar
+,Jashipur
+,Jatani
+,Jeypur
+,Jharsuguda,Jhumpura
+,Joda
+,JSPL Town Anugul,Junagarh,Kabatabandha,Kaipadar,Kalarangiata,Kaliapani
+,Kalinga Nagar Industrial
+								
+Area,Kalyanasingpur,Kamakshyanagar,Kanheipur,Kansbahal,Kantabanji,Kantilo,Karanjia,Kashinagara,Kavisurjyanagar
+							
+							
+,Kendrapara,Kendujhar,Kesinga,Khaliapali,Khalikote,Khandapada,Khariar
+,Khariar,oad,Khatiguda,Khordha
+,Kochinda
+,Kodala
+,Koida
+,Konark
+,Koraput
+,Kotpad,Krushnanandapur,Kuanrmunda,Kukudakhandi,Kullada,Kunjabangarh,L And T Cement Plant
+								
+Jharsuguda,Lanjigarh,Lathikata,Lochapada,Loisinga,Madanpur,ampur,Majhihara,Makundapur,Malkangiri,Meghahatuburu,Mohana,Mukhiguda,Mundamarai,Nabarangapur,Nalco
+							
+							
+,Nayagarh
+,New Lalsingi,Nilagiri
+,Nimapada
+,NTPC Kaniha,Nuahata
+,Nuapatna
+,OCL Industrial Township,Odagaon
+,Padmapur,Palalahada,Palurgada,Papadahandi,Paradip,Parlakhemundi,Pathar,Patnagarh,Patrapur,Pattamundai,Phulabani,Pipili,Pitala,Polasara,Puri,Purusottampur, Udayagiri,aighar,airangpur,ajagangapur,ajasunakhala,ambha,anapurgada,ayagada,edhakhol,emuna,engali,engali Dam Project
+							
+							
+								
+Township
+,ourkela
+,Sambalpur
+,Saranga
+,Sayadpur,Sheragada
+,Sohela
+,Sonapur
+,Soro
+,Subalaya
+,Sunabeda,Sundargarh,Surada
+,Surala
+,Suvani
+,Talcher
+,Talcher Thermal Power
+								
+Station Township,Tangi
+,Tarbha
+,Tensa
+,Tikarpada
+,Tikarpada Ganjam District,Tipo
+,Titlagarh,Tusura,Udala,Umarkote,Vedanta Jharsuguda,Venketraipur
+								
+Pondicherry
+,Karaikal
+,Mahe
+,Puducherry,Thirumalairayan Pattinam,Yanam
+
+,Williamnagar Mizoram
+,Aizawl,Bairabi,Biate,Champhai,Darlawn,Hnahthial,Khawhai,Khawzawl,Kolasib,Lawngtlai,Lengpui,Lunglei,Mamit,N Kawnpui,N Vanlaiphai,Saiha,Sairang,Saitual,Serchhip,Thenzawl,Tlabung,Vairengte,Zawlnuam,
+					
+Changtongya,Chumukedima,Dimapur,Jalukie,Kiphire,Kohima,Longleng,Medziphema,Mokokchung
+				
+,Mon Town,Naginimora,Peren,Pfutsero,Phek,Satakha,Tseminyu,Tuensang,Tuli,Tzudikong,Wokha,Zunheboto
+,Agastinuagan,Anandapur,Anandpur,Anjira
+,Anjira Jagatsinghapur
+					
+District,Anugul,Arjyapalli,Asika,Athagad,Athmallik,Badagada,Badakodanda,Badamba,Badmal,Balagoda,Balakati,Balangir,Baleshwar,Baliguda,Balimela,Balipatapur,Balugaon
+				
+,Banapur,Bandhbahal,Bangomunda,Bangura,Banki,Barapali,Barbil,Bardol,Bargarh,Baripada,Basudebpur,Baudhgarh,Belagachhia,Bellaguntha,Belpahar,Berhampur,Bhadrak,Bhakarsahi,Bhanjanagar,Bhapur,Bhatli,Bhawanipatna,Bhuban,Bhubaneswar,Bhushan Steel Plant
+					
+Jharsuguda,Bhushan Steel Plant
+					
+Meramandali,Bijepur,Binika,Biramitrapur,Birapratappur,Bishama Katak,Bonaigarh,Borigam,Boriguma,Brahmabarada
+				
+,Brajarajnagar,Budhapanka,Buguda
+,Bundia
+,Burla,Byasanagar,Champua,Chandapur,Chandili
+,Charibatia,Chhatrapur,Chikiti,Chitrakonda,Choudwar
+,Cuttack,Dadhapatna,Daitari
+,Damanjodi
+,Danara,Daringbadi,Debagarh
+,Dera Colliery Township,Dhamanagar,Dhenkanal,Digapahandi,Dungamal
+					
+,FCI Township,G Udayagiri,Ganjam,Ghantapada,Ghatagaon,GMR Power Plant
+					
+Kmalanga,Godiputamatiapara,Golabandha,Gopalpur,Gotamara
+
+,Nangli,Narot Mehra,Nawanshahr,Nehon,Nurmahal,Pathankot,Patiala,Patran,Patti,Payal,Phagwara,Phillaur,Qadian,ahon,aikot,ail,aipur,asulpur,aja Sansi,ajpura,akri,aman,amdas,ampura Phul,ayya,upnagar,urki Kasba,Sahnewal,Saloh,Samana,Samrala,Sanaur,Sangat,Sangrur,Sansarpur,Sarai Khas,Sardulgarh
+
+,Satyewala
+,Shahkot
+,Sham ChaurasI,Shikar
+,Sirhind Fatehgarh Sahib,Sri Hargobindpur,Sujanpur
+,Sultanpur,Sunam,Talwandi Bhai,Talwandi Sabo,Talwara,Tapa,Tarantaran,Tharial,Tibri,Tungaheri,Urmar Tanda,Zira,Zirakpur
+,ajasthan
+,Atru
+,Babai
+,Baggar
+,Bagru
+,Bakani
+,Bali
+,Balotra
+,Banasthali
+,Bandikui
+,Banera
+,Bangur Nagar,Banswara
+,Bar
+,Baral
+,Baran
+,Bari
+,Bari Sadri
+,Barmer
+,Baskhoh
+,Basni Belima,Bassi
+,Bay
+,Bayana
+,Beawar
+,Beejoliya Kalan,Begun
+,Behror
+,Bewanja 
+							
+							
+,Bhiwadi
+,Bhusawar
+,Bicciwara ,Bichhiwara
+,Bichhri
+,Bidasar
+,Bigod
+,Bikaner
+,Bilara
+,Bishangarh
+,Bissau
+,BITS Pilani Campus,Boranada Special
+								
+Economic Zone,Borawar
+,Budhpura
+,Bundi
+,Chaksu
+,Chawand
+,Chechat
+,Chhabra
+,Chhapar
+,Chhipabarod
+,Chhoti Sadri
+,Chirawa
+,Chittaurgarh
+,Chomu
+,Churu
+,Danta
+,Dariba
+,Dausa
+,Deeg
+,Delwara
+,Deogarh
+,Deoli
+,Deshnoke
+,Dewrighata 
+
+,1SGM
+,3STR
+,Abu,oad
+,Ahore
+,Ajeetgarh
+,Ajmer
+,Ajolion Ka Khera ,Bhadra
+
+,Aklera,Aligarh,Alwar,Amet,Antah,Anupgarh,Asind
+							
+							
+,Bhalariya,Bharatpur,Bhavri,Bhawani Mandi,Bhilwara,Bhim,Bhinder,Bhinmal
+
+,Abohar,Adampur,Ahmedgarh,Ajnala,Akalgarh,Alawalpur,Amargarh,Amloh,Amritsar,Anandpur Sahib,Apra,Aur,Baba Bakala,Baddowal,Badhni Kalan,Balachaur,Banga,Banur,Bareta,Bariwala,Barnala,Baryar,Bassi Pathana,Batala,Bathinda,Beas,Begowal,Beharnpur,Behrampur,Bhabat,Bhadaur,Bhadson,Bhagha Purana,Bhagta BhaiKa,Bhankarpur,Bhattian
+				
+,Bhawanigarh,Bhikhi,Bhikhiwind,Bhisiana,Bhogpur,Bhucho Mandi,Bhulath,Budha Theh,Budhlada,Bungal,Chamkaur Sahib,Cheema,Chogawan,Chohal,Daper,Dasuya,Dera Baba,Dera Bassi,Dera Bassi,Dhanaula,Dharamkot,Dhariwal,Dhilwan,Dhuri,Dinanagar,Dirba,Doraha,Faridkot,Fatehgarh Churian,Fazilka,Firozpur,Gardhiwala,Garhshankar,Ghagga,Ghanaur,Ghoh,Giddarbaha
+				
+,Goindwal,Goniana,Goraya,Gurdaspur,Guru Har Sahai,Hajipur,Halwara,Handiaya,Hariana,Hoshiarpur,Hussainpur,Jagraon,Jaitu,Jalalabad,Jalandhar,Jandiala,Jandiala, Jalandhar District
+,Jodhan,Jugial,Kalan,Kalanaur,Kapurthala,Karoran,Kartarpur,Kathanian,Khamanon,Khambra,Khanauri,Khanna,Kharar,Khemkaran,Khilchian,Korianwali,Kot Fatta,Kot Ise Khan,Kotkapura
+				
+				
+,Kotla Nihang,Kurali,Lalru,Leather Complex
+					
+,Lehragaga
+,Lohian Khas
+,Longowal
+,Ludhiana
+,Machhiwara
+,Mahilpur
+,Majitha
+,Makhu
+,Malaut
+,Malerkotla
+,Mallanwala Khass,Maloud
+,Mamun
+,Mandi Govindgarh,Mansa
+,Manwal
+,Maur
+,Mirpur
+,Moga
+,Mohali
+,Moonak
+,Morinda
+,Mubarakpur
+,Mudal
+,Mudki
+,Mukerian
+,Muktsar
+,Mullanpur Dakha,Mullanpur Garib Dass,Nabha
+,Nag Kalan ,Nakodar,
+				
+			
+			
+				
+					
+Nanak 
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Nawalgarh
+,Neem Ka Thana Industrial
+								
+Area,Neem-Ka-Thana,Neemrana
+,Newa Talai,Nimbahera
+,Niwai
+,Niwai ,Nohar
+,Nokha
+,Nooan
+,Padampur
+,Pali
+,Parbatsar
+,Partapur
+,Partapur ,Phalodi
+,Phalodi ,Phulera
+,Pilani Town
+,Pilibanga
+,Pindwara
+,Pipar City
+,Pirawa
+,Pokaran
+,Pratapgarh
+,Pushkar
+,aila,aisinghnagar,ajakhera
+,ajaldesar
+,ajgarh
+,ajgarh, Churu District,ajsamand
+,amganj Mandi,amgarh
+							
+							
+,amgarh, Alwar District,amgarh, Sikar District,ani
+,ani Sagar,anthambore,atangarh,atannagar,awatbhata,awatsar
+,eengus,enwal,eodar,
+								
+Bassi,
+								
+Bidasar,
+								
+Bikasar,
+								
+Chopanki,
+Gudli,
+								
+Kharani ,
+								
+Khushkhera ,
+								
+Naya Gaon ,
+								
+Neemrana,
+								
+Palsana
+,ajgarh
+
+Sanchore
+,IICO Institutional Area,
+,anpur
+,upangarh
+,ikhabdeo
+,Sadri
+,Sadulshahar
+,Sagwara
+,Salasar
+,Salumbar
+,Sambhar
+,Samdari
+,Sanchore
+,Sanderao
+,Sangaria
+,Sangod
+,Sapotra
+,Saradhana,Sardargarh,Sardarshahar,Sarekhurdß
+,Sariska,Sarmathura,Sarwar
+,Satalkheri
+,Sawa
+,Sawai Madhopur,Seemalwara,Semari,Shahjahanpur
+,Shahpura,Shahpura, Bhilwara
+,Sheoganj,Shiwar
+							
+							
+,Sikar
+,Silora ,Singhana
+,Sirohi ,Siwana
+,Sojat
+,Sojat,oad
+,Sri Ganganagar,Sri Madhopur,Sri Madhopur Indusrtial Area
+,Sudarshanpura,Sujangarh
+,Suket
+,Suket Industrail Area,Sumerganj Mandi,Sumerpur
+,Sumerpur ,Sundlak,Baran,Surajgarh
+,Suratgarh,Swaroopganj,Takhatgarh
+,Talera
+,Tapookra
+,Taranagar
+,Thana Gazi,Tijara
+,Todabhim,Todaraisingh
+,Todra
+,Tonk
+,Tonk ,Udaipur
+,Udaipurwati
+,Udpura
+							
+						
+					
+
+			 			 			
+,Dhariawad
+,Dhaulpur
+,Dhorimanna
+,Didwana
+,Dudu
+,Dungargarh
+,Dungarpur
+,Emri
+,Falna
+,Fatehnagar
+,Fatehpur
+,Gajsinghpur
+,Galiakot
+,Gangapur
+,Gangapur City
+,Garhi
+,Gharsana
+,Gogunda
+,Goredi Chancha
+,Gothan
+,Gothra
+,Govindgarh, Alwar District
+,Govindgarh, Jaipur DistrictRJalore 
+				
+			
+			
+,Govindpur Baori 
+					
+RGoyli
+,Guhala
+,Gulabpura
+,Hamirgarh
+,Hamirgarh Growth Centre
+					,Hanumangarh,Hindaun
+,Hindaun City 
+,Indragarh
+, Bidiyad
+				
+,Jamwa,amgarh,Jhagarwas,Jhalawar,Jhalrapatan,Jhunjhunun,Jobner,Jodhpur,Jodhpur Stone Park
+					
+,Kaithoon
+,Kaladwas ,Kaman,
+Kanor,Kanwat
+,,,,,,
+ Kheri
+,,,,
+ Khera
+,, Swaroopganj
+,Islampur
+,Jahazpur
+,Jahazpur ,Jaipur
+				
+			
+			
+,Jaisalmer,Jaitaran,Jalor,
+				
+			
+			
+				
+					
+Bigod,Deoli,Gegal,Hathipura,Kaladera,Kanya
+				
+,Kapasan
+,Kaprain
+,Karanpur
+,Karauli
+,Kasba Bonli
+,Kawai
+,Kekri
+,Kelwa,Keshoraipatan,Kesrisinghpur,Khairabad
+,Khairthal
+,Khajuwala
+,Khandela,
+,Khandela,
+,Khanpur
+,Khara
+,Khatu
+,Kherli
+,Kherliganj
+,Kherwara Chhaoni,Khetri
+,Kinchan
+,Kishangarh
+,Kishangarh,enwal,Kishangarh, Alwar District,Kolayat
+					
+,Kolvi Mandi,ajendrapur,Kota
+,Kotputli
+,Kuchaman City,Kuchera
+					
+,Kumbhkot,Kumher,Kushalgarh,Lachhmangarh,Ladnu
+				
+,Lakheri
+,Lalsot
+,Losal,Lunkaransar,Mahu Kalan,Mahwa
+,Makrana
+,Malpura
+,Malsisar,Mandalgarh,Mandawa,Mandawar,Mandpiya
+,Mangrol,Manoharpur,Manoharthana,Marwar Junction,Mathania
+,Mavli,Mehandipur,Merta City
+,Merta,oad,Modak
+,Mokalsar
+,Mount Abu,Mukandgarh,Mundwa
+,Nadbai
+,Nagar
+,Nagaur
+,Nagaur ,Nainwa
+					
+,Nandri,Napasar,Nasirabad,Nathdwara,Nawa
+				
+			
+			
+				
+					
+,Karauli,Mathania,Napasar,Narbad,
+				
+			
+			
+				
+					
+Sangaria
+				
+			
+			
+				
+					
+,Baran District,Sikar District
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Chettipalayam,Chettipalayam,
+								
+Coimbatore District,Chettithangal,Chidambaram,Chinnakalayamputhur,Chinnakkampalayam,Chinnalapatti,Chinnamanur,Chinnampalayam,Chinnasalem,Chinnathadagam,Chinniampalayam, Erode
+								
+District,Chinthamani,Chithode,Chockampatti,Cholapuram,Coimbatore,Coonoor,Courtalam,Cuddalore,Damalerimuthur,Dasanaickenpatti,Denkanikottai,Desur,Devadanapatti,Devakottai,Devanangurichi,Devarshola,Devasthanam,Devikapuram,Devipattinam,Dhalavoipuram,Dhali,Dhaliyur,Dharamapuram
+							
+							
+,Dharapadavedu,Dharapuram,Dharmapuri
+,Dindigul,Doramangalam,Dusi,Edaganasalai,Edaikodu,Edakalinadu,Edappadi
+,Elathur,Elayirampannai,ELCOT Gangaikodan IT Park
+,Ellandaikuttai,Elumalai
+,Eral,Eranapuram,Eraniel
+,Eriodu
+,Erode,Erumaipatti,Eruvadi
+,Ethapur,Ettayapuram,Ettimadai,Ezhudesam,Frontier Mediville SEZ,Ganapathipuram,Gandhi Nagar,Gangaikondan,Gangavalli,Ganguvarpatti,Gingee
+,GK Industrial Park,Gobichettipalayam,Gopalasamudram
+							
+							
+,Gudalur,Gudalur, The Nilgiris District
+,Gudalur, Theni District,Gudiyatham,Gummidipoondi,Hale Dharmapuri,Hanumanthampatti,Harur,Harveypatti,Highways
+,Hosur,Hubbathala,Huligal
+,Idikarai
+,Iduvai
+,Ilampillai
+,Ilanji,Ilayangudi,Iluppaiyurani,Iluppur
+,Irugur
+,Jaffrabad,Jalakandapuram,Jambai,Jayankondam,Jeyamangalam,Jolarpet
+,K Madapur,Kadambathur,Kadambur,Kadathur
+,Kadayal
+,Kadayam,Kadayampatti,Kadayanallur,Kailasagiri
+							
+							
+,Kakkalur
+,Kalakad,Kalakattupular,Kalambur,Kalappanaickenpatti,Kalavai,Kaliyakkavilai,Kaliyapuram,Kalladaikurichi,Kallakkurichi,Kallakudi
+,Kallangudy,Kallipalaym,Kallukoottam,Kalparapatti,Kalugumalai,Kamalakannanji SIDCO
+								
+Industrial Estate,Kamayagoundanpatti,Kambainallur,Kambam,Kamuthi,Kanadukathan,Kanakkampalayam,Kanakkanpatti,Kanam,Kancheepuram,Kandanur,Kangayampalayam,Kangeyam,Kaniyambadi,Kaniyampoondl,Kaniyur,Kaniyur,Coimbatore District,Kanjikoil,Kannamangalam
+							
+						
+					
+
+			 			 			
+,Uniara
+,Utarlai
+,Vijainagar
+,Vijainagar, Ganganagar District
+					
+,Viratnagar,Weir
+,Gangtok,Gyalshing,Jorethang,Mangan,Meli,Namchi,Nayabazar,Pelling,angpo,henock,Singtam,Upper Tadong
+,VA Vellalapatti,Abiramam,Achampudur,Acharapakkam,Achipatti,Adikaratti,Adiramapattinam,Adiyanuthu,Aduthurai,Agaram,Agastheeswaram,Alagappapuram,Alanganallur,Alangayam
+				
+,Alangudi
+,Alangulam
+,Alangulam, Virudhunagar District
+,Alanthurai,Alathur, Chengalpattu,
+Taluka
+,Aliyar
+,Alur,Alwarkurichi,Alwarthirunagiri,Amathur,Ambasamudram,Ambur,Ammainaickanur,Ammanur,Ammapattinam,Ammapettai,Ammapettai, Erode District,Ammavarikuppam,Ammoor
+,AMRL Sez Vaigaikulam,Anaimalai
+					
+,Anaiyur,Ananthapuram,Andipalayam,Andipatti Jakkampatti,Anjugrammam,Annamalai Nagar,Annanji,Annavasal,Annur,Anthiyur,Anuppankulam,Appakudal,Arachalur
+				
+,Arakandanallur,Arakonam,Aralvaimozhi,Arani
+,Arani, Thiruvallur District,Aranthangi,Arasiramani
+					
+,Arasur,Aravakurichi,Arcot,Arimalam,Ariyalur,Ariyappampalayam,Ariyur,Arumanai,Arumbanur,Arumbavur,Arumuganeri,Aruppukkottai,Asaripallam,Athani,Athanur,Athimarapatti,Athipatti,Athur,Athur, Thoothukkudi District,Attayampatti,Attur,Avadattur,Avalapalli,Avalpoondurai,Avanashi,Avaniapuram,Ayakudi,Aygudi,Ayothiapattinam
+				
+,Ayyalur,Ayyampalayam,Ayyampettai,Ayyampettai, Thanjavur District,Azhagiapandipuram,B Mallapuram,B Meenakshipuram,Balakrishnampatti,Balakrishnapuram,Balapallam,Balasamudram,Bargur,Batlagundu,Belur
+,Bharathi Nagar,Bhavani,Bhavanisagar,Bhuvanagiri,Bikketti,Bodinayakanur,Boothapandi,Boothipuram,Chakkarapalli,Chathirareddipatti,Chatrapatti,Chenbagaramanputhur,Chengalpattu,Chengam,Chengappalli,Chennagiri
+,Chennai,Chennasamudram,Chennimalai,Cheranmadevi,Chetpet,Chettiarpatti
+
+,Markayankottai,Marthandam,Marudur
+,Marungur,Maruthancode,Masinaickenpatty,Mathicode
+,Mathigiri
+,Mathur,Mayiladuthurai,Mecheri
+,Melacheval,Melachokkanathapuram,Melagaram,Melaparthibanur,Melathiruppanthuruthi,Melattur,Melmangalam,Melpattampakkam,Melur,Melvisharam,Methukummal,Mettamalai,Mettunasuvanpalayam,Mettupalayam,Mettupalayam,
+								
+Tiruchirappalli District,Mettur,Mevalurkuppam,Milavittan,Minampalli-Pachamadevi,Modakurichi
+,Mohamed Bundur,Mohanur,Moolakaraipatti,Mopperipalayam,Morattupalayam
+							
+							
+,Mudalipalayam SIDCO,Mudukulathur,Mudumalai,Mukasipidariyur,Mukkudal,Mulagumudu,Mulanur
+,Mullipattu,Muruganpalayam,Musiri,Muthanampalayam,Muthukadu,Muthupet,Muthur,Muttayyapuram,Muzhucode,Mylaudy,Nadaikavu,Naduvaneri,Naduvattam,Nagamalaipudukottai,Nagamangalam,Nagapattinam,Nagercoil,Nagojanahalli,Nallampatti,Nallipalayam,Nallur,Namagiripettai,Namakkal,Nambiyur,Nandivaram-
+								
+Guduvancheri,Nangavalli,Nangavaram,Nanguneri,Nanjaiuthukuli
+
+Industrial Estate,Omalur,Nanjikottai,Ooty,Nannilam
+,Naranammalpuram
+,Naranapuram,Narasimhanaickenpalayam,Narasingapuram,Narasingapuram, Salem District,Nasiyanur,Natchiarkoil,Natham,Nathampannai,Natrampalli,Nattalam,Nattapettai,Nattarasankottai,Nazerath,Needamangalam,Neelagiri,Neikkarapatti,Nellikuppam,Nelliyalam,Nemili,Neripperichal,Nerkuppai,Nerunjipettai,Neyveli,Neyyoor,Nilaiyur,Nilakkottai,O' Valley,Odaipatti,Odaiyakulam,Oddanchatram,Odugathur,Olagadam
+							
+						
+					
+
+			 			 			
+,Kannampalayam,Kannanendal,Kannanoor,Kannivadi,Kannivadi, Dindigul District,Kanniyakumari,
+Kappalur SIDCO Industrial Estate,Kappiyarai,Karadipatti,Karaikkudi,Karaikudi SIDCO Industrial Estate,Karamadai,Karambakkudi,Kariamangalam,Kariapatti,Karugampattur,Karukkalvadi,Karumandi Chellipalayam,Karumathampatti,Karungal
+					,Karunguzhi,Karuppur,Karur,Kasipalayam,Kathujuganapalli,Kattathurai,Kattumannarkoil,Kattupakkam,Kattuputhur,Kaveripakkam,Kaveripattinam,Kavindapadi,Kayalpattinam,Kayatharu
+				
+,Keelakarai,Keeramangalam,Keeranur
+,Keeranur, Pudukkottai District
+,Keeripatti,Keezhkulam,Kelamangalam,Kembainaickenpalayam,Kethi
+
+,Kila Ambur,Kilampadi,Kilapavoor,Kilkunda,Killai,Killiyoor,Kilpennathur,Kilvaithinankuppam,Kilvelur,Kinathukadavu,Kodaikanal,Kodavasal,Kodivalasa,Kodumudi,Koil Palayam,Kolachal,Kolappalur,Kolathupalayam,Kolathur,Kollancode,Kollankoil,Komaralingam,Kombai,Kondur,Konganapuram,Koonavelampatti,Kooraikundu
+				
+,Koothappar,Koradacheri
+,Kotagiri
+,Kothanallur
+,Kottaiyur,Kottakuppam,Kottaram
+,Kottur
+,Kovalam
+,Kovilpatti
+,Krishnagiri,Krishnarayapuram,Kuchanur,Kuchipulayam,Kuhalur
+,Kulappuram,Kulasekaram,Kulasekarapuram,Kulathur
+,Kulithalai
+,Kullursandai,Kumaragiri,Kumarapalayam,Kumarapuram,Kumbakonam,Kunnathur
+,Kurinjipadi,Kurudampalayam,Kurukkupatti,Kurumbalur,Kurumbapatti,Kuruppanaickenpalayam,Kuthalam
+,Kuthanallur,Kuzhithurai,Labbaikudikadu,Lakkampatti
+				
+,Lakshmi Puram,Lalgudi,Lalpet,Lampalayam,Madaharpakkam,Madathukulam,Madukkarai,Madukkur,Madurai,Maduranthakam,Mahindra World City,Makkinampatti,Mallankinaru,Mallasamudram,Mallur,Malumichampatti,Mamallapuram,Mamsapuram,Manachanallur,Manalikarai,Manalmedu,Manalurpet,Manamadurai,Manapparai,Manavalakurichi,Mancad,Mandaikadu,Mandapam,Mangalam,Mangalampet,Manimutharu,Mannargudi,Manthithoppu,Maraimalainagar,Marakkanam,Maramangalathupatti,Marandahalli
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Thamaraikulam,Thammampatti,Thanjavur
+,Thanthoni,Thappakuttai,Tharamangalam,Tharangambadi,Thathaiyangarpet,Thathankuttai,Thazhakudy,Thedavur,Thenambakkam,Thengampudur,Theni Allinagaram,Thenkarai,Thenkarai, Coimbatore
+								
+District,Thenthamaraikulam,Thenthiruperai,Therur
+,Thevaram,Thevarappan Patti,Thevur,Thiagadurgam,Thikkanamcode,Thimmaiyanpettai,Thingalnagar,Thirikoodapuram,Thirukarungavur,Thirukarungudi,Thirukkadaiyur,Thirukkattupalli,Thirumalayampalayam,Thirumalpur,Thirumangalam,Thirumuruganpoondi,Thirunageswaram
+							
+							
+,Thiruparankundram,Thiruparappu,Thiruporur
+,Thiruppalai,Thiruppanandal,Thirupuvanam,Thirupuvanam, Thanjavur District
+,Thiruthangal,Thiruthuraipoondi,Thiruvaiyaru,Thiruvalam
+,Thiruvallur
+,Thiruvarur
+,Thiruvattar,Thiruvenkadam,Thiruvennainallur,Thiruverumbur,Thiruvidaimarudur,Thiruvithancode,Thisayanvilai,Thondamuthur,Thondi,Thookkanaikampalayam,Thorapadi,Thorapadi,Cuddalore District,Thottiyam,Thuraiyur,Thuthipattu,Thuvakudi,Timiri,Tindivanam,Tiruchendur,Tiruchengode,Tiruchirappalli,Tirukalukundram
+							
+							
+,Tirukkoyilur,Tirumalaigiri
+,Tirunelveli
+,Tirupathur
+,Tirupathur, Vellore,Tiruppur
+,Tiruttani,Tiruvannamalai,Tiruvethipuram,Tittacheri
+,Tittakudi
+,TNPL Pugalur,Tuticorin
+,TVS Plant Hosur,Udangudi,Udayarpalayam,Udumalaipettai,Ullur
+,Ulundurpet
+,Unjalur,Unnamalaikadai,Uppidamangalam,Uppiliapuram,Usilampatti,Uthamapalayam,Uthangarai,Uthayendram,Uthiramerur,Uthukkottai
+,Uthukuli
+,V Pudupatti
+,V Pudur
+,Vadakarai Keezhpadugai,Vadakkanandal,Vadakkuvalliyur,Vadalur,Vadamadurai
+							
+							
+,Vadapudupatti,Vaddakkankulam
+							
+						
+					
+
+			 			 			
+,Periyamanali,Periyanaickenpalayam,Pernampattu,Perumagalur,Perumagoundampatti,Perumanallur,Perumandi,Perundurai,Perungulam,Pethampalayam,Pethanaickenpalayam,Pettai
+					
+,Pillanallur
+,PJ Cholapuram,Pollachi
+,Polur
+,Pongaliyur
+,Ponmanai,Ponnamaravathi,Ponnampatti
+,Ponneri
+,Poolambadi,Poolampatti,Poolankinar,Pooluvapatti
+,Porayar
+,Pothanur,Pothatturpettai,Pudiyamputhur,Pudukkottai,Pudupalayam,Pudupalayam Agraharam,Pudupatti,Pudupattinam,Pudur
+,Puduvayal,Puliankudi
+				
+,Puliyur,Pullampadi,Punjai Thottakurichi,Punjaipugalur,Punjaipuliampatti,Puthalam,Putheri,Puthukkadai,Puvalur, Pudupatti,ajapalayam,ajapalayam, Salem District
+,akkiya Palayam,amalingapuram,amanathapuram,ameswaram,anipettai,asipuram,ayagiri,S Mangalam,udravathi,S Kannanur,S Kodikulam,S Nallur,Sakkimangalam,Salangapalayam,Salem,Samalapuram,Samanatham,Samathur,Sambavar Vadagarai,Sankaramanallur,Sankarankoil,Sankaraperi,Sankarapuram,Sankari
+				
+,Sankarnagar,Sarcarsamakulam,Sathankulam,Sathiyavijayanagaram,Sathyamangalam,Sattur
+,Sayalgudi,Sayapuram,Seerapalli
+,Seevur
+					
+,Seithur,Semmipalayam,Senthamangalam,Sentharapatti,Senur,Sethiathoppu,Sevilimedu,Sevugampatti,Sevur,Shenkottai,Sholavandan,Sholingur,Sholur,SIDCO Bargur,Singampuneri,Singaperumalkoil,Singilipatti,SIPCOT Cheyyar,SIPCOT Industrial
+					
+Complex Pillaipakkam,SIPCOT Industrial Park
+				
+,Sirugamani
+,Sirumugai,Sithayankottai,Sithurajapuram,Sivaganga
+,Sivagiri
+,Sivagiri, Erode District,Sivagiripatti,Sivagnanapuram,Sivakasi
+,Sivanthipatti,Sivanthipuram,Srikalikapuram,Srimushnam,Sriperumbudur,Sriramapuram,Srivaikuntam,Srivilliputhur,Suchindrum,Suleeswaranpatti,Sulur,Sundarapandiam,Sundarapandianpattinam,Sundarapandiapuram,Surandai,Suriyampalayam,Swamimalai, T. Kallipatti,T Kallupatti,Tajpura,Tayilupatti,Tenkasi,Terkukallikulam
+,Sriprumbudur
+,SIPCOT Perundurai
+,SIPCOT Thervoy KandigalRThadikarankonam
+
+			
+,SIPCOT Thoothukudi,Sircar Periapalayam,Sirkali
+				
+,Thadikombu,Thakkolam,Thalainayar
+
+							
+,aasi Cement Factory Wazirabad
+,aghunathpur,amagundam,amannapeta,atnapur
+,atnapur Medak District,udraram
+,udraram ,Sadasivpet,Sangareddy,Sarangapur
+,Sarapaka,Sathupally,Secunderabad,Shamshabad,Shankarampet,Shivunipalle,Siddipet,Singapuram,Sircilla,Soanpet, Dondapadu,Suryapet,Tallada,Tandur,Teegalpahad,Thallapalle,Thimmapur,Thorrur,Turkapally,Utnur,Vatwarlapalle,Vemulawada,Vicarabad,Wanaparthy
+							
+							
+,Warangal
+,Warangal ,Yadagirigutta,Yellandu
+,Yellareddy
+,Yenugonda,Yerrabalem
+,Zahirabad
+								
+
+,Agartala,Amarpur,Ambassa,Anandanagar,Badharghat,Belonia,Briddhanagar,Dharmanagar,Fatikroy,Gakulnagar,Gakulpur,Gandhigram,Indranagar,Jogendranagar,Kailasahar,Kalachhari,Kamalpur,Kanchanpur,Khowai,Kumarghat,Kunjaban,Madhupur,Manu,Matarbari,Narsingarh,Panisagar,anirbazar
+							
+							
+,Sabroom,Santirbazar,Sonamura,Taranagar,Teliamura,Udaipur
+,
+,Abupur
+,Achalganj
+,Achhalda
+,Achhnera
+,Adari
+,Afzalgarh
+,Agarwal Mandi,Agra
+,Agro Park Karkhiyon,Ahraura
+,Ailum
+,Air Force Area,Ajhuwa
+,Akbarpur
+,Akbarpur Near Kanpur,Aliganj
+,Aligarh
+,Allahabad
+,Allahganj
+,Allapur
+,Amanpur
+,Ambehta
+,Amethi
+,Amethi Sultanpur District,Amila
+,Amilo,Aminagar Sarai,Amraudha,Amroha
+							
+							
+,Anandnagar,Anpara
+,Antu
+,Anupshahr,Anurudhpur Purab Patti,Aonla
+,Artauni
+,Ashrafpur Kichhauchha,Atarra
+,Atasu
+,Atrauli
+,Atraulia
+,Auraiya,Aurangabad,Auras
+,Awagarh
+,Ayodhya
+,Azamgarh,Azmatgarh
+,Babarpur Ajitmal,Baberu
+,Babina
+,Babrala
+,Babugarh,Bachhgaon,Bachhraon,Bachhrawan,Bad
+,Badaun ,Baghpat
+,Bah,Bahadurganj,Baheri
+,Bahjoi
+,Bahraich
+,Bahsuma
+,Bahuwa
+							
+						
+					
+
+			 			 			
+,Yercaud,Zamin Uthukuli
+
+,Achampet
+,Adilabad
+,Alampur
+,Allipur,Ananthapuram,Anjani Portland Cement Factory
+,APIIC Polepally SEZ,Armur,Ashwaraopet,Asifabad
+,Atmakur Mahbubnagar District
+,Ballepalle
+,Banswada
+,Bellampalle,Bhadrachalam,Bhainsa,
+					
+Ramapuram,Bhimaram,Bhimaram Warangal District,Bhongir,Bhupalpalle,Bibinagar,Bodhan,Boyapalle,Chandur,Chanukya Cement Factory,Chatakonda,Chegunta
+				
+,Chelpur
+,Chennur Adilabad District,Chinnachitakunta,Chitkul
+,Chityala,Choppadandi,Choutuppal,Chunchupalle,Dasnapur
+,Deccan Cement Factory,Devapur,Devarakonda,Devarkadra,Dharmapuri,Dharmaram,Dharmaram District,Dharmaram
+				
+,Ichoda
+,Ieeja
+,Isnapur
+,Jadcherla
+,Jagtial
+,Jainoor
+,Jallaram
+,Jammikunta
+,Jangaon
+,Jannaram
+,Jogipet
+,Kaddam Peddur
+,Kadipikonda
+,Kagaznagar
+,Kalwakurthy
+,Kamalapuram
+,Kamalapuram Karimnagar,Mulugu,
+				
+			
+			
+				
+					
+Karimnagar Warangal,Mamda,Mamnoor,Mancherial,Mandamarri,Manugur,Medak,Medipalle,Metapally,Miryalaguda,Muhammadabad,
+,Dornakal
+,Eddumailaram
+,Farooqnagar
+,Gadwal
+,Gajwel
+,Ghanpur
+,Ghanpur Warangal District,Kodad
+				
+			
+			
+,Gorrekunta,Gurralapadu ,Haliya,Hanwada,Husnabad,Huzur Nagar,Huzurabad,Hyderabad,Ibrahimpatnam
+					
+Sangareddy District,Kodangal,
+				
+			
+			
+				
+					
+
+,Kamareddy,Karimnagar,Kasipet,Khammam,Khanapur
+,Kisan Nagar Industrial
+				
+,Nagarjuna Sagar,Nagarkurnool,Nakrekal,Nalgonda,Narayanapuram,Narayankhed,Narayanpet,Narsampet,Narsapur,Naspur,Navandgi,Nirmal,Nizamabad,Palakurthy,Palwancha,Pargi,Peddapalle,Perur,Pochampalle,Pothreddipalle
+				
+			
+			
+,Kondamallapalle,Koratla,Kosigi,Kothagudem,Kothakota,Kothur,Kyathampalle,Laxmidevipalle,Luxettipet,Madaram
+				
+			
+			
+,Madhira
+,Madikonda,Mahabubabad,Mahbubnagar,Maheswaram Industrial
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Domariyaganj,Dostpur
+,Dudhi
+,Dulhipur
+,Ekdil
+,Erich
+,Etah
+,Etah Indutrial Area,Etawah
+,Etmadpur
+,Faizabad
+,Faizganj
+,Farah
+,Faridnagar
+,Faridpur, Bareilly District,Fariha,Farrukhabad,Fatehabad
+,Fatehganj Pashchimi,Fatehganj Purvi,Fatehgarh,Fatehpur,Fatehpur Chaurasi,Fatehpur Sikri
+								
+,Fatehpur, Barabanki District,Fazi Nagar,Firozabad,Firozabad UPSIDC,Gabhana,Gadhi,Gagalhedi Must,Gajraula,Gangapur,Gangiri,Gangoh,Ganj Dundwara
+							
+							
+,Ganj Muradabad,Ganwaria Tulsipur,Garauri,Garautha,Garhi Pukhta,Garhmukteshwar,Gaura,Gaura Barhaj,Gaura Kala,Gauri Bazar,Gausganj,Gawan,Ghatampur,Ghaziabad,Ghazipur,Ghiraur,Ghorawal,Ghosi,Ghosia Bazar,Ghughuli,GIDA Gorakhpur,Gird Baragaon,Gohand,Gokul,Gola Bazar,Gola Gokarannath,Gonda,Gopamau,Gopi Ganj,Gorakhpur,Gosainganj,Gosainganj, Lucknow, Got,Govardhan,Gulaothi
+							
+							
+,Gulariya
+,Gunnaur
+,Gursahaiganj
+,Gursarai
+,Gyanpur
+,Hafiz Ganj
+,Haidergarh
+,Haldaur
+,Hallaur
+,Hamirpur
+,Handia
+,Hapur
+,Haqiqatpur
+,Hardoi
+,Harduaganj
+,Hargaon
+,Hariharpur
+,Hariyawan
+,Harraiya
+,Hasanpur
+,Hasayan
+,Hastinapur
+,Hata
+,Hathgram
+,Hathras
+,Hyderabad
+,Ibrahimpur
+,Iglas
+,Ikauna
+,Iltifatganj Bazar
+,Indian Tehephone Industry,Joya,
+							
+						
+						
+							
+								
+Mankapur
+,Indian Telephone Industry,Islamnagar
+,Itaunja
+,Itwa
+,Jafarabad
+							
+							
+,Jugauli,Jyoti Khuria,Kabrai,Kachhauna Patseni,Kachhla,Kachhwa
+							
+						
+						
+							
+,Jagner
+,Jahanabad,Jahangirabad,Jahangirpur
+,Jais
+,Jaithara
+,Jalalabad
+,Jalalabad, Bijnor District,Jalalabad, Muzaffarnagar
+							
+						
+						
+							
+								
+,Jalali,Jalalpur,Jalaun,Jalesar,Jamshila,Jamuhan,Jangipur,Jansath,Jarwal,Jasra,Jasrana,Jaswantnagar,Jatari,Jaunpur,Jewar,Jhalu,Jhansi,Jhinjhak,Jhinjhana,Jiyanpur
+							
+						
+					
+
+			 			 			
+,Bajna
+,Bakewar
+,Bakiabad
+,Baksar
+,Bakshi Ka Talab,Baldeo
+,Ballia
+,Balrampur
+,Banat
+,Banda
+,Bangarmau
+,Banguwan Kalan,Banjarepur
+,Bansdih
+,Bansgaon
+,Bansi
+,Bara Gaon
+,Barabanki
+,Barabanki ,Baragaon
+					
+,Barahatir Jagdishpur,Baraut,Bareilly,Barhalganj,Barhani Bazar,Barkhera,Baroun,Barsana,Barua Sagar,Barwar,Barwara Mazra,Basantpur Saitli,Basta,Basti,Beelna,Behat,Behta Hajipur
+				
+,Bela Pratapgarh,Belthara,oad,Beniganj
+,Benipur
+,Beswan
+,Bewar
+,Bhabnan Bazar,Bhadarsa
+,Bhadohi
+,Bhadohi ,Bhagwant Nagar,Bharatganj
+,Bhargain
+					
+,Bharthana
+,Bharuhana
+,Bharwari
+,Bhatni Bazar,Bhatpar,ani,Bhawan Bahadur Nagar,Bhinga
+					
+,Bhogaon
+,Bhojpur Dharampur,Bhokarhedi
+,Bhulepur
+,Bidhuna
+,Bighapur
+,Bihka
+,Bijauli ,Bijnor
+,Bijpur
+,Bikapur
+,Bilari
+,Bilariaganj
+,Bilaspur
+,Bilaspur, Gautam Buddha
+					
+Nagar District,Bilgram
+				
+,Bilhaur,Bilram,Bilsanda,Bilsi,Bindki,Birbhanpur,Bisalpur,Bisanda Buzurg,Bisauli,Bisharatganj,Bishunipur,Biswan,Bithoor,Budaun,Budhana,Bugrasi,Bulandshahr,Chail,Chakia,Chakmano,Chandauli,Chandausi,Chandpur,Charkhari,Charthaval,Chaumuhan,Chaurhat,Chhaprauli,Chharra,afatpur,Chhata,Chhatari,Chhibramau,Chhitauni,Chhutmalpur,Chilkana Sultanpur,Chirgaon,Chitbara Gaon
+				
+,Chitrakoot,Chopan,Choubepur Kalan,Chunar,Churk Ghurma,Colonelganj,Dadri,Dalmau,Dankaur,Dariyabad,Dasna,Dataganj,Daurala,Debai,Deoband,Deoranian,Deori Singhpura,Deoria,Deosaini,Derapur,Devinagar,Dewa,Dhakauli,Dhampur,Dhanauha,Dhanaura,Dharoti Khurd,Dhaura Tanda,Dhaurahara,Dibiyapur,Dildarnagar Fatehpur,
+					
+azar
+,Dindaspur,Dindaspur Chandauli
+					
+District,Doghat,Dohrighat,
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Mawana
+,Meerut
+,Mehdawal
+,Mehnagar
+,Mendu
+,Middha
+,Milak
+,Miranpur
+,Mirganj
+,Mirzapur cum Vindhyachal,Nautanwa,
+							
+						
+						
+							
+,Misrikh Cum Neemsar,Modinagar,Mogra Badshahpur,Mohammadabad,Mohammadabad,
+								
+Farrukhabad District,Mohammadi,Mohan,Mohanpur,Mohiuddinpur,Moradabad,Moth,Mubarakpur,Mughalsarai,Muhammadabad,Mundera Bazar,Mundia,Muradnagar,Mursan,Musafirkhana,Muzaffarnagar,Nadigaon,Nagina,Nagram,Nai Bazar,Naini ,Najibabad
+							
+							
+,Nawabganj,Nawabganj, Bareilly
+								
+,Nawabganj, Unnao
+								
+
+,Nehtaur
+,Nichlaul
+,Nidhauli Kalan,Nihal Garh Chak Jangla,Nivi
+,Niwari,Nizamabad,Noida,Noorpur,Nyoria Husainpur,Nyotini,Obra,Oel Dhakwa,Orai,Orai ,Orai Jalaun District,Oran,Pachperwa,Padarathpur,Padrauna,Pahar Ganj,Pahasu
+							
+						
+						
+							
+,Nakur,Nanauta,Nandgaon,Nanpara,Naraini,Narauli,Naraura,Naugarh,Naugawan Sadat
+							
+							
+,Paintepur
+,Pakbara
+,Pali
+,Pali, Hardoi District,Palia Kalan
+,Palpur
+,Parasi
+,Parichha
+,Parikshitgarh,Parsadepur
+,Parsakhera ,Parsona
+,Patadi
+,Patala
+,Patiyali
+,Patti
+,Pavi Sadakpur,Phalauda
+,Phaphund
+,Phulpur
+,Phulpur, Allahabad District,Pihani
+,Pilibhit,Pilkhana,Pilkhuwa,Pinahat,Pipalsana Chaudhari,Pipara Dand,Pipiganj,Pipraich,Piprayli Bujurg,Pipri,Powayan,Pratapgarh City,Pukhrayan,Puranpur,Purdilnagar
+							
+							
+,Pure Tiwari
+,Purquazi
+,Purwa
+,Qasimpur Power House Colony
+,abupura
+,adhakund
+,ae Bareli
+,aja ka,ampur,ajapur
+,am Nagar ,amdaspur Urf Nagal,amkola
+,amnagar
+,ampur
+,ampur Bhawanipur,ampur Karkhana,ampur Maniharan,ampura
+,anipur
+,aniyan
+,asra
+,asulabad
+,asulabad Unnao District,atanpura
+,ath
+,ati Ka Nagla,aya,enukoot,eoti,ichha,isia Bazar,ithora,obertsganj,ori,udauli
+							
+						
+					
+
+			 			 			
+,Kachnar,Kadaura,Kadipur,Kailashpur,Kaimganj,Kairana,Kakari,Kakod,Kakori,Kakrala,Kalinagar,Kalpi,Kamalganj,Kampil,Kandharpur,Kandhla,Kannauj,Kanpur,Kanth,Kanth, Shahjahanpur
+					
+,Kaptanganj,Karari,Karhal,Karnawal,Karwi,Kasba Khanpur,Kasganj,Kasiya,Kataka,Kataria,Katghar Lalganj,Kathaura,Kathera,Katra
+				
+,Katra Medniganj,Katra, Gonda ,Kaulakha
+,Kauria ganj,Kemri
+,Kerakat
+,Kewalpur
+,Khadda
+,Khaga
+,Khailar
+,Khair
+,Khairabad,Khairabad, Mau District,Khalilabad
+					
+Khamaria,Khandauli,Khanpur,Kharela,Khargupur,Khariya,Kharkhoda,Khatauli,Khekada,Kheragarh,Kheri,Kheta Sarai,Khudaganj,Khurja,Khutar,Kiraoli,Kiratpur,Kishni,Kishunpur,Kithaur,Koeripur,Konch,Kopaganj
+				
+,Kora Jahanabad,Koraon
+,Korwa
+,Kosi Kalan
+,Kota
+,Kota, Sonbhadra District,Kotra
+					
+,Kotwa
+,Kotwali
+,Kulpahar
+,Kunda
+,Kundarki
+,Kunwargaon
+,Kuraoli
+,Kurara
+,Kursath
+,Kursath, Hardoi District,Kursi,oad ,Kurthi Jafarpur,Kushinagar
+					
+,Kusmara
+,Laharpur
+,Lakhimpur
+,Lakhna
+,Lal Gopalganj Nindaura,Lalganj
+					
+,Lalitpur,Lar,Lawar,Leather Park Banthar,Ledwa Mahua,Loni,Lucknow,Machhlishahr,Madhoganj,Madhogarh,Madiya
+				
+,Maghar
+,Mahaban,Maharajganj,Mahimapur,Mahmudabad,Mahoba
+,Maholi
+,Mahona,Mahrajganj,Mahrajganj, Azamgarh
+					
+District,Mahroni,Mahul Khas,Maigal Ganj,Mailani,Maina Maujpur,Mainpuri,Majhauliraj,Makhanpur,Malhipur,Malihabad,Mallawan,Mandawar,Manikpur,Manikpur Sarhat,Maniyar,Manjhanpur,Mankapur,Marehra,Mariahu,Maswasi,Mataundh,Mathura,Mau Aima,Maudaha,Maunath Bhanjan,Maurawan
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Warhapur,Wazirganj,Zaidpur,
+Zamania,
+,Almora
+,Auli
+,Badrinath,Bageshwar,Bahadarabad,Banbasa
+,Bandia
+,Bandiya
+,Barkot
+,Bazpur,Begumpur,Berinag,Bhagwanpur,Bhimtaal
+,Bhowali
+,Chakrata
+,Chamba
+,Chamoli,Champawat,Chaukori
+,Corbett,Dehradun,Devaprayag,Devaprayag, Garhwal District
+,Dhanaulti,Dharchula,Dharchula Dehat,Didihat,Dineshpur,Dogadda
+							
+							
+,Doiwala
+,Dwarahat
+,Gadarpur,Gangolihat,Gangotri
+,Gochar,Gopeshwar,Haldwani
+,Haridwar
+,Herbertpur
+,Jaspur
+,Jhabrera
+,Joshimath
+,Kachnal Gosain,Kaladhungi,Karnaprayag,Kashipur,Kathgodam,Kausani
+,Kela Khera,Khatima
+,Kichha
+,Kirtinagar
+,Kotdwara
+,Laksar
+,Lalkuan
+,Landaur
+,Landhaura,Lansdowne,Lohaghat
+,Mahua Dabra Haripura,Mahua Kheraganj,Manglaur
+,Mehwar Kalan,Mohanpur Mohammadpur,Mukteshwar
+,Mussoorie
+							
+							
+,Nagala Imarti,Nagla,Nainital,Nandprayag,Narendranagar,Natthuwa Wala,New Tehri,Pantnagar,Pauri,Piran Kaliyar,Pithoragarh,Pratitnagar,aipur,amnagar,anikhet,ishikesh,oorkee,udraprayag,udrapur,Saidpura,Sara Industrial Estate,Selaqui,Shaktigarh,SIDCUL Haridwar,SIDCUL Kotadwara,Sitarganj,Srinagar,Sultanpur,Tanakpur,Tehri,Uttarkashi,Vikasnagar
+
+,Adra,Ahmadpur,Aiho
+							
+							
+,Ajodhyanagar,Alipukur
+,Alipurduar
+,Alipurduar,ly Jnc,Amarshi Kasba,Ambhua
+,Amlagora
+,Amlajora
+,Amta
+,Amtala
+,Anantabati
+,Andal
+,Andul
+,Ankurhati
+,Anup Nagar,Arambag
+,Argari
+,Arjunpur
+,Arra
+,Asansol,Ashadtalya,Aurangabad,Badamtam Tea Garden,Badkulla
+,Baduria,Bagnan,Bagula,Bahirgram,Bahula,Baidyabati,Bakreshwar Thermal Power Township,Baksa
+,Balarampota,Balarampur
+,Balarampur, South Twenty Four Parganas District,
+							
+						
+					
+
+			 			 			
+,udayan
+,udrapur
+,unkata
+,ura,ustamnagar Sahaspur,Sadabad
+					
+,Sadat,Sadatmasaura,Sadruddin Nagar,Safipur
+,Sahanpur
+,Saharanpur
+,Sahaspur
+,Sahaswan
+,Sahatwar
+,Sahawar
+,Sahjanwan
+,Sahpau
+,Saidpur
+,Saidpur Khajuria,Saidpur, Budaun District,Sainthal
+					
+,Saiyad,aja,Sakaldiha,Sakhanu,Sakit,Salarpur,Salempur,Salon,Sambhal,Samdhan,Samthar,Sandi,Sandila,Sandilla,Sapur Banger,Sarai Abdulmalik
+				
+,Sarai Aquil,Sarai Lahur,Sarai mir,Sarai Mohana,Saraon,Sardhana,Sarila,Sarnath,Sarsawan,Sarsual,Sasni,Satiyava,Satrikh,Saunkh,Saurikh,Seohara,Sewalkhas,Sewarhi,Shahabad,Shahabad,,ampur
+,Shahganj
+,Shahi,Shahjahanpur,Shahpur
+,Shamli
+,Shamsabad,Shamsabad,Shankargarh
+					
+,Shaoron,Shergarh,Sherkot,Shikarpur,Shikohabad,Shishgarh,Shivli,Shivrajpur
+				
+,Shohratgarh,Siana
+,Siddhaur
+,Sidhauli
+,Sidhpura,Sikandarabad 
+,Sikanderpur,Sikanderpur, Kannauj
+					
+,Sikandra,Sikandra,ao,Sikandrabad,Sikindra,Sikri Kalan,Singahi Bhiraura,Sirathu,Sirauli,Sirsa,Sirsaganj,Sirsi,Sisauli,Siswa Bazar,Sitapur,Soron,Suar,Subeha,Sultanpur,Sumerpur,Suriyawan,Suthana Barsola,Suzabad,Talbehat,Talgram,Tambaur Cum Ahmadabad
+				
+,Tanda
+,Tanda,,ampur District,Tatarpur Lallu,Thakurdwara,Thana Bhawan,Thiriya Nizamat Khan,Tikait Nagar,Tikri
+,Tikuniya
+,Tilhar
+,Tilthi
+,Tindwari
+,Tirwaganj
+,Titron
+,Tondi Fatehpur,Tronica City,Tulsipur
+,Tundla
+,Tundla Kham,Tundla,ly Colony,Ugu
+,Ujhani
+,Ujhari
+,Umarha
+,Umri
+,Umri Kalan,Un
+,Unchahar
+,Unnao
+,Usawan
+,Usehat
+,Uska Bazar,Utraula
+,Varanasi
+,Vijaigarh
+,Vrindavan
+,Walidpur
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Chinchuria,Chittaranjan,Chong Ghurali,Chongtong Tea Garden,Chopra
+,Contai
+,Dafahat
+,Dakhin,ampur,Dakshin Baguan,Dakshin Chatra,Dakshin Jhapardaha,Dakshin Odlabari,Dakshin,ajyadharpur,Dakshin,aypur,Dakshin Santoshpur,Dalkhola,Dalurband,Danga
+,Dankuni,Darappur,Darjeeling,Daulatpur,Deara,Debipur,Deora,Deulgram,Deuli,Deulia,Dhakuria,Dhaliabari,Dhamua,Dhandadihi,Dhania,Dhanyakuria,Dharmapur,Dhatrigram,Dhola
+							
+							
+,Dhuilya
+,Dhulasimla
+,Dhulian
+,Dhunki
+,Dhupguri,Dhusaripara,Diamond Harbour,Digha
+,Dighirpar
+,Dignala,Dihimandalghat,Dinga Khola,Dinhata
+,Dogachhia
+,Dogachhia Barddhaman
+								
+
+,Domjur
+,Dubra
+,Dubrajpur,Dudhkalmi,Durgapur,Durllabhganj,Egra,Ekabbarpur,Eksara
+,Erashal
+,Falakata
+,Falta Industrial Growth Centre
+,Farakka Barrage Township
+,Farakka PTS Township,Fatehpur
+,Fatellapur
+,Fatepur
+,Gabberia,Gairkata
+							
+							
+,Gangadharpur,Gangarampur,Gangi,Gangnapur,Gangni,Garalgachha,Garbeta,Garh Kamalpur,Garshyamnagar,Garulia,Gaur Daha,Geni,Ghatal,Ghola Noapara,Ghoraberia,Ghutgarya,Ging Tea Garden,Giria,Goasafat,Gobardanga,Gobindapur,Gopalpur,Guskara,Habra,Haldia,Haldibari,Halisahar,Halyan,Hanskunda,Hanspukuria,Haora,Harharia Chak,Harinadibhastsala,Harindanga,Haringhata Farm,Haripur,Harirampur
+							
+							
+,Harishpur
+,Hasimnagar,Hatgachha
+,Hatsimla
+,Hijuli
+,Hincha Gerya,Hindusthan Cables Town,Hingalganj
+,Hirapur,Hugli-Chinsurah,Hutmura
+,Ichhapur Defence Estate,Ichhlampur
+,Ilambazar
+,Islampur
+,Itahar
+,Itinda
+,Jadupur
+,Jafarpur,Jagadanandapur,Jagadishpur,Jagatballavpur,Jagatnagar
+,Jagijhora Barabak,Jagtaj
+,Jala Kendua
+,Jallabad
+,Jalpaiguri
+,Jaluidanga
+,Jamuria
+,Janai
+,Jangalpara,Jangalpara, Hugli District,Jangipur
+,Jateshwar,Jaygaon,Jaykrishnapur
+							
+						
+					
+
+			 			 			
+,Balichak,Balihati,Bally,Baluhati,Balurghat,Bamangram,Bamanpukur,Bamna,Bamunari,Ban Harishpur,Banarhat Tea Garden,Bandhail,Bandipur,Bandoan,Baneshwarpur,Baneshwarpur Haora District
+				
+,Bargachhia Hugli District,Barijhati
+,Barijpur
+,Barjora
+,Barkalikapur,Barrackpur
+,Barrackpur Cantonment,Barua Gopalpur,Baruipara
+					
+RBaruipur,Barunda,Basantapur,Basanti,Basantia,Basirhat,Baska,Basudebpur,Basudebpur Purba
+					
+Medinipur District,Batika,Batul,Bayarsing,Begampur
+				
+,Bhangri Pratham Khanda,Bhasa
+,Bhasaipaikar
+,Bhatpara
+					
+,Bhimram
+,Bholar Dabri
+,Bidhan Nagar,Bikihakola
+,Bilandapur
+,Bilpahari
+,Bipra Noapara,Bira
+,Birlapur
+,Birnagar
+,Birodhi
+,Birpara
+,Birpara, Jalpaiguri District,Bishnupur
+					
+,Bishnupur Birbhum District
+					
+,Bishnupur Industrial Growth Centre
+					
+,Bishnupur, South Twenty Four Parganas District
+					
+,Bolpur,Bora Gagangohalia,Borai,Bowali,Brindabanpur,Budge Budge,Buita,Burdwan,Cart,oad,Chachanda,Chak Alampur,Chak Bankola,Chak Baria
+				
+,Chak Bhrigu,Chak Enayetnagar,Chak Kanthalia,Chak Kashipur,Chakapara,Chakdaha,Chakiabhita,Chakmeghoan,Chalsa Mahabari,Champahati,Champdani,Chamrail,Chanchal,Chandannagar,Chandapur
+					
+Champagachhi,Chanddandaha,Chandipur
+,Chandipur Haora District,Chandpala Anantapathpur,Chandpur
+					
+,Chandpur South Twenty Four Parganas District
+					
+,Chandrakona,Chandrapur,Chapari,Chapra,Chaspara,Chaulia,Chechakhata,Chekya,Chhekati,Chhora,Chhota Laukuthi,Chhota Suzapur,Chikanpara,Chikrand
+				
+			
+			
+,Baneswar
+,Bangalpur
+,Bangaon
+,Baniban
+,Baniban Jagadishpur
+,Bankra
+,Bankra North Twenty Four,
+Begun Kodar Parganas
+				
+			
+			
+,Bankul,Bankura,Bansberia,Banshra,Banupur,Bara,Bara Jumla,Bara Suzapur,Barabazar,Barasat,Barda,Bargachhia
+				
+,Beldanga
+,Beldubi
+,Beliatore
+,Belumilki
+,Benudia,Berhampore,Betpuli
+,Bhabki,Bhadreswar,Bhagabatipur,Bhandar Gachha,Bhandardaha,Bhangar,aghunathpur
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Murulia
+,Nababpur
+,Nabadwip,Nabaghanapur,Nabagram,Nabagram Colony,Nabgram,Nadabhanga,Nagar Changrabandha,Nagdaha
+,Nahazari
+,Naihati
+,Nainan
+,Naiti
+,Nalahati
+,Naldanga
+,Nalpur,Nandigram,Naridana,Nasaratpur,Nasibpur
+,Natibpur
+,Naul
+,Naupala,Nawapara,Nayabahadurpur,Nebadhai Duttapukur,New Barrackpur,New Town,Nibra,Nischintapur,Nischintapur Paschim
+								
+Medinipur District,Nokpul,North Barrackpur,Nrisinghapur,Odlabari
+							
+							
+,Pairagachha,Palashban,Palashi,Panchghara,Panchla,Panchpara,Pandua,Paniara,Panihati,Panuria,Par Patiram,Para,Parangarpar,Paranpara,Parashkol,Parasia,Parota,Paschim Bainan,Paschim Gazipur,Paschim Jitpur,Paschim Panchla,Paschim Punropara,Pashchim Khalna,Patdaha,Patharberia,Patihal,Patuli,Patulia,Phulia,Poali,Podara,Prayagpur,Pujali,Purba Bishnupur,Purbba Narayanpur,Purbba Tajpur,Puruliya
+							
+							
+,adhapur,aghudebbati,aghunathpur,aghunathpur, Puruliya
+								
+
+,aichak,aigachhi,aiganj,aipur,ajbalhat,ajnagar,ajpur Bazar,ajpur Sonarpur,amakantapur,amanathpur,amchandrapur,ameswarpur,amjibanpur,amkrishnapur,amnagar,ampurhat,anaghat,angabhita,aniganj,Maninagar,
+aynagar,ishra,ongmook Ceder Tea,Garden
+,uiya,Sadigachhi,Sahapur,Sahebganj,Sahebpur,Sainthia
+,Salap
+							
+							
+,Salar,Samali,Samudragarh,Samuktola,Sangrampur,Sankarpur,Sankrail,Santaldih,Santipur,Santoshpur,Sarenga,Sarpi,Sehara,Serampore,Serpur,Shankara,Shashati,Shilda,Shimulpur,Shyamdhan,Shyampur,Sibnagar,Siduli,Silampur,Siliguri,Simhat,Simla,Simlapal,Singtam Tea Garden,Singur,Sirakol,Sirsha,Sisha-Jumrha,Sobhaganj,Solgohalia,Sonada Khasmahal,Sonamukhi
+							
+						
+					
+
+			 			 			
+,Jaynagar Mazilpur,Jaypur,Jemari,Jetia,Jhalda,Jhanti Pahari,Jhargram,Jhorhat,Jiaganj Azimganj,Jirat,Joka,Joypul,Jujarsaha,Kachu Pukur,Kaijuri,Kajora,Kakdihi,Kakramari,Kalara,Kalaria,Kalas North,Kaliaganj,Kalikapota,Kalikapur,Kalimpong,Kalipur,Kalipur Barddhaman
+					
+
+,Kalna
+,Kalyani
+,Kalyanpur,Kamalapur
+,Kamat Phulbari,Kanaipur
+,Kanaipur Haora District,Kanchrapara,Kandi
+				
+,Kanganbaria,Kanki
+,Kankuria
+,Kanpur
+,Kantaberia
+,Kantlia,Kanyanagar,Kapashanria,Karari Chandpur,Karia
+,Karidhya
+,Karimpur,Kashimnagar,Katwa
+,Kaugachhi
+,Kenda
+,Kendra Khottamdi,Kendua
+,Kesabpur
+,Khajutti
+,Khalia
+,Khalor
+,Khandra
+,Khanpur
+,Khantora
+,Kharagpur
+,Kharar
+,Khardaha
+,Khardaha Haora District,Kharibari
+					
+,Kharsarai
+,Khatra
+,Khidirpur
+,Khidirpur, Murshidabad District,Khorddabamonia,Koch Bihar
+				
+,Kodalia,Kokapur,Kolaghat,Kolkata,Komarhat,Konardihi,Konnagar,Kotbar,Kotulpur,Koyra,Kriparampur,Krishna Sali,Krishnanagar,Krishnapur,Krishnapur Maldah District
+					
+,Kshidirpur,Kshirpai,Kulia,Kulihanda,Kulitapara,Kulti,Kurseong,Labhpur,Lagda,Lalpur,Lapara,Laskarpara,Lataguri,Madhyamgram,Madna,Mahadeb Nagar,Mahal,Mahiari,Mahira,Mahishrekha,Mainaguri
+				
+,Makardaha
+,Makhal Tala
+,Malbazar
+,Malda
+,Mamrejpur
+,Manbazar,Mandarbani,Mangalbari,Mangarjung Tea Garden,Manikpur
+,Manirampur,Mansinhapur,Manushpur
+					
+,Masat
+,Masat South Twenty Four
+					
+Parganas District,Maslandapur,Mathabhanga,Matialihat,Matiari,Matla,Medinipur,Mejia Thermal
+					
+PowerTownship,Mekliganj,Memari,Milki,Minakhan,Mira,Mirdhanga,Mirik,Mirzapur,Mohanpur,Mugkalyan,Muragachha,Murarai,Murshidabad
+				
+			
+		
+		
+			 			
+						 					
+						
+							
+,Shirdi,Siliguri,Surat,Thalassery,Thiruvananthapuram,Thrissur,Tiruchirappalli,Tirupati,Udaipur,Vadodara,Varanasi,Vijayawada,Visakhapatnam,Vrindavan,Warangal
+,Cities with House Addresses*,Ahmedabad,Allahabad,Auraiya,Azamgarh,Belgaum,Bengaluru,Bettiah,Bhagalpur,Bhavnagar,Bhopal,Bhubaneswar,Bidhan Nagar,Chandigarh,Chennai,Cheranallur,Coimbatore,Darbhanga,Dehradun,Deoria
+							
+							
+,Eloor,Ernakulam,Etawah,Faridabad,Ghaziabad,Gorakhpur,Greater Noida,Hyderabad,Indore,Jaipur,Jalandhar,Jamalpur,Jammu,Jamnagar,Kadungalloor,Kalamassery,Kalyan,Kanpur,Kishanganj,Kochi,Kolkata,Kollam,Latur,Lucknow,Ludhiana,Madurai,Mainpuri,Manesar,Mohali,Moradabad,Motihari,Mumbai,Munger,Muradnagar,Muzaffarpur
+							
+							
+,Mysore,Nagpur,Nashik,Navi Mumbai,New Town,Padrauna,Panchkula,Pimpri Chinchwad,Puducherry,Pune,ajkot,Saharanpur,Saharsa,Salem,Sangli Miraj Kupwad,Secunderabad,Sitamarhi,Srinagar,Surat,Thane,Thiruvananthapuram,Thiruvankulam,Thrippunithura,Tronica City,Vadodara,Varanasi,Vazhakkala,Vijayawada
+							
+						
+					
+
+			 			 			
+,Sonatikiri,Srimantapur,Sripur,Subarnapur,Sukdal,Sukhiapokhri,Suri
+,Taki,Talbandha,Taldi
+,Tamluk,Tarakeswar,Tehatta
+,Tehatta Nadia District,Teleni Para,Telipara Tea Garden,Tentulkuli
+,Tisa
+,Titagarh,Tufanganj,Udang
+,Ukhra
+,Uluberia
+,Uluberia Near Kolkata,Usthi
+					
+,Uttar Bagdogra,Uttar Bishnupur,Uttar Jhapardaha,Uttar Kamakhyaguri,Uttar Kusum,Uttar Latabari,Uttar Madarihat,Uttar Mahammadpur,Uttar Pirpur,Uttar,aypur,Uttar Satali,Uttarpara Kotrung
+				
+,WBIIDC Growth Centre Uluberia
+					
+Travel Destinations
+					
+,Agra,Ahmedabad,Ajanta,Ajmer,Alappuzha,Alibaug,Allahabad,Almora,Alwar,Amarkantak,Amritsar,Auli,Aurangabad,Badrinath,Bageshwar,Bandhawagarh,Belgaum,Bharatpur,Bhopal,Bikaner,Bodh Gaya,Bundi,Chail,Chamba,Chamoli,Chittaurgarh,Coimbatore,Corbett,Dalhousie,Darjiling,Dehradun,Dhanaulti,Dwarka
+				
+,Ernakulam,Fatehpur Sikri,Gandhinagar,Gangotri,Gangtok,Gorakhpur,Gulmarg,Guntur,Guwahati,Gwalior,Hampi,Hardwar,Hassan,Hazaribagh,Hospet,Indore,Jaipur,Jaisalmer,Jalandhar,Jamshedpur,Jhansi,Jodhpur,Joshimath,Kangra,Kanniyakumari,Kanpur,Kasauli,Kausani,Khajuraho,Kochi,Kolkata,Kollam,Kottayam,Kovalam,Kozhikode,Kullu,Kumarakom
+				
+,Kumbakonam,Lucknow,Ludhiana,Madurai,Mamallapuram,Manali,Mangalore,Mathura,Mount Abu,Mussoorie,Mysore,Nainital,Nalsarovar,Nangal,Nellore,Pachmarhi,Pahalgam,Palakkad,Panaji,Pathankot,Patna,Patnitop,Pauri,Pondicherry,Porbandar,Puri,Pushkar,ajgir,ajkot,anikhet,ishikesh,udraprayag,Sanchi,Sariska,Sarnath,Shillong,Shimla
+				
+
+
+
+		
+		
+			 			
+						 					
+
+							
+						
+					
+
+			 			 		
+
