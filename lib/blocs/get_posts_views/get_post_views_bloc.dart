@@ -15,7 +15,7 @@ class GetPostViewsBloc extends Bloc<GetPostViewsEvent, GetPostViewsState> {
   Future<void> getPostViews(
       GetPostViews event, Emitter<GetPostViewsState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_post_views",
       "post_id": event.postId ?? ""
     };

@@ -16,7 +16,7 @@ class GetUserPromotionsBloc
   Future<void> GetUserAllPromotions(
       GetUserPromotions event, Emitter<GetUserPromotionsState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_user_promotions",
       "user_id": event.userId ?? ""
     };

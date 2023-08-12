@@ -10,63 +10,63 @@ class PromotionService {
     return response;
   }
 
-  Future<ApiResponse> viewPromotion(Map<String, dynamic> params) async {
+  Future<ApiResponse> viewPromotion(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getPromotionComments(Map<String, dynamic> params) async {
+  Future<ApiResponse> getPromotionComments(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> addPromotionComment(Map<String, dynamic> params) async {
+  Future<ApiResponse> addPromotionComment(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> interestPromotion(Map<String, dynamic> params) async {
+  Future<ApiResponse> interestPromotion(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> deletePromotion(Map<String, dynamic> params) async {
+  Future<ApiResponse> deletePromotion(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getAllPromotions(Map<String, dynamic> params) async {
+  Future<ApiResponse> getAllPromotions(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getUserPromotions(Map<String, dynamic> params) async {
+  Future<ApiResponse> getUserPromotions(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getPromotionViews(Map<String, dynamic> params) async {
+  Future<ApiResponse> getPromotionViews(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getPromotionInterests(Map<String, dynamic> params) async {
+  Future<ApiResponse> getPromotionInterests(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));

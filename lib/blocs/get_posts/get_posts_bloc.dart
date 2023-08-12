@@ -30,13 +30,13 @@ class GetPostsBloc extends Bloc<GetPostsEvent, GetPostsState> {
       allPosts!.clear();
     }
 
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_all_posts",
       "user_id": userId ?? "",
-      "city": city?.trim(),
+      "city": city?.trim() ?? "",
       "category": (selectedCategory ?? "all").toLowerCase(),
       "search_keyword": (searchKeyword ?? "").trim().toLowerCase(),
-      "offset": offset ?? 0,
+      "offset": "${offset ?? "0"}",
     };
 
     print(params);

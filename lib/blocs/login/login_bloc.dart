@@ -93,9 +93,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   void loginWithMobile(LoginWithMobile event, Emitter<LoginState> emit) async {
     emit(Loading());
     try {
-      var params = {
+      Map<String, String> params = {
         "method": "mobile_login",
-        "mobile_number": event.mobile_number,
+        "mobile_number": event.mobile_number ?? "",
       };
 
       final apiResponse = await authService.mobileLogin(params);

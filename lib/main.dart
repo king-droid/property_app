@@ -10,6 +10,8 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_autosize_screen/auto_size_util.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:property_feeds/blocs/common_bloc.dart';
 import 'package:property_feeds/blocs/complete_profile/complete_profile_bloc.dart';
@@ -94,7 +96,7 @@ void main() async {
     AppStorage.setString("device_token", fcmToken);
     saveDeviceTokenToServer(fcmToken);
   }).onError((err) {});
-
+  AutoSizeUtil.setStandard(360, isAutoTextSize: true);
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
       child: const MyApp()));
@@ -184,6 +186,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    setPageTitle('Property Feeds', context);
     return MultiBlocProvider(
         providers: [
           BlocProvider<LoginBloc>(
@@ -226,6 +229,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           navigatorKey: navKeyRoot,
           debugShowCheckedModeBanner: false,
+          builder: AutoSizeUtil.appBuilder,
           title: "Property Feeds",
           theme: theme(),
           routes: routes,
@@ -233,7 +237,22 @@ class MyApp extends StatelessWidget {
   }
 }
 
+void setPageTitle(String title, BuildContext context) {
+  SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
+    label: title,
+    primaryColor: Theme.of(context).primaryColor.value, // This line is required
+  ));
+}
+
 class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
+  }
+}
+/*class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
     return super.createHttpClient(context)
@@ -244,7 +263,7 @@ class MyHttpOverrides extends HttpOverrides {
         return isValidHost;
       });
   }
-}
+}*/
 
 class NotificationController {
   /// Use this method to detect when the user taps on a notification or action button

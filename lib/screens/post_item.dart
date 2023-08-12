@@ -84,7 +84,7 @@ class _PostItemState extends State<PostItem> {
         ),
         // Decoration
         margin: EdgeInsets.only(left: 8, top: 5, right: 8, bottom: 5),
-        width: MediaQuery.of(context).size.width,
+        width: double.infinity,
         padding: EdgeInsets.only(top: 8),
         child: Column(
           children: <Widget>[

@@ -2,7 +2,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:property_feeds/blocs/get_posts_interests/get_post_interests_event.dart';
 import 'package:property_feeds/blocs/get_posts_interests/get_post_interests_state.dart';
 import 'package:property_feeds/models/get_post_interests_response.dart';
-import 'package:property_feeds/models/get_post_views_response.dart';
 import 'package:property_feeds/networking/api_response.dart';
 import 'package:property_feeds/services/post_service.dart';
 
@@ -17,7 +16,7 @@ class GetPostInterestsBloc
   Future<void> getPostInterests(
       GetPostInterests event, Emitter<GetPostInterestsState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_post_interests",
       "post_id": event.postId ?? ""
     };

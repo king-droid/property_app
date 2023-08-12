@@ -81,7 +81,7 @@ class CompleteProfileBloc
 
   Future<User?> updateShowMobileNumberSetting(
       String? userId, bool? showMobileNumber) async {
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "update_show_mobile_number_setting",
       "user_id": userId ?? "",

@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:http/http.dart' as http;
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:property_feeds/constants/appConstants.dart';
 import 'package:property_feeds/networking/api_response.dart';
@@ -63,24 +64,34 @@ class DioClient {
   Future<ApiResponse> post(
     String endPoint, {
     data,
-    Map<String, dynamic>? queryParameters,
+    Map<String, String>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
     try {
-      var response = await _dio?.post(
+      var client = http.Client();
+      var response = await client.post(Uri.parse(AppConstants.apiBaseUrl),
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: data as Map<String, String>);
+      //var decodedResponse = jsonDecode(utf8.decode(response.body);;
+      return ApiResponse(
+          status: Status.success,
+          code: response.statusCode ?? 0,
+          data: response.body,
+          message: "Success");
+
+      /*var response = await _dio?.post(
         endPoint,
         data: data,
         queryParameters: queryParameters,
-        options: Options(
-          headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Accept': '*/*',
-            "Content-Type": "application/json; charset=utf-8"
-          },
-        ),
+        options: options ??
+            Options(
+              headers: {
+                //"Content-Type": "application/x-www-form-urlencoded",
+              },
+            ),
         cancelToken: cancelToken,
         onSendProgress: onSendProgress,
         onReceiveProgress: onReceiveProgress,
@@ -89,8 +100,8 @@ class DioClient {
           status: Status.success,
           code: response?.statusCode ?? 0,
           data: response?.data,
-          message: response?.statusMessage ?? "");
-    } on DioError catch (error) {
+          message: response?.statusMessage ?? "");*/
+    } on Exception catch (error) {
       return NetworkExceptions().handleDioException(error);
     }
   }
@@ -183,8 +194,7 @@ class RequestInterceptor extends InterceptorsWrapper {
     //options.headers.addAll({HttpHeaders.userAgentHeader: "mobile"});
     //if (/*(_appAuth?.loginToken ?? "").isNotEmpty*/ sessionToken.isNotEmpty) {
     //options.headers.addAll({_authorization: _bearer + sessionToken});
-    options.headers
-        .addAll({'Access-Control-Allow-Origin': '*', 'Accept': '*/*'});
+    options.headers.addAll({'Access-Control-Allow-Origin': '*'});
 
     return handler.next(options); //modify your request
   }

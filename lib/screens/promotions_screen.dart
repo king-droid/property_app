@@ -63,8 +63,8 @@ class _PromotionsState extends State<Promotions> {
         if (promotions!.length <
                 (int.parse(getPromotionsBloc.totalResults ?? "0")) &&
             !isPaginationLoading) {
-          if (offset + 5 < (int.parse(getPromotionsBloc.totalResults ?? "0")))
-            offset = offset + 5;
+          if (offset + 10 < (int.parse(getPromotionsBloc.totalResults ?? "0")))
+            offset = offset + 10;
           else
             offset = offset +
                 ((int.parse(getPromotionsBloc.totalResults ?? "0")) - offset);

@@ -15,7 +15,7 @@ class GetUserPostsBloc extends Bloc<GetUserPostsEvent, GetUserPostsState> {
   Future<void> getUserPosts(
       GetUserPosts event, Emitter<GetUserPostsState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_user_posts",
       "user_id": event.userId ?? ""
     };

@@ -10,56 +10,56 @@ class PostService {
     return response;
   }
 
-  Future<ApiResponse> viewPost(Map<String, dynamic> params) async {
+  Future<ApiResponse> viewPost(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getPostComments(Map<String, dynamic> params) async {
+  Future<ApiResponse> getPostComments(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> addPostComment(Map<String, dynamic> params) async {
+  Future<ApiResponse> addPostComment(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> interestPost(Map<String, dynamic> params) async {
+  Future<ApiResponse> interestPost(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> deletePost(Map<String, dynamic> params) async {
+  Future<ApiResponse> deletePost(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getAllPosts(Map<String, dynamic> params) async {
+  Future<ApiResponse> getAllPosts(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getUserPosts(Map<String, dynamic> params) async {
+  Future<ApiResponse> getUserPosts(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
     return response;
   }
 
-  Future<ApiResponse> getPostViews(Map<String, dynamic> params) async {
+  Future<ApiResponse> getPostViews(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));

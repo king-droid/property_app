@@ -53,7 +53,7 @@ class _PromotionItemState extends State<PromotionItem> {
           ],
         ),
         margin: EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 5),
-        width: MediaQuery.of(context).size.width,
+        width: double.infinity,
         //padding: EdgeInsets.only(left: 2, right: 2, top: 8),
         child: Column(
           children: <Widget>[

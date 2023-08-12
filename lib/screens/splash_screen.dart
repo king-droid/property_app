@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:property_feeds/configs/app_routes.dart';
@@ -22,9 +20,9 @@ class SplashScreenState extends State<SplashScreen> {
   bool isDark = false;
 
   startTime() async {
-    Future.delayed(const Duration(milliseconds: 1000), () {
-      navigationPage();
-    });
+    //Future.delayed(const Duration(milliseconds: 100), () {
+    navigationPage();
+    //});
   }
 
   void navigationPage() {
@@ -64,12 +62,12 @@ class SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Container(
           color: Colors.white,
-          width: MediaQuery.of(context).size.width,
+          width: double.infinity,
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 // App Logo on screen center top
-                Container(
+                /*Container(
                   margin: const EdgeInsets.only(bottom: 1.0),
                   width: 200.0,
                   height: 200.0,
@@ -109,7 +107,7 @@ class SplashScreenState extends State<SplashScreen> {
                       ),
                     ],
                   ),
-                ),
+                ),*/
               ]),
         ),
       ),

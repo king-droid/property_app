@@ -49,7 +49,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
   Stream get addCommentLoaderState => _addCommentLoaderController.stream;
 
   getComments(String postId) async {
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_post_comments",
       "post_id": postId,
     };
@@ -78,7 +78,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
       String toUserId, String commentText, String postId) async {
     User? user = await AppUtils.getUser();
     String userId = user?.userId ?? "";
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "add_post_comment",
       "from_user_id": userId,
       "to_user_id": toUserId,
@@ -287,7 +287,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
   Future<bool> viewPost(String postId) async {
     User? user = await AppUtils.getUser();
     String userId = user?.userId ?? "";
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "view_post",
       "user_id": userId,
@@ -312,7 +312,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
       String postUserId, String postId, bool interested) async {
     User? user = await AppUtils.getUser();
     String userId = user?.userId ?? "";
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "interest_post",
       "user_id": userId,
@@ -336,7 +336,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
   }
 
   Future<bool> deletePost(String postId) async {
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "delete_post",
       "post_id": postId,

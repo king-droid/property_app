@@ -22,7 +22,7 @@ class GetProfileBloc extends Bloc<GetProfileEvent, GetProfileState> {
   Future<void> getUserProfile(
       GetProfile event, Emitter<GetProfileState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_profile",
       "user_id": event.userId ?? ""
     };
@@ -47,7 +47,7 @@ class GetProfileBloc extends Bloc<GetProfileEvent, GetProfileState> {
   }
 
   Future<UserProfile?> getProfile(String userId) async {
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_profile",
       "user_id": userId ?? ""
     };

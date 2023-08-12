@@ -56,104 +56,99 @@ class LandingScreenState extends State<LandingScreen> {
       body: SafeArea(
         child: Container(
           color: Colors.white,
-          child: Padding(
-            padding: EdgeInsets.only(
-              left: kIsWeb ? (MediaQuery.of(context).size.width / 4) : 0,
-              right: kIsWeb ? (MediaQuery.of(context).size.width / 4) : 0,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  //color: Colors.blue,
-                  margin: const EdgeInsets.only(bottom: 1.0),
-                  width: 80.0,
-                  height: 80.0,
-                  child: Image.asset('assets/logo.png', fit: BoxFit.contain),
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              /* Container(
+                //color: Colors.blue,
+                margin: const EdgeInsets.only(bottom: 1.0),
+                width: 80.0,
+                height: 80.0,
+                child: Image.asset('assets/logo.png', fit: BoxFit.contain),
+              ),
+              // App Title
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Property",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: AppColors.primaryColor,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "muli"),
+                    ),
+                    Text(
+                      " Feeds",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black54,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "muli"),
+                    ),
+                  ],
                 ),
-                // App Title
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Property",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: AppColors.primaryColor,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "muli"),
-                      ),
-                      Text(
-                        " Feeds",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.black54,
-                            fontWeight: FontWeight.bold,
-                            fontFamily: "muli"),
-                      ),
-                    ],
-                  ),
-                ),
-                Spacer(),
-                kIsWeb
-                    ? Image.asset(
-                        "assets/landing_header_image.png",
-                        width: MediaQuery.of(context).size.width,
-                        //height: 300,
-                        fit: BoxFit.fitWidth,
-                      )
-                    : Image.asset(
-                        "assets/landing_header_image.png",
-                        width: MediaQuery.of(context).size.width,
-                        fit: BoxFit.fitWidth,
-                      ),
-                const Spacer(),
-                buildLoginWithMobileButton(),
-                BlocConsumer<LoginBloc, LoginState>(
-                  builder: (context, state) {
-                    if (state is Initial) {
-                      return buildLoginWithGmailButton(false);
-                    } else if (state is Loading) {
-                      return buildLoginWithGmailButton(true);
-                    } else {
-                      return buildLoginWithGmailButton(false);
+              ),*/
+              Spacer(),
+              kIsWeb
+                  ? Image.asset(
+                      "assets/landing_header_image.png",
+                      width: double.infinity,
+                      //height: 300,
+                      fit: BoxFit.fitWidth,
+                    )
+                  : Image.asset(
+                      "assets/landing_header_image.png",
+                      width: double.infinity,
+                      fit: BoxFit.fitWidth,
+                    ),
+              const Spacer(),
+              buildLoginWithMobileButton(),
+              BlocConsumer<LoginBloc, LoginState>(
+                builder: (context, state) {
+                  if (state is Initial) {
+                    return buildLoginWithGmailButton(false);
+                  } else if (state is Loading) {
+                    return buildLoginWithGmailButton(true);
+                  } else {
+                    return buildLoginWithGmailButton(false);
+                  }
+                },
+                listener: (context, state) async {
+                  if (state is LoggedInWithEmail) {
+                    if (state.result ?? false) {
+                      Provider.of<UserProvider>(context, listen: false)
+                          .createUser(state.user);
+                      await AppUtils.saveUser(state.user);
+                      Navigator.pushReplacementNamed(
+                          context, AppRoutes.homeScreen);
                     }
-                  },
-                  listener: (context, state) async {
-                    if (state is LoggedInWithEmail) {
-                      if (state.result ?? false) {
-                        Provider.of<UserProvider>(context, listen: false)
-                            .createUser(state.user);
-                        await AppUtils.saveUser(state.user);
-                        Navigator.pushReplacementNamed(
-                            context, AppRoutes.homeScreen);
-                      }
-                    } else if (state is ProfileInComplete) {
-                      Navigator.pushNamed(
-                          context, AppRoutes.completeProfileScreen,
-                          arguments: state.user);
-                    } else if (state is Error) {
-                      AppUtils.showToast(state.error ?? "");
-                    }
-                  },
+                  } else if (state is ProfileInComplete) {
+                    Navigator.pushNamed(
+                        context, AppRoutes.completeProfileScreen,
+                        arguments: state.user);
+                  } else if (state is Error) {
+                    AppUtils.showToast(state.error ?? "");
+                  }
+                },
+              ),
+              const SizedBox(height: 50),
+              Text(
+                "Don't want to create account?",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Muli",
+                  color: Colors.black87.withOpacity(0.5),
+                  fontSize: 16,
                 ),
-                const SizedBox(height: 50),
-                Text(
-                  "Don't want to create account?",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontFamily: "Muli",
-                    color: Colors.black87.withOpacity(0.5),
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 15),
-                buildSkipButton(),
-                const SizedBox(height: 25),
-              ],
-            ),
+              ),
+              const SizedBox(height: 15),
+              buildSkipButton(),
+              const SizedBox(height: 25),
+            ],
           ),
         ),
       ),

@@ -17,11 +17,11 @@ class GetPromotionsBloc extends Bloc<GetPromotionsEvent, GetPromotionsState> {
 
   Future<List<Promotion>?> getAllPromotions(bool isRefresh, String? userId,
       String? city, int? offset, bool? isPagination) async {
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_all_promotions",
       "user_id": userId ?? "",
-      "city": city?.trim(),
-      "offset": offset ?? 0,
+      "city": city?.trim() ?? "",
+      "offset": "${offset ?? "0"}",
     };
     if (isPagination == false) {
       allPromotions!.clear();

@@ -663,9 +663,7 @@ class OtpScreenState extends State<OtpScreen> {
                         : const Color(0xffb8b8b8),
                     //padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                     textStyle: const TextStyle(
-                        fontSize: 16,
-                        color: AppColors.buttonTextColorWhite,
-                        fontFamily: "Muli"),
+                        fontSize: 16, color: AppColors.buttonTextColorWhite),
                     shape: const StadiumBorder()),
                 child: const Text("Verify OTP",
                     style: const TextStyle(

@@ -3,7 +3,6 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:property_feeds/blocs/get_posts/get_posts_bloc.dart';
-import 'package:property_feeds/components/custom_icon_button.dart';
 import 'package:property_feeds/configs/app_routes.dart';
 import 'package:property_feeds/constants/appColors.dart';
 import 'package:property_feeds/models/post.dart';
@@ -81,20 +80,20 @@ class _FeedsState extends State<Feeds> {
 
   @override
   void initState() {
-    DefaultAssetBundle.of(context)
-        .loadString("assets/cities.txt")
-        .then((value) {
-      value = value.replaceAll("\n", "");
-      allCities = value.split(',');
-    });
     SchedulerBinding.instance.addPostFrameCallback((_) {
+      DefaultAssetBundle.of(context)
+          .loadString("assets/cities.txt")
+          .then((value) {
+        value = value.replaceAll("\n", "");
+        allCities = value.split(',');
+      });
       selectedCity = user?.defaultCity ?? "";
-      /*  Future.delayed(Duration(seconds: 1)).then((value) {
+      Future.delayed(Duration(seconds: 1)).then((value) {
         if (user?.accountType == "guest_account" &&
             (selectedCity ?? "").isEmpty) {
           _showSearchCityDialog();
         }
-      });*/
+      });
 
       setState(() {
         cities = (user?.interestedCities ?? "").trim().isNotEmpty
@@ -109,8 +108,8 @@ class _FeedsState extends State<Feeds> {
         //print("next page...");
         if (posts!.length < (int.parse(getPostsBloc.totalResults ?? "0")) &&
             !isPaginationLoading) {
-          if (offset + 5 < (int.parse(getPostsBloc.totalResults ?? "0")))
-            offset = offset + 5;
+          if (offset + 10 < (int.parse(getPostsBloc.totalResults ?? "0")))
+            offset = offset + 10;
           else
             offset = offset +
                 ((int.parse(getPostsBloc.totalResults ?? "0")) - offset);
@@ -393,7 +392,20 @@ class _FeedsState extends State<Feeds> {
                   ),
                 )*/
               : /*kIsWeb
-                  ? _buildWebPostsListViewWidget()
+                  ? NotificationListener<OverscrollIndicatorNotification>(
+                      onNotification: (overscroll) {
+                        overscroll.disallowIndicator();
+                        return true;
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          _buildResultsCountWidget(),
+                          Expanded(
+                              flex: 1, child: _buildWebPostsListViewWidget())
+                        ],
+                      ),
+                    )
                   :*/
               NotificationListener<OverscrollIndicatorNotification>(
                   onNotification: (overscroll) {
@@ -459,9 +471,11 @@ class _FeedsState extends State<Feeds> {
   _buildWebPostsListViewWidget() {
     return MasonryGridView.count(
       itemCount: (posts ?? []).length,
-      crossAxisCount: 3,
+      crossAxisCount: 1,
       mainAxisSpacing: 4,
       crossAxisSpacing: 4,
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) {
         Post post = (posts ?? [])[index];
         return GridTile(
@@ -492,7 +506,7 @@ class _FeedsState extends State<Feeds> {
           ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            padding: EdgeInsets.symmetric(horizontal: 0),
+            //padding: EdgeInsets.symmetric(horizontal: 0),
             itemCount: (posts ?? []).length,
             itemBuilder: (BuildContext context, int index) {
               Post post = (posts ?? [])[index];
@@ -739,7 +753,64 @@ class _FeedsState extends State<Feeds> {
 
   _buildSuggestionBuilder2() {
     selectedCity = user?.defaultCity;
-    return Container(
+    return StatefulBuilder(builder: (context, setState) {
+      return Padding(
+        padding: const EdgeInsets.only(left: 15.0, right: 15, bottom: 10),
+        child: Align(
+          alignment: Alignment.topLeft,
+          child: Wrap(
+            direction: Axis.horizontal,
+            alignment: WrapAlignment.start,
+            children: List.generate(
+              (allCities ?? []).length,
+              (index) {
+                return GestureDetector(
+                  onTap: () async {
+                    selectedCity = allCities[index] ?? "";
+                    if ((selectedCity ?? "").isEmpty) {
+                      AppUtils.showToast(
+                          "Select at least one city to continue");
+                      return;
+                    }
+                    user?.defaultCity = selectedCity;
+                    Provider.of<UserProvider>(context, listen: false)
+                        .updateUser(user);
+                    await AppUtils.saveUser(user);
+                    getPosts();
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                        left: 3, right: 3, top: 5, bottom: 5),
+                    decoration: BoxDecoration(
+                      color: selectedCity == (allCities[index] ?? "")
+                          ? AppColors.primaryColor
+                          : AppColors.white,
+                      border: Border.all(
+                          width: 1,
+                          color: selectedCity == (allCities[index] ?? "")
+                              ? AppColors.primaryColor
+                              : AppColors.titleColorLight),
+                      borderRadius: BorderRadius.all(Radius.circular(25)),
+                    ),
+                    padding: const EdgeInsets.only(
+                        left: 7, right: 7, top: 4, bottom: 4),
+                    child: Text(
+                      allCities![index] ?? "",
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                          color: selectedCity == (allCities[index] ?? "")
+                              ? AppColors.white
+                              : AppColors.titleColorLight,
+                          fontSize: 13),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
+      );
+    }); /*Container(
       margin: const EdgeInsets.only(left: 30, right: 30.0, top: 0.0),
       child: ChipsInput<String>(
         maxChips: 1,
@@ -799,9 +870,9 @@ class _FeedsState extends State<Feeds> {
               selectedCity = "";
               //selectedCities.remove(city.toString());
               state.deleteChip(city);
-              /*if (selectedCities.isNotEmpty) {
+              */ /*if (selectedCities.isNotEmpty) {
                 isCitiesFieldValid.value = true;
-              }*/
+              }*/ /*
             },
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
           );
@@ -821,9 +892,9 @@ class _FeedsState extends State<Feeds> {
                   selectedCity = city.toString();
                   //selectedCities.add(city.toString());
                   state.selectSuggestion(city);
-                  /*if (selectedCities.isNotEmpty) {
+                  */ /*if (selectedCities.isNotEmpty) {
                     isCitiesFieldValid.value = true;
-                  }*/
+                  }*/ /*
                 },
               ),
               Container(
@@ -834,7 +905,7 @@ class _FeedsState extends State<Feeds> {
           );
         },
       ),
-    );
+    );*/
   }
 
   /*_showGuestCitySelectDialog() {
@@ -971,7 +1042,7 @@ class _FeedsState extends State<Feeds> {
                   .copyWith(color: Colors.black54, fontSize: 12),
             ),
           ),
-          (user?.accountType == "guest_account")
+          /* (user?.accountType == "guest_account")
               ? Container(
                   margin: const EdgeInsets.only(
                       top: 15, left: 40, right: 40, bottom: 10),
@@ -999,7 +1070,7 @@ class _FeedsState extends State<Feeds> {
                         Navigator.pop(context);
                       }),
                 )
-              : Container(),
+              : Container(),*/
           const SizedBox(height: 5),
         ],
       ),
@@ -1024,19 +1095,23 @@ class _FeedsState extends State<Feeds> {
                 return (selectedCity ?? "").isEmpty ? false : true;
               },
               child: StatefulBuilder(builder: (context, setState) {
-                return Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    _buildCitySelectionBottomSheetWidget((String selectedCity) {
-                      user?.defaultCity = selectedCity;
-                      Provider.of<UserProvider>(context, listen: false)
-                          .updateUser(user);
-                      getPosts();
-                    }),
-                    //Navigator.pop(context);
-                    const SizedBox(height: 15),
-                  ],
-                );
+                return Container(
+                    margin:
+                        const EdgeInsets.only(left: 15, right: 15.0, top: 10.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        _buildCitySelectionBottomSheetWidget(
+                            (String selectedCity) {
+                          user?.defaultCity = selectedCity;
+                          Provider.of<UserProvider>(context, listen: false)
+                              .updateUser(user);
+                          getPosts();
+                        }),
+                        //Navigator.pop(context);
+                        const SizedBox(height: 15),
+                      ],
+                    ));
               }),
             ),
           );

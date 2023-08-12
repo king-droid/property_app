@@ -58,7 +58,7 @@ class NetworkExceptions {
               errorMessage = "Bad response";
               break;
             case DioErrorType.connectionError:
-              errorMessage = "Connection error";
+              errorMessage = error.message ?? "";
               break;
           }
         } else if (error is SocketException) {

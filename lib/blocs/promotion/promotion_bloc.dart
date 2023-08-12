@@ -51,7 +51,7 @@ class PromotionBloc extends Bloc<PromotionEvent, PromotionState> {
   Stream get addCommentLoaderState => _addCommentLoaderController.stream;
 
   getComments(String promotionId) async {
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_promotion_comments",
       "promotion_id": promotionId,
     };
@@ -80,7 +80,7 @@ class PromotionBloc extends Bloc<PromotionEvent, PromotionState> {
       String toUserId, String commentText, String promotionId) async {
     User? user = await AppUtils.getUser();
     String fromUserId = user?.userId ?? "";
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "add_promotion_comment",
       "from_user_id": fromUserId,
       "to_user_id": toUserId,
@@ -260,7 +260,7 @@ class PromotionBloc extends Bloc<PromotionEvent, PromotionState> {
   Future<bool> viewPromotion(String promotionId, String userId) async {
     User? user = await AppUtils.getUser();
     String loggedInUserId = user?.userId ?? "";
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "view_promotion",
       "user_id": userId,
@@ -289,7 +289,7 @@ class PromotionBloc extends Bloc<PromotionEvent, PromotionState> {
       String promotionUserId, String promotionId, bool interested) async {
     User? user = await AppUtils.getUser();
     String userId = user?.userId ?? "";
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "interest_promotion",
       "user_id": userId,
@@ -313,7 +313,7 @@ class PromotionBloc extends Bloc<PromotionEvent, PromotionState> {
   }
 
   Future<bool> deletePromotion(String promotionId) async {
-    Map<String, dynamic> body;
+    Map<String, String> body;
     body = {
       "method": "delete_promotion",
       "promotion_id": promotionId,

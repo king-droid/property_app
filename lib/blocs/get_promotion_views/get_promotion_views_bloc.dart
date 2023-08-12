@@ -16,7 +16,7 @@ class GetPromotionViewsBloc
   Future<void> getPromotionViews(
       GetPromotionViews event, Emitter<GetPromotionViewsState> emit) async {
     emit(Loading());
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "get_promotion_views",
       "promotion_id": event.promotionId ?? ""
     };

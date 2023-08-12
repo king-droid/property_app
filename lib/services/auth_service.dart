@@ -15,7 +15,7 @@ class AuthService {
     return response;
   }
 
-  Future<ApiResponse> mobileLogin(Map<String, dynamic> params) async {
+  Future<ApiResponse> mobileLogin(Map<String, String> params) async {
     final response = await DioClient().init().post("",
         data: params,
         options: Options(contentType: "application/x-www-form-urlencoded"));
