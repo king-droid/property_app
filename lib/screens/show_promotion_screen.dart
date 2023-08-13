@@ -626,7 +626,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                   /*"${promotion?.interestsCount ?? 0} Interested",*/
                   (promotion?.userInterestStatus ?? false)
                       ? "Interest sent"
-                      : "I am interested",
+                      : "Interested",
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       color: (promotion?.userInterestStatus ?? false)
                           ? AppColors.primaryColor
@@ -1309,7 +1309,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                       },
                                       child: CircleAvatar(
                                         backgroundColor: AppColors.primaryColor
-                                            .withOpacity(0.7),
+                                            .withOpacity(0.5),
                                         radius: 22,
                                         child: ClipOval(
                                           child: Icon(

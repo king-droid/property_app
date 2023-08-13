@@ -1608,7 +1608,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                                 },
                                 child: CircleAvatar(
                                   backgroundColor:
-                                      AppColors.primaryColor.withOpacity(0.7),
+                                      AppColors.primaryColor.withOpacity(0.5),
                                   radius: 22,
                                   child: ClipOval(
                                     child: Icon(
@@ -1628,7 +1628,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                           },
                           child: CircleAvatar(
                             backgroundColor:
-                                AppColors.primaryColor.withOpacity(0.7),
+                                AppColors.primaryColor.withOpacity(0.5),
                             radius: 22,
                             child: ClipOval(
                               child: Icon(
