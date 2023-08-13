@@ -293,7 +293,7 @@ class OtpScreenState extends State<OtpScreen> {
           margin: const EdgeInsets.only(left: 35.0, right: 35.0, top: 10.0),
           alignment: Alignment.center,
           decoration: const BoxDecoration(
-              color: AppColors.textFieldBgColorLight,
+              color: AppColors.bgColor,
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(10.0),
                   topRight: Radius.circular(10.0),
