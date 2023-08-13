@@ -172,7 +172,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
           ],
         ),
       ),
-      height: 50,
+      height: 57,
       child: Row(
         children: [
           Align(
@@ -187,7 +187,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                 }
               },
               child: Container(
-                margin: EdgeInsets.all(5),
+                margin: EdgeInsets.all(8),
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: AppColors.overlayButtonColor,
@@ -214,7 +214,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                     showPostOptions();
                   },
                   child: Container(
-                    margin: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(8),
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: AppColors.overlayButtonColor,
@@ -1586,7 +1586,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                                       },
                                       child: CircleAvatar(
                                         backgroundColor: AppColors.primaryColor
-                                            .withOpacity(0.7),
+                                            .withOpacity(0.9),
                                         radius: 22,
                                         child: ClipOval(
                                           child: Icon(
@@ -1608,7 +1608,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                                 },
                                 child: CircleAvatar(
                                   backgroundColor:
-                                      AppColors.primaryColor.withOpacity(0.5),
+                                      AppColors.primaryColor.withOpacity(0.9),
                                   radius: 22,
                                   child: ClipOval(
                                     child: Icon(
@@ -1628,7 +1628,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                           },
                           child: CircleAvatar(
                             backgroundColor:
-                                AppColors.primaryColor.withOpacity(0.5),
+                                AppColors.primaryColor.withOpacity(0.9),
                             radius: 22,
                             child: ClipOval(
                               child: Icon(

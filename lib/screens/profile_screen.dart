@@ -62,6 +62,7 @@ class ProfileScreenState extends State<ProfileScreen> {
     if (user == null)
       user = Provider.of<UserProvider>(context, listen: false).userData;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
@@ -307,7 +308,7 @@ class ProfileScreenState extends State<ProfileScreen> {
 
   Widget profileDetailsWidget() {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: double.infinity,
       alignment: Alignment.center,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -533,7 +534,7 @@ class ProfileScreenState extends State<ProfileScreen> {
         Column(
           children: <Widget>[
             Container(
-              width: MediaQuery.of(context).size.width,
+              width: double.infinity,
               color: AppColors.white,
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),

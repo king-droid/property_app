@@ -11,7 +11,7 @@ class CommonBloc {
     User? user = await AppUtils.getUser();
     String userId = user?.userId ?? "";
 
-    Map<String, dynamic> params = {
+    Map<String, String> params = {
       "method": "update_device_token",
       //"device_type": Platform.isAndroid ? "android" : "ios",
       //"sender": userType,

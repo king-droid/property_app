@@ -191,7 +191,7 @@ class _FeedsState extends State<Feeds> {
             child: Container(
               alignment: Alignment.center,
               margin:
-                  const EdgeInsets.only(left: 1, right: 1, top: 5, bottom: 5),
+                  const EdgeInsets.only(left: 1, right: 1, top: 8, bottom: 2),
               padding: const EdgeInsets.only(left: 10),
               height: 42,
               decoration: BoxDecoration(

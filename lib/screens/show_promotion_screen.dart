@@ -334,7 +334,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                   }
                                 },
                                 child: Container(
-                                  margin: EdgeInsets.all(5),
+                                  margin: EdgeInsets.all(8),
                                   padding: EdgeInsets.all(10),
                                   decoration: BoxDecoration(
                                     color: AppColors.overlayButtonColor,
@@ -441,7 +441,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                         trailing: isLoading
                             ? Container(
                                 margin: const EdgeInsets.only(
-                                    left: 5.0, right: 5.0, top: 1.0),
+                                    left: 1.0, right: 5.0, top: 1.0),
                                 width: 20,
                                 height: 20,
                                 child: CircularProgressIndicator(
@@ -1277,7 +1277,8 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                   );
                                 } else {
                                   return Container(
-                                    margin: EdgeInsets.all(5),
+                                    margin: EdgeInsets.only(
+                                        left: 5, right: 5, bottom: 8, top: 0),
                                     child: GestureDetector(
                                       onTap: () {
                                         promotionBloc?.handleLoader(true);
@@ -1309,7 +1310,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                       },
                                       child: CircleAvatar(
                                         backgroundColor: AppColors.primaryColor
-                                            .withOpacity(0.5),
+                                            .withOpacity(0.9),
                                         radius: 22,
                                         child: ClipOval(
                                           child: Icon(
@@ -1324,14 +1325,15 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                 }
                               })
                           : Container(
-                              margin: EdgeInsets.all(5),
+                              margin: EdgeInsets.only(
+                                  left: 5, right: 5, bottom: 8, top: 0),
                               child: GestureDetector(
                                 onTap: () {
                                   null;
                                 },
                                 child: CircleAvatar(
                                   backgroundColor:
-                                      AppColors.primaryColor.withOpacity(0.7),
+                                      AppColors.primaryColor.withOpacity(0.9),
                                   radius: 22,
                                   child: ClipOval(
                                     child: Icon(
@@ -1345,6 +1347,8 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                             );
                     } else {
                       return Container(
+                        margin: EdgeInsets.only(
+                            left: 5, right: 5, bottom: 8, top: 0),
                         child: GestureDetector(
                           onTap: () {
                             null;

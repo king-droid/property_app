@@ -163,36 +163,42 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
           onTap: () {
             FocusScope.of(context).requestFocus(FocusNode());
           },
-          child: SingleChildScrollView(
-            //reverse: true,
-            controller: scrollController,
-            child: Padding(
-              padding: EdgeInsets.only(bottom: 0),
-              child: Container(
-                //height: 500,
-                color: Colors.white10,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    //const SizedBox(height: 20),
-                    // _buildHeadingWidget(),
-                    //_buildProfilePictureWidget(),
-                    _buildProfilePictureWidgetEdit(),
-                    _buildNameTextField(),
-                    _buildMobileTextField(),
-                    _userTypeLabelWidget(),
-                    editUserType ? _userTypeSelectionWidget() : Container(),
-                    _buildCompanyNameTextField(),
-                    _buildAboutTextField(),
-                    const SizedBox(height: 10),
-                    _buildLocationTextField(),
-                    _buildCitySelectTextField(),
-                    const SizedBox(height: 50),
-                    _buildSubmitButtonWidget(),
-                    const SizedBox(height: 25),
-                  ],
+          child: NotificationListener<OverscrollIndicatorNotification>(
+            onNotification: (overscroll) {
+              overscroll.disallowIndicator();
+              return true;
+            },
+            child: SingleChildScrollView(
+              //reverse: true,
+              controller: scrollController,
+              child: Padding(
+                padding: EdgeInsets.only(bottom: 0),
+                child: Container(
+                  //height: 500,
+                  color: Colors.white10,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      //const SizedBox(height: 20),
+                      // _buildHeadingWidget(),
+                      //_buildProfilePictureWidget(),
+                      _buildProfilePictureWidgetEdit(),
+                      _buildNameTextField(),
+                      _buildMobileTextField(),
+                      _userTypeLabelWidget(),
+                      editUserType ? _userTypeSelectionWidget() : Container(),
+                      _buildCompanyNameTextField(),
+                      _buildAboutTextField(),
+                      const SizedBox(height: 10),
+                      _buildLocationTextField(),
+                      _buildCitySelectTextField(),
+                      const SizedBox(height: 50),
+                      _buildSubmitButtonWidget(),
+                      const SizedBox(height: 25),
+                    ],
+                  ),
                 ),
               ),
             ),

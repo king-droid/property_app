@@ -82,7 +82,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
                   Navigator.pop(context);
                 },
                 child: Container(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.all(8),
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: AppColors.overlayButtonColor,
@@ -243,7 +243,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
 
   Widget profileDetailsWidget() {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: double.infinity,
       alignment: Alignment.center,
       margin: EdgeInsets.only(left: 10, top: 2),
       child: Column(
@@ -382,7 +382,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
                     )
                   : Container(),
           Container(
-            width: MediaQuery.of(context).size.width - 100,
+            width: double.infinity,
             child: Align(
               alignment: Alignment.center,
               child: Wrap(
@@ -567,11 +567,11 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Container(
-          width: MediaQuery.of(context).size.width,
+          width: double.infinity,
           padding: EdgeInsets.only(left: 0, top: 1, bottom: 5),
           child: Container(
             //color: AppColors.bgColorLight,
-            margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 10),
+            margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 12),
             //padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
