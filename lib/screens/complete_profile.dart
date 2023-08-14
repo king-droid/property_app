@@ -1416,6 +1416,7 @@ class CompleteProfileScreenState extends State<CompleteProfileScreen> {
   Future<void> goToHomeScreen(BuildContext context) async {
     BlocProvider.of<CompleteProfileBloc>(context).add(UpdateProfile(
         "",
+        null,
         user?.userId ?? "",
         nameController.text,
         mobileController.text,

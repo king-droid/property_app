@@ -1,5 +1,6 @@
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:property_feeds/blocs/common_bloc.dart';
@@ -195,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _getDeviceTokenAndUpdateToServer();
 
     AwesomeNotifications().isNotificationAllowed().then((isAllowed) {
-      if (!isAllowed) {
+      if (!isAllowed && !kIsWeb) {
         AwesomeNotifications().requestPermissionToSendNotifications();
       }
     });

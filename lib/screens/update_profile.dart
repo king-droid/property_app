@@ -1,5 +1,8 @@
+import 'dart:html' as html;
 import 'dart:io';
 
+import 'package:file_picker/file_picker.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -74,6 +77,8 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
   double? _distanceToField;
   User? user;
   File? _image;
+  PlatformFile? file;
+  Uint8List? bytes;
 
   @override
   void didChangeDependencies() {
@@ -179,7 +184,7 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       //const SizedBox(height: 20),
                       // _buildHeadingWidget(),
@@ -304,10 +309,10 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
           CircleAvatar(
             backgroundColor: AppColors.semiPrimary,
             radius: 45,
-            child: _image != null
+            child: bytes != null
                 ? ClipOval(
-                    child: Image.file(
-                      _image!,
+                    child: Image.memory(
+                      bytes!,
                       width: 90,
                       height: 90,
                       fit: BoxFit.cover,
@@ -332,11 +337,16 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
                           ),
                         ),
                       )
-                    : Container(
-                        child: Icon(
-                        Icons.photo_camera,
-                        color: AppColors.primaryColor,
-                      )),
+                    : ClipOval(
+                        child: Container(
+                          width: 90,
+                          height: 90,
+                          child: CircleAvatar(
+                              radius: 40,
+                              backgroundImage:
+                                  AssetImage('assets/default_profile_pic.png')),
+                        ),
+                      ),
           ),
           Positioned(
             right: 0.0,
@@ -1770,6 +1780,7 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
   Future<void> goToHomeScreen(BuildContext context) async {
     BlocProvider.of<CompleteProfileBloc>(context).add(UpdateProfile(
         _image?.path ?? "",
+        bytes,
         user?.userId ?? "",
         nameController.text,
         mobileController.text,
@@ -1842,60 +1853,93 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
   }
 
   Future getImageFromGallery() async {
-    XFile? image = await ImagePicker().pickImage(source: ImageSource.gallery);
-    _image = File(image?.path ?? "");
-    File? croppedFile = await ImageCropper().cropImage(
-        sourcePath: _image?.path ?? "",
-        aspectRatioPresets: Platform.isAndroid
-            ? [
-                CropAspectRatioPreset.square,
-                CropAspectRatioPreset.ratio3x2,
-                CropAspectRatioPreset.original,
-                CropAspectRatioPreset.ratio4x3,
-                CropAspectRatioPreset.ratio16x9
-              ]
-            : [
-                CropAspectRatioPreset.original,
-                CropAspectRatioPreset.square,
-                CropAspectRatioPreset.ratio3x2,
-                CropAspectRatioPreset.ratio4x3,
-                CropAspectRatioPreset.ratio5x3,
-                CropAspectRatioPreset.ratio5x4,
-                CropAspectRatioPreset.ratio7x5,
-                CropAspectRatioPreset.ratio16x9
-              ],
-        androidUiSettings: AndroidUiSettings(
-            toolbarTitle: '',
-            toolbarColor: AppColors.primaryColor,
-            toolbarWidgetColor: Colors.white,
-            initAspectRatio: CropAspectRatioPreset.original,
-            lockAspectRatio: false),
-        iosUiSettings: IOSUiSettings(
-          title: '',
-        ));
+    if (kIsWeb) {
+      /* FilePickerResult? result = await FilePicker.platform.pickFiles(
+        withReadStream: true,
+        type: FileType.custom,
+        withData: true,
+        allowedExtensions: ['png', 'jpeg', 'jpg'],
+      );
+      if (result != null) {
+        file = result.files.single;
+        file!.readStream!.listen((event) {
 
-    if (croppedFile != null) {
-      _clearImage();
-      final dir = await getTemporaryDirectory();
-      final targetPath = dir.absolute.path + "/temp.jpg";
-      var result;
-      try {
-        result = await FlutterImageCompress.compressAndGetFile(
-          croppedFile.absolute.path,
-          targetPath,
-          minWidth: 320,
-          minHeight: 480,
-          quality: 90,
-        );
-      } on UnsupportedError catch (e) {
-        print(e);
-        result = croppedFile;
-      }
-      setState(() {
-        imageCache.clear();
-        _image = result;
-        //_buttonActive = true;
+        });*/
+
+      final input = html.FileUploadInputElement()..accept = 'image/*';
+      input.onChange.listen((event) {
+        if ((input.files ?? []).isNotEmpty) {
+          //html.Url.createObjectUrl(input.files!.first);
+          html.File webFile = input.files!.first;
+          var r = new html.FileReader();
+          r.readAsArrayBuffer(webFile);
+          r.onLoadEnd.listen((e) async {
+            bytes = r.result as Uint8List?;
+            setState(() {
+              imageCache.clear();
+            });
+          });
+        }
       });
+      input.click();
+    } else {
+      XFile? image = await ImagePicker().pickImage(source: ImageSource.gallery);
+      _image = File(image?.path ?? "");
+      //bytes = await _image!.readAsBytes();
+      File? croppedFile = await ImageCropper().cropImage(
+          sourcePath: _image?.path ?? "",
+          aspectRatioPresets: Platform.isAndroid
+              ? [
+                  CropAspectRatioPreset.square,
+                  CropAspectRatioPreset.ratio3x2,
+                  CropAspectRatioPreset.original,
+                  CropAspectRatioPreset.ratio4x3,
+                  CropAspectRatioPreset.ratio16x9
+                ]
+              : [
+                  CropAspectRatioPreset.original,
+                  CropAspectRatioPreset.square,
+                  CropAspectRatioPreset.ratio3x2,
+                  CropAspectRatioPreset.ratio4x3,
+                  CropAspectRatioPreset.ratio5x3,
+                  CropAspectRatioPreset.ratio5x4,
+                  CropAspectRatioPreset.ratio7x5,
+                  CropAspectRatioPreset.ratio16x9
+                ],
+          androidUiSettings: AndroidUiSettings(
+              toolbarTitle: '',
+              toolbarColor: AppColors.primaryColor,
+              toolbarWidgetColor: Colors.white,
+              initAspectRatio: CropAspectRatioPreset.original,
+              lockAspectRatio: false),
+          iosUiSettings: IOSUiSettings(
+            title: '',
+          ));
+
+      if (croppedFile != null) {
+        _clearImage();
+        final dir = await getTemporaryDirectory();
+        final targetPath = dir.absolute.path + "/temp.jpg";
+        var result;
+        try {
+          result = await FlutterImageCompress.compressAndGetFile(
+            croppedFile.absolute.path,
+            targetPath,
+            minWidth: 320,
+            minHeight: 480,
+            quality: 90,
+          );
+        } on UnsupportedError catch (e) {
+          print(e);
+          result = croppedFile;
+        }
+        _image = result;
+        //bytes = _image!.readAsBytesSync();
+        setState(() {
+          imageCache.clear();
+          //_buttonActive = true;
+        });
+      }
     }
   }
 

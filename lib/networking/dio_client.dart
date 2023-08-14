@@ -7,9 +7,6 @@ import 'package:property_feeds/networking/api_response.dart';
 import 'package:property_feeds/networking/network_exceptions.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 
-const _authorization = "idtoken"; //"Authorization";
-const _bearer = ""; //"Bearer ";
-
 class DioClient {
   Dio? _dio;
 
@@ -76,6 +73,63 @@ class DioClient {
           headers: {"Content-Type": "application/x-www-form-urlencoded"},
           body: data as Map<String, String>);
       //var decodedResponse = jsonDecode(utf8.decode(response.body);;
+      return ApiResponse(
+          status: Status.success,
+          code: response.statusCode ?? 0,
+          data: response.body,
+          message: "Success");
+
+      /*var response = await _dio?.post(
+        endPoint,
+        data: data,
+        queryParameters: queryParameters,
+        options: options ??
+            Options(
+              headers: {
+                //"Content-Type": "application/x-www-form-urlencoded",
+              },
+            ),
+        cancelToken: cancelToken,
+        onSendProgress: onSendProgress,
+        onReceiveProgress: onReceiveProgress,
+      );
+      return ApiResponse(
+          status: Status.success,
+          code: response?.statusCode ?? 0,
+          data: response?.data,
+          message: response?.statusMessage ?? "");*/
+    } on Exception catch (error) {
+      return NetworkExceptions().handleDioException(error);
+    }
+  }
+
+  /// Handle POST API calls
+  Future<ApiResponse> postMultiPartRequest(
+    String endPoint, {
+    data,
+    Map<String, String>? queryParameters,
+    List<http.MultipartFile>? multipartFiles,
+    Options? options,
+    CancelToken? cancelToken,
+    ProgressCallback? onSendProgress,
+    ProgressCallback? onReceiveProgress,
+  }) async {
+    try {
+      final uri = Uri.parse(AppConstants.apiBaseUrl);
+      var request = new http.MultipartRequest('POST', uri);
+      for (http.MultipartFile file in multipartFiles ?? []) {
+        request.files.add(file);
+      }
+      request.fields.addAll(data);
+      final streamedResponse = await request.send();
+
+      /*var client = http.Client();
+      var response = await client.post(Uri.parse(AppConstants.apiBaseUrl),
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: data);*/
+      //var decodedResponse = jsonDecode(utf8.decode(response.body);;
+      final response = await http.Response.fromStream(streamedResponse);
+
       return ApiResponse(
           status: Status.success,
           code: response.statusCode ?? 0,

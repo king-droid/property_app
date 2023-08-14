@@ -1,5 +1,8 @@
-import 'package:dio/dio.dart';
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:http/http.dart' as http;
 import 'package:property_feeds/blocs/complete_profile/complete_profile_event.dart';
 import 'package:property_feeds/blocs/complete_profile/complete_profile_state.dart';
 import 'package:property_feeds/models/profile_response.dart';
@@ -20,9 +23,12 @@ class CompleteProfileBloc
   Future<void> updateProfile(
       UpdateProfile event, Emitter<CompleteProfileState> emit) async {
     emit(Loading());
-    Map<String, dynamic> body;
+    Map<String, String> body;
 
-    if ((event.profile_pic ?? "").isEmpty) {
+    if ((event.profile_pic_mobile ?? "")
+            .isEmpty /*&&
+        event.profile_pic_web == null*/
+        ) {
       body = {
         "method": "update_profile",
         "profile_pic": "",
@@ -48,18 +54,38 @@ class CompleteProfileBloc
         "default_city": event.defaultCity ?? "",
         "user_type": event.userType ?? "",
         "company_name": event.companyName ?? "",
-        "file": event.profile_pic != null
+        /*"file": event.profile_pic != null
             ? await MultipartFile.fromFile(event.profile_pic ?? "",
-                filename: event.profile_pic ?? "".split('/').last)
-            : null,
+            filename: event.profile_pic ?? ""
+                .split('/')
+                .last)
+            : null,*/
         "about_user": event.about ?? "",
         "show_mobile_number": event.showMobileNumber ?? "true"
       };
     }
 
-    FormData formData = new FormData.fromMap(body);
+    List<http.MultipartFile> multipartFiles = [];
+    if (kIsWeb) {
+      final httpImage = http.MultipartFile.fromBytes('file', event.bytes!,
+          filename: "profile_pic.png");
+      multipartFiles.add(httpImage);
+    } else {
+      final httpImage = http.MultipartFile.fromBytes(
+          'file', File(event.profile_pic_mobile!).readAsBytesSync(),
+          filename: "profile_pic.png");
+      multipartFiles.add(httpImage);
+      /* if ((event.profile_pic_mobile ?? "").isNotEmpty) {
+        final httpImage = http.MultipartFile.fromPath(
+            "file", event.profile_pic_mobile ?? "",
+            filename: event.profile_pic_mobile!.split('/').last);
+        multipartFiles.add(httpImage);
+      }*/
+    }
 
-    final apiResponse = await authService.updateProfile(formData);
+    //FormData formData = new FormData.fromMap(body);
+
+    final apiResponse = await authService.updateProfile(body, multipartFiles);
     if (apiResponse.status == Status.success) {
       ProfileResponse profileResponse =
           ProfileResponse.fromJson(apiResponse.data);

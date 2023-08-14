@@ -71,6 +71,15 @@ void main() async {
   HttpOverrides.global = new MyHttpOverrides();
   WidgetsFlutterBinding.ensureInitialized();
 
+  await handleFirebase();
+  AutoSizeUtil.setStandard(360, isAutoTextSize: true);
+
+  runApp(MultiProvider(
+      providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
+      child: const MyApp()));
+}
+
+Future<void> handleFirebase() async {
   /// Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
@@ -96,11 +105,6 @@ void main() async {
     AppStorage.setString("device_token", fcmToken);
     saveDeviceTokenToServer(fcmToken);
   }).onError((err) {});
-  AutoSizeUtil.setStandard(360, isAutoTextSize: true);
-
-  runApp(MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
-      child: const MyApp()));
 }
 
 Future<void> handleFirebaseMessages() async {
@@ -162,7 +166,7 @@ saveDeviceTokenToServer(String? fcmToken) async {
 
 Future<void> setupFlutterNotifications() async {
   AwesomeNotifications().initialize(
-    // set the icon to null if you want to use the default app icon
+      // set the icon to null if you want to use the default app icon
       'resource://drawable/ic_launcher',
       [
         NotificationChannel(
@@ -241,10 +245,7 @@ class MyApp extends StatelessWidget {
 void setPageTitle(String title, BuildContext context) {
   SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
     label: title,
-    primaryColor: Theme
-        .of(context)
-        .primaryColor
-        .value, // This line is required
+    primaryColor: Theme.of(context).primaryColor.value, // This line is required
   ));
 }
 

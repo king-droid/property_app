@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:property_feeds/constants/appColors.dart';
@@ -12,9 +13,13 @@ ThemeData? theme() {
     fontFamily: "Muli",
     primaryColorLight: AppColors.primaryColor,
     primaryColorDark: AppColors.primaryColor,
-    pageTransitionsTheme: const PageTransitionsTheme(builders: {
-      TargetPlatform.android: CupertinoPageTransitionsBuilder(),
-    }),
+    pageTransitionsTheme: kIsWeb
+        ? const PageTransitionsTheme(builders: {
+            TargetPlatform.android: NoTransitionsBuilder(),
+          })
+        : const PageTransitionsTheme(builders: {
+            TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+          }),
     // Define the default `TextTheme`. Use this to specify the default
     // text styling for headlines, titles, bodies of text, and more.
     /*  textTheme: const TextTheme(
@@ -131,4 +136,20 @@ AppBarTheme appBarTheme() {
           color: AppColors.headingsColor),
     ).titleLarge,
   );
+}
+
+class NoTransitionsBuilder extends PageTransitionsBuilder {
+  const NoTransitionsBuilder();
+
+  @override
+  Widget buildTransitions<T>(
+    PageRoute<T>? route,
+    BuildContext? context,
+    Animation<double> animation,
+    Animation<double> secondaryAnimation,
+    Widget? child,
+  ) {
+    // only return the child without warping it with animations
+    return child!;
+  }
 }
