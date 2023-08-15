@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:property_feeds/constants/appColors.dart';
@@ -13,13 +12,14 @@ ThemeData? theme() {
     fontFamily: "Muli",
     primaryColorLight: AppColors.primaryColor,
     primaryColorDark: AppColors.primaryColor,
-    pageTransitionsTheme: kIsWeb
+    pageTransitionsTheme: /*kIsWeb
         ? const PageTransitionsTheme(builders: {
-            TargetPlatform.android: NoTransitionsBuilder(),
-          })
-        : const PageTransitionsTheme(builders: {
             TargetPlatform.android: CupertinoPageTransitionsBuilder(),
-          }),
+          })
+        : */
+        const PageTransitionsTheme(builders: {
+      TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+    }),
     // Define the default `TextTheme`. Use this to specify the default
     // text styling for headlines, titles, bodies of text, and more.
     /*  textTheme: const TextTheme(

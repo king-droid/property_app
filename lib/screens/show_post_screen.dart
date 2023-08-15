@@ -172,7 +172,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
           ],
         ),
       ),
-      height: 57,
+      height: 60,
       child: Row(
         children: [
           Align(
@@ -193,7 +193,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                   color: AppColors.overlayButtonColor,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                child: Container(
+                child: Center(
                   child: Icon(
                     Icons.arrow_back_ios_new,
                     color: Colors.black,
@@ -220,7 +220,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                       color: AppColors.overlayButtonColor,
                       borderRadius: BorderRadius.all(Radius.circular(20)),
                     ),
-                    child: Container(
+                    child: Center(
                       child: Icon(
                         Icons.more_vert,
                         color: Colors.black,

@@ -1,4 +1,3 @@
-import 'dart:html' as html;
 import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
@@ -1854,7 +1853,7 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
 
   Future getImageFromGallery() async {
     if (kIsWeb) {
-      /* FilePickerResult? result = await FilePicker.platform.pickFiles(
+      FilePickerResult? result = await FilePicker.platform.pickFiles(
         withReadStream: true,
         type: FileType.custom,
         withData: true,
@@ -1863,15 +1862,19 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
       if (result != null) {
         file = result.files.single;
         file!.readStream!.listen((event) {
+          bytes = Uint8List.fromList(event);
+          setState(() {
+            imageCache.clear();
+          });
+        });
+      }
 
-        });*/
-
-      final input = html.FileUploadInputElement()..accept = 'image/*';
-      input.onChange.listen((event) {
+      //final input = Html.FileUploadInputElement()..accept = 'image/*';
+      /* input.onChange.listen((event) {
         if ((input.files ?? []).isNotEmpty) {
           //html.Url.createObjectUrl(input.files!.first);
-          html.File webFile = input.files!.first;
-          var r = new html.FileReader();
+          Html.File webFile = input.files!.first;
+          var r = new Html.FileReader();
           r.readAsArrayBuffer(webFile);
           r.onLoadEnd.listen((e) async {
             bytes = r.result as Uint8List?;
@@ -1881,11 +1884,11 @@ class UpdateProfileScreenState extends State<UpdateProfileScreen> {
           });
         }
       });
-      input.click();
+      input.click();*/
     } else {
       XFile? image = await ImagePicker().pickImage(source: ImageSource.gallery);
       _image = File(image?.path ?? "");
-      //bytes = await _image!.readAsBytes();
+      bytes = await _image!.readAsBytes();
       File? croppedFile = await ImageCropper().cropImage(
           sourcePath: _image?.path ?? "",
           aspectRatioPresets: Platform.isAndroid

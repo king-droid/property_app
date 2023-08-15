@@ -1,6 +1,3 @@
-import 'dart:io';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
 import 'package:property_feeds/blocs/complete_profile/complete_profile_event.dart';
@@ -66,22 +63,9 @@ class CompleteProfileBloc
     }
 
     List<http.MultipartFile> multipartFiles = [];
-    if (kIsWeb) {
-      final httpImage = http.MultipartFile.fromBytes('file', event.bytes!,
-          filename: "profile_pic.png");
-      multipartFiles.add(httpImage);
-    } else {
-      final httpImage = http.MultipartFile.fromBytes(
-          'file', File(event.profile_pic_mobile!).readAsBytesSync(),
-          filename: "profile_pic.png");
-      multipartFiles.add(httpImage);
-      /* if ((event.profile_pic_mobile ?? "").isNotEmpty) {
-        final httpImage = http.MultipartFile.fromPath(
-            "file", event.profile_pic_mobile ?? "",
-            filename: event.profile_pic_mobile!.split('/').last);
-        multipartFiles.add(httpImage);
-      }*/
-    }
+    final httpImage = http.MultipartFile.fromBytes('file', event.bytes!,
+        filename: "profile_pic.png");
+    multipartFiles.add(httpImage);
 
     //FormData formData = new FormData.fromMap(body);
 
