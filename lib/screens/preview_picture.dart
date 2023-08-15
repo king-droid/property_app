@@ -44,7 +44,7 @@ class _PreviewPictureScreenState extends State<PreviewPictureScreen> {
                   Expanded(
                     flex: 1,
                     child: Container(
-                        width: MediaQuery.of(context).size.width,
+                        width: double.infinity,
                         //height: MediaQuery.of(context).size.height,
                         child: (imagePath ?? "").isNotEmpty
                             ? GestureDetector(

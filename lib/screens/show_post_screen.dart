@@ -189,8 +189,8 @@ class ShowPostScreenState extends State<ShowPostScreen> {
               child: Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.all(8),
-                height: 20,
-                width: 20,
+                height: 50,
+                width: 50,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: AppColors.overlayButtonColor,
@@ -216,17 +216,19 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                     showPostOptions();
                   },
                   child: Container(
+                    alignment: Alignment.center,
                     margin: EdgeInsets.all(8),
-                    padding: EdgeInsets.all(10),
+                    height: 50,
+                    width: 50,
                     decoration: BoxDecoration(
+                      shape: BoxShape.circle,
                       color: AppColors.overlayButtonColor,
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
                     ),
                     child: Center(
                       child: Icon(
                         Icons.more_vert,
                         color: Colors.black,
-                        size: 20,
+                        size: 15,
                       ),
                     ),
                   ),

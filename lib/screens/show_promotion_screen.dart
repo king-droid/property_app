@@ -318,7 +318,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                             ],
                           ),
                         ),
-                        height: 50,
+                        height: 60,
                         child: Row(
                           children: [
                             Align(
@@ -334,18 +334,19 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                   }
                                 },
                                 child: Container(
+                                  alignment: Alignment.center,
                                   margin: EdgeInsets.all(8),
-                                  padding: EdgeInsets.all(10),
+                                  height: 50,
+                                  width: 50,
                                   decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
                                     color: AppColors.overlayButtonColor,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(20)),
                                   ),
-                                  child: Container(
+                                  child: Center(
                                     child: Icon(
                                       Icons.arrow_back_ios_new,
                                       color: Colors.black,
-                                      size: 20,
+                                      size: 15,
                                     ),
                                   ),
                                 ),
@@ -362,18 +363,19 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                       showPostOptions();
                                     },
                                     child: Container(
-                                      margin: EdgeInsets.all(5),
-                                      padding: EdgeInsets.all(10),
+                                      alignment: Alignment.center,
+                                      margin: EdgeInsets.all(8),
+                                      height: 50,
+                                      width: 50,
                                       decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
                                         color: AppColors.overlayButtonColor,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(20)),
                                       ),
-                                      child: Container(
+                                      child: Center(
                                         child: Icon(
                                           Icons.more_vert,
                                           color: Colors.black,
-                                          size: 20,
+                                          size: 15,
                                         ),
                                       ),
                                     ),
