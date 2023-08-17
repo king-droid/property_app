@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:property_feeds/configs/app_routes.dart';
 import 'package:property_feeds/constants/appColors.dart';
 import 'package:property_feeds/models/user.dart';
@@ -55,7 +54,6 @@ class SplashScreenState extends State<SplashScreen> {
       statusBarColor: isDark ? AppColors.semiPrimary : AppColors.primaryColor,
       statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
     ));
-    FlutterNativeSplash.remove();
   }
 
   @override

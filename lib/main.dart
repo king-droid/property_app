@@ -78,6 +78,7 @@ void main() async {
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
       child: const MyApp()));
+  FlutterNativeSplash.remove();
 }
 
 Future<void> handleFirebase() async {
