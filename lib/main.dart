@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_autosize_screen/auto_size_util.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:property_feeds/blocs/common_bloc.dart';
 import 'package:property_feeds/blocs/complete_profile/complete_profile_bloc.dart';
 import 'package:property_feeds/blocs/get_posts/get_posts_bloc.dart';
@@ -69,8 +70,8 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 void main() async {
   HttpOverrides.global = new MyHttpOverrides();
-  WidgetsFlutterBinding.ensureInitialized();
-
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await handleFirebase();
   AutoSizeUtil.setStandard(360, isAutoTextSize: true);
 
