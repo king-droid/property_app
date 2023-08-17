@@ -83,7 +83,7 @@ dev_dependencies:
 flutter_native_splash:
   image: "assets/logo_small.png"
   color: "ffffff"
-  web: false
+  #web: false
 
 flutter_icons:
   android: true
