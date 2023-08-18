@@ -199,7 +199,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                   child: Icon(
                     Icons.arrow_back_ios_new,
                     color: Colors.black,
-                    size: 15,
+                    size: 18,
                   ),
                 ),
               ),
@@ -228,7 +228,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                       child: Icon(
                         Icons.more_vert,
                         color: Colors.black,
-                        size: 15,
+                        size: 18,
                       ),
                     ),
                   ),

@@ -59,7 +59,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
           user?.userId != promotion?.userId) {
         promotionBloc
             ?.viewPromotion(
-            promotion?.promotionId ?? "", promotion?.userId ?? "")
+                promotion?.promotionId ?? "", promotion?.userId ?? "")
             .then((value) {});
       }
       promotionBloc?.getComments(promotion?.promotionId ?? "");
@@ -92,21 +92,13 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
 
   @override
   Widget build(BuildContext context) {
-    user = Provider
-        .of<UserProvider>(context, listen: false)
-        .userData;
+    user = Provider.of<UserProvider>(context, listen: false).userData;
     if (promotion == null) {
-      promotion = (ModalRoute
-          .of(context)!
-          .settings
-          .arguments
-      as Map)["promotion"] as Promotion?;
+      promotion = (ModalRoute.of(context)!.settings.arguments
+          as Map)["promotion"] as Promotion?;
     }
     from =
-    (ModalRoute
-        .of(context)!
-        .settings
-        .arguments as Map)["from"] as String?;
+        (ModalRoute.of(context)!.settings.arguments as Map)["from"] as String?;
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
@@ -174,7 +166,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                               FocusScope.of(context).requestFocus(FocusNode());
                             },
                             child: Container(
-                              //width: double.infinity,
+                                //width: double.infinity,
                                 color: AppColors.white,
                                 //height: MediaQuery.of(context).size.height,
                                 child: Column(
@@ -185,15 +177,14 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                       padding: EdgeInsets.all(8),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Container(
                                             color: Colors.transparent,
                                             child: Text(
                                               AppUtils.getFormattedPostDate(
                                                   promotion?.createdOn ?? ""),
-                                              style: Theme
-                                                  .of(context)
+                                              style: Theme.of(context)
                                                   .textTheme
                                                   .bodySmall,
                                             ),
@@ -202,25 +193,18 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                             color: Colors.transparent,
                                             child: Text(
                                               (promotion
-                                                  ?.promotionViewsCount ??
-                                                  "0") ==
-                                                  "1" ||
-                                                  (promotion
-                                                      ?.promotionViewsCount ??
-                                                      "0") ==
-                                                      "0" ||
-                                                  (promotion
-                                                      ?.promotionViewsCount ??
-                                                      "0") ==
-                                                      "1"
-                                                  ? "${promotion
-                                                  ?.promotionViewsCount ??
-                                                  0} view"
-                                                  : "${promotion
-                                                  ?.promotionViewsCount ??
-                                                  0} views",
-                                              style: Theme
-                                                  .of(context)
+                                                                  ?.promotionViewsCount ??
+                                                              "0") ==
+                                                          "1" ||
+                                                      (promotion?.promotionViewsCount ??
+                                                              "0") ==
+                                                          "0" ||
+                                                      (promotion?.promotionViewsCount ??
+                                                              "0") ==
+                                                          "1"
+                                                  ? "${promotion?.promotionViewsCount ?? 0} view"
+                                                  : "${promotion?.promotionViewsCount ?? 0} views",
+                                              style: Theme.of(context)
                                                   .textTheme
                                                   .bodySmall,
                                             ),
@@ -241,7 +225,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                             width: double.infinity,
                                             child: Column(
                                               crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                                  CrossAxisAlignment.start,
                                               children: <Widget>[
                                                 Container(
                                                   margin: EdgeInsets.only(
@@ -250,21 +234,20 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                                       top: 5),
                                                   child: Text(
                                                       promotion
-                                                          ?.promotionTitle ??
+                                                              ?.promotionTitle ??
                                                           "",
-                                                      style: Theme
-                                                          .of(context)
+                                                      style: Theme.of(context)
                                                           .textTheme
                                                           .titleMedium!
                                                           .copyWith(
-                                                          color: Colors
-                                                              .black
-                                                              .withOpacity(
-                                                              0.7),
-                                                          fontSize: 16,
-                                                          fontWeight:
-                                                          FontWeight
-                                                              .bold)),
+                                                              color: Colors
+                                                                  .black
+                                                                  .withOpacity(
+                                                                      0.7),
+                                                              fontSize: 16,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold)),
                                                 ),
                                                 Container(
                                                   padding: EdgeInsets.only(
@@ -275,24 +258,23 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                                   //margin: EdgeInsets.only(top: 1, bottom: 2),
                                                   child: Text(
                                                       promotion
-                                                          ?.promotionDescription ??
+                                                              ?.promotionDescription ??
                                                           "",
                                                       overflow:
-                                                      TextOverflow.fade,
+                                                          TextOverflow.fade,
                                                       //maxLines: 10,
-                                                      style: Theme
-                                                          .of(context)
+                                                      style: Theme.of(context)
                                                           .textTheme
                                                           .titleMedium!
                                                           .copyWith(
-                                                          color: Colors
-                                                              .black87
-                                                              .withOpacity(
-                                                              0.7),
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                          FontWeight
-                                                              .w500)),
+                                                              color: Colors
+                                                                  .black87
+                                                                  .withOpacity(
+                                                                      0.7),
+                                                              fontSize: 14,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500)),
                                                 ),
                                                 const SizedBox(height: 5),
                                               ],
@@ -346,7 +328,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                   if (from == "notification") {
                                     navKeyRoot.currentState
                                         ?.pushReplacementNamed(
-                                        AppRoutes.homeScreen);
+                                            AppRoutes.homeScreen);
                                   } else {
                                     Navigator.pop(context, promotion);
                                   }
@@ -364,7 +346,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                     child: Icon(
                                       Icons.arrow_back_ios_new,
                                       color: Colors.black,
-                                      size: 15,
+                                      size: 18,
                                     ),
                                   ),
                                 ),
@@ -393,7 +375,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                         child: Icon(
                                           Icons.more_vert,
                                           color: Colors.black,
-                                          size: 15,
+                                          size: 18,
                                         ),
                                       ),
                                     ),
@@ -429,93 +411,93 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
             children: <Widget>[
               (promotion?.userId ?? "") == (user?.userId ?? "")
                   ? ListTile(
-                leading: new Icon(Icons.edit),
-                title: new Text(
-                  'Edit promotion',
-                  style: TextStyle(
-                      fontFamily: "Roboto_Bold",
-                      color: AppColors.buttonTextColor,
-                      fontSize: 16),
-                ),
-                onTap: () async {
-                  Navigator.pop(context);
-                  await Navigator.pushNamed(
-                      context, AppRoutes.addPromotionScreen, arguments: {
-                    "mode": "edit",
-                    "promotion": promotion
-                  }).then((value) {
-                    setState(() {
-                      promotion = value as Promotion?;
-                    });
-                  });
-                },
-              )
+                      leading: new Icon(Icons.edit),
+                      title: new Text(
+                        'Edit promotion',
+                        style: TextStyle(
+                            fontFamily: "Roboto_Bold",
+                            color: AppColors.buttonTextColor,
+                            fontSize: 16),
+                      ),
+                      onTap: () async {
+                        Navigator.pop(context);
+                        await Navigator.pushNamed(
+                            context, AppRoutes.addPromotionScreen, arguments: {
+                          "mode": "edit",
+                          "promotion": promotion
+                        }).then((value) {
+                          setState(() {
+                            promotion = value as Promotion?;
+                          });
+                        });
+                      },
+                    )
                   : Container(),
               (promotion?.userId ?? "") == (user?.userId ?? "")
                   ? Divider(color: AppColors.subTitleColor, height: 1)
                   : Container(),
               (promotion?.userId ?? "") == (user?.userId ?? "")
                   ? StatefulBuilder(builder: (context, setState) {
-                return ListTile(
-                  leading: new Icon(Icons.delete),
-                  trailing: isLoading
-                      ? Container(
-                    margin: const EdgeInsets.only(
-                        left: 1.0, right: 5.0, top: 1.0),
-                    width: 20,
-                    height: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      color: AppColors.primaryColor,
-                    ),
-                  )
-                      : Container(
-                    width: 20,
-                    height: 20,
-                  ),
-                  title: new Text(
-                    'Delete promotion',
-                    style: TextStyle(
-                        fontFamily: "Roboto_Bold",
-                        color: AppColors.buttonTextColor,
-                        fontSize: 16),
-                  ),
-                  onTap: () async {
-                    AppUtils.showNativeAlertDialog(
-                        context: context,
-                        title: "Delete promotion",
-                        content:
-                        "Are you sure you want to delete this promotion?",
-                        cancelActionText: "Cancel",
-                        defaultActionText: "Delete",
-                        defaultActionClick: () {
-                          setState(() {
-                            isLoading = true;
-                          });
-                          promotionBloc
-                              ?.deletePromotion(
-                              promotion?.promotionId ?? "")
-                              .then((status) {
-                            setState(() {
-                              isLoading = false;
-                            });
-                            if (status) {
-                              AppUtils.showToast(
-                                  "Promotion deleted successfully");
-                              Navigator.pop(context);
-                              Navigator.pop(context, null);
-                            } else {
-                              AppUtils.showToast(
-                                  "Failed to delete promotion. Please try again");
-                            }
-                          });
+                      return ListTile(
+                        leading: new Icon(Icons.delete),
+                        trailing: isLoading
+                            ? Container(
+                                margin: const EdgeInsets.only(
+                                    left: 1.0, right: 5.0, top: 1.0),
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  color: AppColors.primaryColor,
+                                ),
+                              )
+                            : Container(
+                                width: 20,
+                                height: 20,
+                              ),
+                        title: new Text(
+                          'Delete promotion',
+                          style: TextStyle(
+                              fontFamily: "Roboto_Bold",
+                              color: AppColors.buttonTextColor,
+                              fontSize: 16),
+                        ),
+                        onTap: () async {
+                          AppUtils.showNativeAlertDialog(
+                              context: context,
+                              title: "Delete promotion",
+                              content:
+                                  "Are you sure you want to delete this promotion?",
+                              cancelActionText: "Cancel",
+                              defaultActionText: "Delete",
+                              defaultActionClick: () {
+                                setState(() {
+                                  isLoading = true;
+                                });
+                                promotionBloc
+                                    ?.deletePromotion(
+                                        promotion?.promotionId ?? "")
+                                    .then((status) {
+                                  setState(() {
+                                    isLoading = false;
+                                  });
+                                  if (status) {
+                                    AppUtils.showToast(
+                                        "Promotion deleted successfully");
+                                    Navigator.pop(context);
+                                    Navigator.pop(context, null);
+                                  } else {
+                                    AppUtils.showToast(
+                                        "Failed to delete promotion. Please try again");
+                                  }
+                                });
+                              },
+                              cancelActionClick: () {
+                                Navigator.pop(context);
+                              });
                         },
-                        cancelActionClick: () {
-                          Navigator.pop(context);
-                        });
-                  },
-                );
-              })
+                      );
+                    })
                   : Container(),
               (promotion?.userId ?? "") == (user?.userId ?? "")
                   ? Divider(color: AppColors.subTitleColor, height: 1)
@@ -525,18 +507,18 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                   : Container(),
               (promotion?.userId ?? "") != (user?.userId ?? "")
                   ? ListTile(
-                leading: new Icon(Icons.report_problem),
-                title: new Text(
-                  'Report problem',
-                  style: TextStyle(
-                      fontFamily: "Roboto_Bold",
-                      color: AppColors.buttonTextColor,
-                      fontSize: 16),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              )
+                      leading: new Icon(Icons.report_problem),
+                      title: new Text(
+                        'Report problem',
+                        style: TextStyle(
+                            fontFamily: "Roboto_Bold",
+                            color: AppColors.buttonTextColor,
+                            fontSize: 16),
+                      ),
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                    )
                   : Container(),
             ],
           );
@@ -564,13 +546,9 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
           child: Container(
             margin: EdgeInsets.only(left: 5),
             child: Text("View profile",
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodyMedium!
-                    .copyWith(
-                  color: AppColors.primaryColor,
-                )),
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      color: AppColors.primaryColor,
+                    )),
           ),
         ),
       ),
@@ -581,91 +559,87 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
     return /*(promotion?.userId ?? "") == (user?.userId ?? "")
         ? Container()
         :*/
-      Container(
-        padding: EdgeInsets.only(top: 3, bottom: 3),
-        child: GestureDetector(
-          onTap: () {
-            /*if ((promotion?.userId ?? "") == (user?.userId ?? "")) {
+        Container(
+      padding: EdgeInsets.only(top: 3, bottom: 3),
+      child: GestureDetector(
+        onTap: () {
+          /*if ((promotion?.userId ?? "") == (user?.userId ?? "")) {
             Navigator.pushNamed(context, AppRoutes.promotionInterestsScreen,
                 arguments: promotion);
           } else {*/
-            if ((user?.accountType == "guest_account")) {
-              AppUtils.showNativeAlertDialog(
-                  context: context,
-                  title: "Registration required",
-                  content:
-                  "You are currently using app as guest.\n\nYou need to create account to access all features of app.",
-                  cancelActionText: "Cancel",
-                  defaultActionText: "Create account Now",
-                  defaultActionClick: () {
-                    Navigator.pushNamed(context, AppRoutes.landingScreen);
-                  });
-              return;
-            } else {
-              promotionBloc
-                  ?.interestPromotion(
-                  promotion?.userId ?? "",
-                  promotion?.promotionId ?? "",
-                  (promotion?.userInterestStatus ?? false) ? false : true)
-                  .then((value) {});
-              setState(() {
-                (promotion?.userInterestStatus ?? false)
-                    ? promotion?.interestsCount =
-                "${(int.parse(promotion?.interestsCount ?? "0") - 1)}"
-                    : promotion?.interestsCount =
-                "${(int.parse(promotion?.interestsCount ?? "0") + 1)}";
-                promotion?.userInterestStatus =
-                (promotion?.userInterestStatus ?? false) ? false : true;
-              });
-            }
-            //}
-          },
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: AppColors.bgColor,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            padding: EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
-            margin: EdgeInsets.only(
-              left: 15,
-              right: 15,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  margin: EdgeInsets.all(1),
-                  child: Icon(
-                    Icons.thumb_up_alt_outlined,
-                    size: 25,
-                    color: (promotion?.userInterestStatus ?? false)
-                        ? AppColors.primaryColor
-                        : AppColors.buttonTextColor,
-                  ),
+          if ((user?.accountType == "guest_account")) {
+            AppUtils.showNativeAlertDialog(
+                context: context,
+                title: "Registration required",
+                content:
+                    "You are currently using app as guest.\n\nYou need to create account to access all features of app.",
+                cancelActionText: "Cancel",
+                defaultActionText: "Create account Now",
+                defaultActionClick: () {
+                  Navigator.pushNamed(context, AppRoutes.landingScreen);
+                });
+            return;
+          } else {
+            promotionBloc
+                ?.interestPromotion(
+                    promotion?.userId ?? "",
+                    promotion?.promotionId ?? "",
+                    (promotion?.userInterestStatus ?? false) ? false : true)
+                .then((value) {});
+            setState(() {
+              (promotion?.userInterestStatus ?? false)
+                  ? promotion?.interestsCount =
+                      "${(int.parse(promotion?.interestsCount ?? "0") - 1)}"
+                  : promotion?.interestsCount =
+                      "${(int.parse(promotion?.interestsCount ?? "0") + 1)}";
+              promotion?.userInterestStatus =
+                  (promotion?.userInterestStatus ?? false) ? false : true;
+            });
+          }
+          //}
+        },
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: AppColors.bgColor,
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+          ),
+          padding: EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
+          margin: EdgeInsets.only(
+            left: 15,
+            right: 15,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.all(1),
+                child: Icon(
+                  Icons.thumb_up_alt_outlined,
+                  size: 25,
+                  color: (promotion?.userInterestStatus ?? false)
+                      ? AppColors.primaryColor
+                      : AppColors.buttonTextColor,
                 ),
-                Container(
-                  margin: EdgeInsets.only(left: 5),
-                  child: Text(
-                    /*"${promotion?.interestsCount ?? 0} Interested",*/
-                    (promotion?.userInterestStatus ?? false)
-                        ? "Interest sent"
-                        : "Interested",
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .copyWith(
-                        color: (promotion?.userInterestStatus ?? false)
-                            ? AppColors.primaryColor
-                            : AppColors.buttonTextColor),
-                  ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 5),
+                child: Text(
+                  /*"${promotion?.interestsCount ?? 0} Interested",*/
+                  (promotion?.userInterestStatus ?? false)
+                      ? "Interest sent"
+                      : "Interested",
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      color: (promotion?.userInterestStatus ?? false)
+                          ? AppColors.primaryColor
+                          : AppColors.buttonTextColor),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
-      );
+      ),
+    );
   }
 
   Widget commentsWidget() {
@@ -695,7 +669,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                         margin: EdgeInsets.only(left: 5),
                         child: Text(
                           (commentsCount ?? "0") == "1" ||
-                              (commentsCount ?? "0") == "0"
+                                  (commentsCount ?? "0") == "0"
                               ? "${commentsCount ?? 0} Comment"
                               : "${commentsCount ?? 0} Comments",
                           style: TextStyle(
@@ -712,7 +686,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                         margin: EdgeInsets.only(left: 5),
                         child: Text(
                           (commentsCount ?? "0") == "1" ||
-                              (commentsCount ?? "0") == "0"
+                                  (commentsCount ?? "0") == "0"
                               ? "${commentsCount ?? 0} Comment"
                               : "${commentsCount ?? 0} Comments",
                           style: TextStyle(
@@ -739,14 +713,10 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
       margin: EdgeInsets.only(left: 5, right: 0),
       child: Text(
         (promotion?.promotionViewsCount ?? "0") == "1" ||
-            (promotion?.promotionViewsCount ?? "0") == "0"
+                (promotion?.promotionViewsCount ?? "0") == "0"
             ? "${promotion?.promotionViewsCount ?? 0} people viewed it recently"
-            : "${promotion?.promotionViewsCount ??
-            0} people viewed it recently",
-        style: Theme
-            .of(context)
-            .textTheme
-            .bodyMedium,
+            : "${promotion?.promotionViewsCount ?? 0} people viewed it recently",
+        style: Theme.of(context).textTheme.bodyMedium,
       ),
     );
   }
@@ -774,29 +744,29 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                     child: Container(
                       child: (promotion?.profilePic ?? "").isNotEmpty
                           ? Container(
-                        child: CircleAvatar(
-                          backgroundColor: AppColors.semiPrimary,
-                          radius: 25,
-                          child: ClipOval(
-                            child: Image(
-                              width: 50,
-                              height: 50,
-                              image: NetworkImage(
-                                AppConstants.imagesBaseUrl +
-                                    "/profile_images/" +
-                                    (promotion?.profilePic ?? ""),
+                              child: CircleAvatar(
+                                backgroundColor: AppColors.semiPrimary,
+                                radius: 25,
+                                child: ClipOval(
+                                  child: Image(
+                                    width: 50,
+                                    height: 50,
+                                    image: NetworkImage(
+                                      AppConstants.imagesBaseUrl +
+                                          "/profile_images/" +
+                                          (promotion?.profilePic ?? ""),
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      )
+                            )
                           : Container(
-                        child: CircleAvatar(
-                            radius: 20,
-                            backgroundImage: AssetImage(
-                                'assets/default_profile_pic.png')),
-                      ), //GestureDetector
+                              child: CircleAvatar(
+                                  radius: 20,
+                                  backgroundImage: AssetImage(
+                                      'assets/default_profile_pic.png')),
+                            ), //GestureDetector
                     ),
                   ), // Container
                 ),
@@ -821,32 +791,29 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                   promotion?.userName ?? "",
                                   maxLines: 2,
                                   overflow: TextOverflow.ellipsis,
-                                  style: Theme
-                                      .of(context)
+                                  style: Theme.of(context)
                                       .textTheme
                                       .titleSmall!
                                       .copyWith(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      height: 1,
-                                      fontWeight: FontWeight.w500),
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          height: 1,
+                                          fontWeight: FontWeight.w500),
                                 ),
                               ),
                             ),
                           ],
                         ),
                       ),
-
                       Container(
                         margin: EdgeInsets.only(left: 7),
                         child: Text(
                           promotion?.companyName ?? "",
-                          style: Theme
-                              .of(context)
+                          style: Theme.of(context)
                               .textTheme
                               .bodySmall
                               ?.copyWith(
-                              fontSize: 12, color: AppColors.subTitleColor),
+                                  fontSize: 12, color: AppColors.subTitleColor),
                         ),
                       ),
                     ], // children
@@ -888,11 +855,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
             margin: EdgeInsets.only(top: 5, bottom: 0),
             child: Text(
               "Posted by",
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .titleMedium!
-                  .copyWith(
+              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.black.withOpacity(0.7),
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
@@ -937,7 +900,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                   color: AppColors.white,
                 ),
                 padding:
-                EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
+                    EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -982,7 +945,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                   color: AppColors.white,
                 ),
                 padding:
-                EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
+                    EdgeInsets.only(left: 10, right: 10, top: 8, bottom: 8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -1067,8 +1030,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                               margin: EdgeInsets.only(left: 5),
                               child: Text(
                                 " Share ",
-                                style: Theme
-                                    .of(context)
+                                style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium!
                                     .copyWith(color: AppColors.buttonTextColor),
@@ -1087,12 +1049,8 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
             margin: EdgeInsets.only(left: 5, top: 10, bottom: 10),
             alignment: Alignment.center,
             child: Text(
-                "${promotion?.interestsCount ??
-                    0} People have shown interest recently",
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodyMedium),
+                "${promotion?.interestsCount ?? 0} People have shown interest recently",
+                style: Theme.of(context).textTheme.bodyMedium),
           ),
         ],
       ),
@@ -1117,14 +1075,10 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                     color: AppColors.bgColorLight,
                     width: double.infinity,
                     padding:
-                    EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 0),
+                        EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 0),
                     child: Text(
                       "Comments (${commentsCount ?? 0})",
-                      style: Theme
-                          .of(context)
-                          .textTheme
-                          .titleMedium!
-                          .copyWith(
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Colors.black.withOpacity(0.7),
                           fontSize: 16,
                           fontWeight: FontWeight.bold),
@@ -1137,16 +1091,12 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                     color: AppColors.bgColorLight,
                     width: double.infinity,
                     padding:
-                    EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 0),
+                        EdgeInsets.only(left: 8, top: 8, bottom: 8, right: 0),
                     child: Text(
                       "Comments (${commentsCount ?? 0})",
-                      style: Theme
-                          .of(context)
-                          .textTheme
-                          .bodyMedium!
-                          .copyWith(
-                        color: AppColors.screenTitleColor,
-                      ),
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: AppColors.screenTitleColor,
+                          ),
                     ),
                   );
                 }
@@ -1177,31 +1127,31 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                 );
               } else if (snapshot.hasData) {
                 List<PromotionComment> comments =
-                snapshot.data as List<PromotionComment>;
+                    snapshot.data as List<PromotionComment>;
                 promotion?.promotionCommentsCount = "${comments.length ?? 0}";
                 callback.call("${comments.length ?? 0}");
 
                 return comments != null && comments.length > 0
                     ? Container(
-                  margin: EdgeInsets.only(top: 10, bottom: 30),
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    padding: EdgeInsets.symmetric(horizontal: 0),
-                    itemCount: comments.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return PromotionCommentItem(
-                          postUser: promotion?.userId ?? "",
-                          comment: comments[index]);
-                    },
-                  ).build(context),
-                )
+                        margin: EdgeInsets.only(top: 10, bottom: 30),
+                        child: ListView.builder(
+                          shrinkWrap: true,
+                          physics: NeverScrollableScrollPhysics(),
+                          padding: EdgeInsets.symmetric(horizontal: 0),
+                          itemCount: comments.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return PromotionCommentItem(
+                                postUser: promotion?.userId ?? "",
+                                comment: comments[index]);
+                          },
+                        ).build(context),
+                      )
                     : Container(
-                  margin: EdgeInsets.only(top: 70, bottom: 70),
-                  alignment: AlignmentDirectional.center,
-                  child: Text("No comments",
-                      style: TextStyle(color: AppColors.subTitleColor)),
-                );
+                        margin: EdgeInsets.only(top: 70, bottom: 70),
+                        alignment: AlignmentDirectional.center,
+                        child: Text("No comments",
+                            style: TextStyle(color: AppColors.subTitleColor)),
+                      );
               } else
                 return Column(
                   children: [
@@ -1254,23 +1204,14 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                   margin: EdgeInsets.only(left: 5, top: 0, bottom: 5),
                   child: TextField(
                     scrollPadding: EdgeInsets.only(
-                        bottom: MediaQuery
-                            .of(context)
-                            .viewInsets
-                            .bottom -
-                            (MediaQuery
-                                .of(context)
-                                .viewInsets
-                                .bottom / 3)),
+                        bottom: MediaQuery.of(context).viewInsets.bottom -
+                            (MediaQuery.of(context).viewInsets.bottom / 3)),
                     controller: commentController,
                     onChanged: (value) {
                       promotionBloc
                           ?.validateCommentField(commentController.text);
                     },
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .bodyLarge,
+                    style: Theme.of(context).textTheme.bodyLarge,
                     onSubmitted: (String value) {
                       FocusScope.of(context).requestFocus();
                       commentFocusNode.unfocus();
@@ -1321,91 +1262,91 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                     if (snapshot.hasData) {
                       return snapshot.data == true
                           ? StreamBuilder(
-                          stream: promotionBloc?.addCommentLoaderState,
-                          initialData: false,
-                          builder: (context, snapshot) {
-                            if (snapshot.data == true) {
-                              return Container(
-                                margin: EdgeInsets.only(left: 10, right: 5),
-                                padding: EdgeInsets.all(5),
-                                alignment: AlignmentDirectional.center,
-                                child: SizedBox(
-                                  width: 30,
-                                  height: 30,
-                                  child: CircularProgressIndicator(
-                                      strokeWidth: 2),
-                                ),
-                              );
-                            } else {
-                              return Container(
-                                margin: EdgeInsets.only(
-                                    left: 5, right: 5, bottom: 8, top: 0),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    promotionBloc?.handleLoader(true);
-                                    promotionBloc
-                                        ?.addComment(
-                                        promotion?.userId ?? "",
-                                        commentController.text,
-                                        promotion?.promotionId ?? "")
-                                        .then((result) {
-                                      promotionBloc?.handleLoader(false);
-                                      if ((result ?? false)) {
-                                        commentController.text = "";
+                              stream: promotionBloc?.addCommentLoaderState,
+                              initialData: false,
+                              builder: (context, snapshot) {
+                                if (snapshot.data == true) {
+                                  return Container(
+                                    margin: EdgeInsets.only(left: 10, right: 5),
+                                    padding: EdgeInsets.all(5),
+                                    alignment: AlignmentDirectional.center,
+                                    child: SizedBox(
+                                      width: 30,
+                                      height: 30,
+                                      child: CircularProgressIndicator(
+                                          strokeWidth: 2),
+                                    ),
+                                  );
+                                } else {
+                                  return Container(
+                                    margin: EdgeInsets.only(
+                                        left: 5, right: 5, bottom: 8, top: 0),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        promotionBloc?.handleLoader(true);
                                         promotionBloc
-                                            ?.validateCommentField("");
-                                        promotionBloc?.getComments(
-                                            promotion?.promotionId ?? "");
-                                        FocusScope.of(context)
-                                            .requestFocus(FocusNode());
-                                      } else {
-                                        //final snackBar = SnackBar(content: Text(result.message));
-                                        //Scaffold.of(context).showSnackBar(snackBar);
-                                      }
-                                    }).catchError((onError) {
-                                      final snackBar = SnackBar(
-                                          content:
-                                          Text(onError.toString()));
-                                      //Scaffold.of(context).showSnackBar(snackBar);
-                                    });
-                                  },
-                                  child: CircleAvatar(
-                                    backgroundColor: AppColors.primaryColor
-                                        .withOpacity(0.9),
-                                    radius: 22,
-                                    child: ClipOval(
-                                      child: Icon(
-                                        Icons.send,
-                                        size: 25,
-                                        color: AppColors.white,
+                                            ?.addComment(
+                                                promotion?.userId ?? "",
+                                                commentController.text,
+                                                promotion?.promotionId ?? "")
+                                            .then((result) {
+                                          promotionBloc?.handleLoader(false);
+                                          if ((result ?? false)) {
+                                            commentController.text = "";
+                                            promotionBloc
+                                                ?.validateCommentField("");
+                                            promotionBloc?.getComments(
+                                                promotion?.promotionId ?? "");
+                                            FocusScope.of(context)
+                                                .requestFocus(FocusNode());
+                                          } else {
+                                            //final snackBar = SnackBar(content: Text(result.message));
+                                            //Scaffold.of(context).showSnackBar(snackBar);
+                                          }
+                                        }).catchError((onError) {
+                                          final snackBar = SnackBar(
+                                              content:
+                                                  Text(onError.toString()));
+                                          //Scaffold.of(context).showSnackBar(snackBar);
+                                        });
+                                      },
+                                      child: CircleAvatar(
+                                        backgroundColor: AppColors.primaryColor
+                                            .withOpacity(0.9),
+                                        radius: 22,
+                                        child: ClipOval(
+                                          child: Icon(
+                                            Icons.send,
+                                            size: 25,
+                                            color: AppColors.white,
+                                          ),
+                                        ),
                                       ),
+                                    ),
+                                  );
+                                }
+                              })
+                          : Container(
+                              margin: EdgeInsets.only(
+                                  left: 5, right: 5, bottom: 8, top: 0),
+                              child: GestureDetector(
+                                onTap: () {
+                                  null;
+                                },
+                                child: CircleAvatar(
+                                  backgroundColor:
+                                      AppColors.primaryColor.withOpacity(0.9),
+                                  radius: 22,
+                                  child: ClipOval(
+                                    child: Icon(
+                                      Icons.send,
+                                      size: 25,
+                                      color: AppColors.white,
                                     ),
                                   ),
                                 ),
-                              );
-                            }
-                          })
-                          : Container(
-                        margin: EdgeInsets.only(
-                            left: 5, right: 5, bottom: 8, top: 0),
-                        child: GestureDetector(
-                          onTap: () {
-                            null;
-                          },
-                          child: CircleAvatar(
-                            backgroundColor:
-                            AppColors.primaryColor.withOpacity(0.9),
-                            radius: 22,
-                            child: ClipOval(
-                              child: Icon(
-                                Icons.send,
-                                size: 25,
-                                color: AppColors.white,
                               ),
-                            ),
-                          ),
-                        ),
-                      );
+                            );
                     } else {
                       return Container(
                         margin: EdgeInsets.only(
@@ -1416,7 +1357,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                           },
                           child: CircleAvatar(
                             backgroundColor:
-                            AppColors.primaryColor.withOpacity(0.7),
+                                AppColors.primaryColor.withOpacity(0.7),
                             radius: 22,
                             child: ClipOval(
                               child: Icon(
@@ -1469,29 +1410,29 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                       },
                       child: (promotion?.profilePic ?? "").isNotEmpty
                           ? Container(
-                        child: CircleAvatar(
-                          backgroundColor: AppColors.semiPrimary,
-                          radius: 25,
-                          child: ClipOval(
-                            child: Image(
-                              width: 50,
-                              height: 50,
-                              image: NetworkImage(
-                                AppConstants.imagesBaseUrl +
-                                    "/profile_images/" +
-                                    (promotion?.profilePic ?? ""),
+                              child: CircleAvatar(
+                                backgroundColor: AppColors.semiPrimary,
+                                radius: 25,
+                                child: ClipOval(
+                                  child: Image(
+                                    width: 50,
+                                    height: 50,
+                                    image: NetworkImage(
+                                      AppConstants.imagesBaseUrl +
+                                          "/profile_images/" +
+                                          (promotion?.profilePic ?? ""),
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                      )
+                            )
                           : Container(
-                        child: CircleAvatar(
-                            radius: 25,
-                            backgroundImage: AssetImage(
-                                'assets/default_profile_pic.png')),
-                      ),
+                              child: CircleAvatar(
+                                  radius: 25,
+                                  backgroundImage: AssetImage(
+                                      'assets/default_profile_pic.png')),
+                            ),
                     ), //GestureDetector
                   ), // Container
                 ),
@@ -1511,15 +1452,14 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                           margin: EdgeInsets.only(left: 10),
                           child: Text(
                             promotion?.userName ?? "",
-                            style: Theme
-                                .of(context)
+                            style: Theme.of(context)
                                 .textTheme
                                 .titleMedium!
                                 .copyWith(
-                                color: Colors.black,
-                                fontSize: 14,
-                                height: 1,
-                                fontWeight: FontWeight.w500),
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    height: 1,
+                                    fontWeight: FontWeight.w500),
                           ),
                         ),
                       ),
@@ -1528,8 +1468,7 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                         child: Text(
                           AppUtils.getFormattedPostDate(
                               promotion?.createdOn ?? ""),
-                          style: Theme
-                              .of(context)
+                          style: Theme.of(context)
                               .textTheme
                               .bodySmall
                               ?.copyWith(fontSize: 11),
@@ -1578,32 +1517,32 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
       },
       child: (promotion?.promotionPic ?? "").isNotEmpty
           ? AspectRatio(
-        aspectRatio: 1 / 1,
-        child: Container(
-          width: double.infinity,
-          child: (promotion?.promotionPic ?? "").isNotEmpty &&
-              ((promotion?.promotionPic ?? "").split(",") ?? [])
-                  .length ==
-                  1
-              ? FadeInImage.assetNetwork(
-            image: AppConstants.imagesBaseUrl +
-                "/promotion_images/" +
-                ((promotion?.promotionPic ?? "").split(",") ??
-                    [])[0],
-            placeholder: "assets/picture_placeholder.webp",
-            placeholderErrorBuilder: (context, error, stackTrace) {
-              return Image.asset("assets/picture_error.png",
-                  fit: BoxFit.fill);
-            },
-            imageErrorBuilder: (context, error, stackTrace) {
-              return Image.asset("assets/picture_error.png",
-                  fit: BoxFit.fill);
-            },
-            fit: BoxFit.cover,
-          )
-              : Container(),
-        ),
-      )
+              aspectRatio: 1 / 1,
+              child: Container(
+                width: double.infinity,
+                child: (promotion?.promotionPic ?? "").isNotEmpty &&
+                        ((promotion?.promotionPic ?? "").split(",") ?? [])
+                                .length ==
+                            1
+                    ? FadeInImage.assetNetwork(
+                        image: AppConstants.imagesBaseUrl +
+                            "/promotion_images/" +
+                            ((promotion?.promotionPic ?? "").split(",") ??
+                                [])[0],
+                        placeholder: "assets/picture_placeholder.webp",
+                        placeholderErrorBuilder: (context, error, stackTrace) {
+                          return Image.asset("assets/picture_error.png",
+                              fit: BoxFit.fill);
+                        },
+                        imageErrorBuilder: (context, error, stackTrace) {
+                          return Image.asset("assets/picture_error.png",
+                              fit: BoxFit.fill);
+                        },
+                        fit: BoxFit.cover,
+                      )
+                    : Container(),
+              ),
+            )
           : Container(),
     );
   }

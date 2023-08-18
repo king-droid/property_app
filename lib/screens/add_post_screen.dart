@@ -134,17 +134,19 @@ class AddPostScreenState extends State<AddPostScreen> {
             }
           },
           child: Container(
-            margin: EdgeInsets.all(5),
-            padding: EdgeInsets.all(10),
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(8),
+            height: 50,
+            width: 50,
             decoration: BoxDecoration(
+              shape: BoxShape.circle,
               color: AppColors.overlayButtonColor,
-              borderRadius: BorderRadius.all(Radius.circular(20)),
             ),
-            child: Container(
+            child: Center(
               child: Icon(
                 Icons.arrow_back_ios_new,
                 color: Colors.black,
-                size: 20,
+                size: 18,
               ),
             ),
           ),
@@ -152,7 +154,7 @@ class AddPostScreenState extends State<AddPostScreen> {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: false,
         title: Text(mode == "edit" ? "Update Post" : "New Post",
-            style: TextStyle(color: AppColors.primaryColor, fontSize: 18)),
+            style: TextStyle(color: AppColors.primaryColor, fontSize: 16)),
         elevation: 0,
         centerTitle: true,
         actions: <Widget>[
@@ -197,38 +199,45 @@ class AddPostScreenState extends State<AddPostScreen> {
         ],
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          controller: scrollController,
-          child: GestureDetector(
-            onTap: () {
-              FocusScope.of(context).requestFocus(FocusNode());
-            },
-            child: Container(
-              padding: kIsWeb
-                  ? EdgeInsets.only(
-                      left: (MediaQuery.of(context).size.width / 4),
-                      right: (MediaQuery.of(context).size.width / 4),
-                      top: 20,
-                      bottom: 25)
-                  : EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 25),
-              color: AppColors.white,
-              //height: MediaQuery.of(context).size.height,
-              child: IgnorePointer(
-                child: Column(
-                  children: <Widget>[
-                    _buildCitySelectionWidget(),
-                    _buildCategorySelectionWidget(),
-                    _buildTitleWidget(),
-                    _buildContentWidget(),
-                    _buildLocationWidget(),
-                    //_buildOtherDetailsSeparator(),
-                    _buildAttachmentWidget(),
-                    //_buildSizeWidget(),
-                    //_buildPriceWidget(),
-                    _buildSubmitCTAWidget(),
-                  ],
+        child: NotificationListener<OverscrollIndicatorNotification>(
+          onNotification: (overscroll) {
+            overscroll.disallowIndicator();
+            return true;
+          },
+          child: SingleChildScrollView(
+            controller: scrollController,
+            child: GestureDetector(
+              onTap: () {
+                FocusScope.of(context).requestFocus(FocusNode());
+              },
+              child: Container(
+                padding: kIsWeb
+                    ? EdgeInsets.only(
+                        left: (MediaQuery.of(context).size.width / 5),
+                        right: (MediaQuery.of(context).size.width / 5),
+                        top: 20,
+                        bottom: 25)
+                    : EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 25),
+                color: AppColors.white,
+                //height: MediaQuery.of(context).size.height,
+                child: IgnorePointer(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      _buildCitySelectionWidget(),
+                      _buildCategorySelectionWidget(),
+                      _buildTitleWidget(),
+                      _buildContentWidget(),
+                      _buildLocationWidget(),
+                      //_buildOtherDetailsSeparator(),
+                      _buildAttachmentWidget(),
+                      //_buildSizeWidget(),
+                      //_buildPriceWidget(),
+                      _buildSubmitCTAWidget(),
+                    ],
+                  ),
+                  ignoring: _isLoading,
                 ),
-                ignoring: _isLoading,
               ),
             ),
           ),
@@ -254,7 +263,7 @@ class AddPostScreenState extends State<AddPostScreen> {
         ),*/
         const SizedBox(height: 10),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 5, top: 1),
@@ -464,7 +473,7 @@ class AddPostScreenState extends State<AddPostScreen> {
                         Container(
                           alignment: Alignment.centerLeft,
                           margin: const EdgeInsets.only(
-                              left: 5, top: 20, bottom: 1),
+                              left: 0, top: 20, bottom: 1),
                           child: new Text(
                             "Pictures (Optional)",
                             style: Theme.of(context)
@@ -1052,7 +1061,7 @@ class AddPostScreenState extends State<AddPostScreen> {
                 ),
               ),
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: double.infinity,
                 margin: const EdgeInsets.only(top: 5.0),
                 alignment: Alignment.center,
                 child: new Row(
@@ -1145,7 +1154,7 @@ class AddPostScreenState extends State<AddPostScreen> {
                         .copyWith(fontSize: 18.0)),
               ),
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: double.infinity,
                 margin: const EdgeInsets.only(top: 5.0),
                 alignment: Alignment.center,
                 child: Column(
@@ -1229,7 +1238,7 @@ class AddPostScreenState extends State<AddPostScreen> {
                 ),
               ),
               Container(
-                width: MediaQuery.of(context).size.width,
+                width: double.infinity,
                 margin: const EdgeInsets.only(top: 10.0),
                 alignment: Alignment.center,
                 child: new Row(
