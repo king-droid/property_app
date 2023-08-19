@@ -44,6 +44,8 @@
 
 
 
+
+
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script defer="" src="flutter.js"></script>
@@ -110,6 +112,8 @@
     }
 
 
+
+
     </style>
     <script id="splash-screen-script">
     function removeSplashFromWeb() {
@@ -117,6 +121,8 @@
       document.getElementById("splash-branding")?.remove();
       document.body.style.background = "transparent";
     }
+
+
 
 
     </script>
@@ -132,28 +138,24 @@
 
 <script>
     window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
+        var loading = document.querySelector('#loading');
+        loading.textContent = "Loading entrypoint...";
+        _flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: async function(engineInitializer) {
+            loading.textContent = "Initializing engine...";
+            let appRunner = await engineInitializer.initializeEngine();
+
+            loading.textContent = "Running app...";
+            await appRunner.runApp();
+          }
+        });
       });
-    });
-
-
-
-
-
 
 
 
 </script>
-
-
 </body>
 </html>
