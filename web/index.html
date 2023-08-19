@@ -14,7 +14,8 @@
       This is a placeholder for base href that will be replaced by the value of
       the `--base-href` argument provided to `flutter build`.
     -->
-    <base href="$FLUTTER_BASE_HREF">
+    <!--<base href="$FLUTTER_BASE_HREF">-->
+    <base href="">
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -35,6 +36,7 @@
     <script>
     // The value below is injected by flutter build, do not touch.
     var serviceWorkerVersion = null;
+
 
 
 
@@ -107,6 +109,7 @@
       right: 0;
     }
 
+
     </style>
     <script id="splash-screen-script">
     function removeSplashFromWeb() {
@@ -115,14 +118,17 @@
       document.body.style.background = "transparent";
     }
 
+
     </script>
 </head>
 <body>
-<!--<picture id="splash">
-    <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
-    <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
-</picture>-->
+<picture id="splash">
+    <source media="(prefers-color-scheme: light)"
+            srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x">
+    <source media="(prefers-color-scheme: dark)"
+            srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x">
+    <img alt="" aria-hidden="true" class="center" src="splash/img/light-1x.png">
+</picture>
 
 <script>
     window.addEventListener('load', function(ev) {
@@ -138,6 +144,7 @@
         }
       });
     });
+
 
 
 
