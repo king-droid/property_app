@@ -7,7 +7,13 @@
   "theme_color": "#4286F8",
   "description": "A property app",
   "orientation": "portrait-primary",
-  "prefer_related_applications": false,
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.property.feeds.app"
+    }
+  ],
   "icons": [
     {
       "src": "icons/Icon-192.png",
