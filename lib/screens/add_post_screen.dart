@@ -211,14 +211,14 @@ class AddPostScreenState extends State<AddPostScreen> {
                 FocusScope.of(context).requestFocus(FocusNode());
               },
               child: Container(
-                padding: /* kIsWeb
-                    ? EdgeInsets.only(
+                padding: kIsWeb
+                    ? EdgeInsets.only(left: 0, right: 0, top: 20, bottom: 25)
+                    /*EdgeInsets.only(
                         left: (MediaQuery.of(context).size.width / 5),
                         right: (MediaQuery.of(context).size.width / 5),
                         top: 20,
-                        bottom: 25)
-                    :*/
-                    EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 25),
+                        bottom: 25)*/
+                    : EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 25),
                 color: AppColors.white,
                 //height: MediaQuery.of(context).size.height,
                 child: IgnorePointer(
