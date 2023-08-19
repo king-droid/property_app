@@ -62,9 +62,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
         descriptionController.text = promotion?.promotionDescription ?? "";
         selectedCity = promotion?.promotionCity ?? "";
         selectedCityIndex = cities!.indexOf(selectedCity ?? "");
-        _images = (promotion?.promotionPic ?? "")
-            .trim()
-            .isNotEmpty
+        _images = (promotion?.promotionPic ?? "").trim().isNotEmpty
             ? (promotion?.promotionPic ?? "").split(',')
             : [];
       }
@@ -84,18 +82,10 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
   @override
   Widget build(BuildContext context) {
     mode =
-    (ModalRoute
-        .of(context)!
-        .settings
-        .arguments as Map)["mode"] as String?;
-    promotion = (ModalRoute
-        .of(context)!
-        .settings
-        .arguments as Map)["promotion"]
-    as Promotion?;
-    user = Provider
-        .of<UserProvider>(context, listen: false)
-        .userData;
+        (ModalRoute.of(context)!.settings.arguments as Map)["mode"] as String?;
+    promotion = (ModalRoute.of(context)!.settings.arguments as Map)["promotion"]
+        as Promotion?;
+    user = Provider.of<UserProvider>(context, listen: false).userData;
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(
@@ -167,14 +157,14 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
                 FocusScope.of(context).requestFocus(FocusNode());
               },
               child: Container(
-                padding: /* kIsWeb
-                    ? EdgeInsets.only(
+                padding: kIsWeb
+                    ? EdgeInsets.only(left: 25, right: 25, top: 20, bottom: 25)
+                    /*EdgeInsets.only(
                         left: (MediaQuery.of(context).size.width / 5),
                         right: (MediaQuery.of(context).size.width / 5),
                         top: 20,
-                        bottom: 25)
-                    :*/ EdgeInsets.only(
-                    left: 20, right: 20, top: 5, bottom: 25),
+                        bottom: 25)*/
+                    : EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 25),
                 color: AppColors.white,
                 //height: MediaQuery.of(context).size.height,
                 child: IgnorePointer(
@@ -206,18 +196,17 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
             Container(
               alignment: Alignment.centerLeft,
               child: Text("Select city",
-                  style: Theme
-                      .of(context)
+                  style: Theme.of(context)
                       .textTheme
                       .titleMedium!
                       .copyWith(fontSize: 18.0)
-                /* TextStyle(
+                  /* TextStyle(
                   fontWeight: FontWeight.bold,
                   color: AppColors.headingsColor,
                   fontFamily: "Montserrat-Light",
                   fontSize: 14.0,
                 ),*/
-              ),
+                  ),
             ),
             const SizedBox(width: 5),
             /*Container(
@@ -245,7 +234,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
                 alignment: WrapAlignment.start,
                 children: List.generate(
                   (cities ?? []).length,
-                      (index) {
+                  (index) {
                     return InkWell(
                       onTap: () {
                         selectedCity = cities![index] ?? "";
@@ -268,15 +257,14 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
                             left: 7, right: 7, top: 5, bottom: 5),
                         child: Text(
                           cities![index] ?? "",
-                          style: Theme
-                              .of(context)
+                          style: Theme.of(context)
                               .textTheme
                               .bodySmall!
                               .copyWith(
-                              color: index == selectedCityIndex
-                                  ? AppColors.primaryColor
-                                  : AppColors.subTitleColor,
-                              fontSize: 13),
+                                  color: index == selectedCityIndex
+                                      ? AppColors.primaryColor
+                                      : AppColors.subTitleColor,
+                                  fontSize: 13),
                         ),
                       ),
                     );
@@ -299,62 +287,61 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
         Container(
           alignment: Alignment.centerLeft,
           child: new Text("Promotional Banner",
-              style: Theme
-                  .of(context)
+              style: Theme.of(context)
                   .textTheme
                   .titleMedium!
                   .copyWith(fontSize: 18.0)),
         ),
         _images.isEmpty
             ? Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            GestureDetector(
-              onTap: () {
-                _pickAttachment();
-              },
-              child: Container(
-                height: 100,
-                width: double.infinity,
-                margin: const EdgeInsets.only(top: 10.0),
-                alignment: Alignment.centerLeft,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius:
-                  new BorderRadius.all(const Radius.circular(5)),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 0,
-                        spreadRadius: 0.5),
-                  ],
-                ),
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 60,
-                        height: 60,
-                        child: Image.asset("assets/picture_icon.png",
-                            fit: BoxFit.fitWidth),
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      _pickAttachment();
+                    },
+                    child: Container(
+                      height: 100,
+                      width: double.infinity,
+                      margin: const EdgeInsets.only(top: 10.0),
+                      alignment: Alignment.centerLeft,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius:
+                            new BorderRadius.all(const Radius.circular(5)),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.black26,
+                              blurRadius: 0,
+                              spreadRadius: 0.5),
+                        ],
                       ),
-                      Text('Choose Picture',
-                          style: TextStyle(
-                              fontFamily: "Roboto_Bold",
-                              color: AppColors.subTitleColor,
-                              fontSize: 14)),
-                      /* onPressed: () {
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 60,
+                              height: 60,
+                              child: Image.asset("assets/picture_icon.png",
+                                  fit: BoxFit.fitWidth),
+                            ),
+                            Text('Choose Picture',
+                                style: TextStyle(
+                                    fontFamily: "Roboto_Bold",
+                                    color: AppColors.subTitleColor,
+                                    fontSize: 14)),
+                            /* onPressed: () {
                                   //_pickAttachment();
                                 }),*/
-                    ],
+                          ],
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
-            /*const SizedBox(width: 15),
+                  /*const SizedBox(width: 15),
                   Container(
                       margin: EdgeInsets.only(top: 10),
                       child: Text(
@@ -363,37 +350,34 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
                               fontFamily: "Roboto_Regular",
                               color: AppColors.buttonTextColorLight,
                               fontSize: 12))),*/
-          ],
-        )
+                ],
+              )
             : Container(
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
-            //color: AppColors.primaryColor,
-            margin: EdgeInsets.only(top: 5, left: 0, right: 1, bottom: 1),
-            child: InkWell(
-              onTap: () {
-                _showPictureOptions(0);
-              },
-              child: Center(
-                child: _images[0] != null
-                    ? (_images[0] ?? "").startsWith("/data")
-                    ? Image.file(
-                  File(_images[0] ?? ""),
-                  fit: BoxFit.fill,
-                  //width: 110,
-                )
-                    : FadeInImage.assetNetwork(
-                  image: AppConstants.imagesBaseUrl +
-                      "/promotion_images/" +
-                      (_images[0] ?? ""),
-                  fit: BoxFit.fill,
-                  placeholder: "assets/picture_loading.gif",
-                )
-                    : Container(),
-              ),
-            ))
+                width: MediaQuery.of(context).size.width,
+                //color: AppColors.primaryColor,
+                margin: EdgeInsets.only(top: 5, left: 0, right: 1, bottom: 1),
+                child: InkWell(
+                  onTap: () {
+                    _showPictureOptions(0);
+                  },
+                  child: Center(
+                    child: _images[0] != null
+                        ? (_images[0] ?? "").startsWith("/data")
+                            ? Image.file(
+                                File(_images[0] ?? ""),
+                                fit: BoxFit.fill,
+                                //width: 110,
+                              )
+                            : FadeInImage.assetNetwork(
+                                image: AppConstants.imagesBaseUrl +
+                                    "/promotion_images/" +
+                                    (_images[0] ?? ""),
+                                fit: BoxFit.fill,
+                                placeholder: "assets/picture_loading.gif",
+                              )
+                        : Container(),
+                  ),
+                ))
       ],
     );
   }
@@ -542,7 +526,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
   Future getImageFromCamera() async {
     final picker = ImagePicker();
     final pickedImage =
-    await picker.pickImage(source: ImageSource.camera, imageQuality: 95);
+        await picker.pickImage(source: ImageSource.camera, imageQuality: 95);
     final pickedImageFile = File(pickedImage!.path);
     setState(() {
       _images.add(pickedImageFile.path);
@@ -616,22 +600,22 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
         sourcePath: selImage.path ?? "",
         aspectRatioPresets: Platform.isAndroid
             ? [
-          CropAspectRatioPreset.square,
-          //CropAspectRatioPreset.ratio3x2,
-          //CropAspectRatioPreset.original,
-          //CropAspectRatioPreset.ratio4x3,
-          //CropAspectRatioPreset.ratio16x9
-        ]
+                CropAspectRatioPreset.square,
+                //CropAspectRatioPreset.ratio3x2,
+                //CropAspectRatioPreset.original,
+                //CropAspectRatioPreset.ratio4x3,
+                //CropAspectRatioPreset.ratio16x9
+              ]
             : [
-          CropAspectRatioPreset.original,
-          CropAspectRatioPreset.square,
-          CropAspectRatioPreset.ratio3x2,
-          CropAspectRatioPreset.ratio4x3,
-          CropAspectRatioPreset.ratio5x3,
-          CropAspectRatioPreset.ratio5x4,
-          CropAspectRatioPreset.ratio7x5,
-          CropAspectRatioPreset.ratio16x9
-        ],
+                CropAspectRatioPreset.original,
+                CropAspectRatioPreset.square,
+                CropAspectRatioPreset.ratio3x2,
+                CropAspectRatioPreset.ratio4x3,
+                CropAspectRatioPreset.ratio5x3,
+                CropAspectRatioPreset.ratio5x4,
+                CropAspectRatioPreset.ratio7x5,
+                CropAspectRatioPreset.ratio16x9
+              ],
         androidUiSettings: AndroidUiSettings(
             toolbarTitle: '',
             toolbarColor: AppColors.primaryColor,
@@ -650,9 +634,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
         targetDir.create();
       }
       final targetPath =
-          targetDir.path + "/${DateTime
-              .now()
-              .microsecondsSinceEpoch}.jpg";
+          targetDir.path + "/${DateTime.now().microsecondsSinceEpoch}.jpg";
       var result;
       try {
         result = await FlutterImageCompress.compressAndGetFile(
@@ -761,8 +743,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
               Container(
                 alignment: Alignment.centerLeft,
                 child: new Text("Title",
-                    style: Theme
-                        .of(context)
+                    style: Theme.of(context)
                         .textTheme
                         .titleMedium!
                         .copyWith(fontSize: 18.0)),
@@ -851,8 +832,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
               Container(
                 alignment: Alignment.centerLeft,
                 child: new Text("Description",
-                    style: Theme
-                        .of(context)
+                    style: Theme.of(context)
                         .textTheme
                         .titleMedium!
                         .copyWith(fontSize: 18.0)),
@@ -924,50 +904,44 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
   }
 
   _buildSubmitCTAWidget() {
-    return MediaQuery
-        .of(context)
-        .viewInsets
-        .bottom == 0.0
+    return MediaQuery.of(context).viewInsets.bottom == 0.0
         ? BlocConsumer<PromotionBloc, PromotionState>(
-      builder: (context, state) {
-        if (state is Initial) {
-          return _buildSubmitBtn();
-        } else if (state is Loading) {
-          return Center(
-            child: Container(
-              margin: const EdgeInsets.only(
-                  left: 35.0, right: 35.0, top: 35.0, bottom: 10),
-              width: 30,
-              height: 30,
-              child: CircularProgressIndicator(
-                strokeWidth: 2,
-                color: AppColors.primaryColor,
-              ),
-            ),
-          );
-        } else {
-          return _buildSubmitBtn();
-        }
-      },
-      listener: (context, state) async {
-        if (state is PromotionAdded) {
-          if (state.result ?? false) {
-            Navigator.of(context).pop(state.data);
-          }
-        } else if (state is Error) {
-          AppUtils.showToast(state.error ?? "");
-        }
-      },
-    )
+            builder: (context, state) {
+              if (state is Initial) {
+                return _buildSubmitBtn();
+              } else if (state is Loading) {
+                return Center(
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                        left: 35.0, right: 35.0, top: 35.0, bottom: 10),
+                    width: 30,
+                    height: 30,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: AppColors.primaryColor,
+                    ),
+                  ),
+                );
+              } else {
+                return _buildSubmitBtn();
+              }
+            },
+            listener: (context, state) async {
+              if (state is PromotionAdded) {
+                if (state.result ?? false) {
+                  Navigator.of(context).pop(state.data);
+                }
+              } else if (state is Error) {
+                AppUtils.showToast(state.error ?? "");
+              }
+            },
+          )
         : Container();
   }
 
   _buildSubmitBtn() {
     return Container(
-      width: MediaQuery
-          .of(context)
-          .size
-          .width,
+      width: MediaQuery.of(context).size.width,
       margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 40.0),
       alignment: Alignment.center,
       child: new Row(
@@ -976,7 +950,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
             child: /*_isLoading
                       ? Request_Loader()
                       : */
-            CustomElevatedButton(
+                CustomElevatedButton(
               text: "Submit",
               color: AppColors.primaryColor,
               textStyle: const TextStyle(

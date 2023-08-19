@@ -212,7 +212,7 @@ class AddPostScreenState extends State<AddPostScreen> {
               },
               child: Container(
                 padding: kIsWeb
-                    ? EdgeInsets.only(left: 0, right: 0, top: 20, bottom: 25)
+                    ? EdgeInsets.only(left: 25, right: 25, top: 20, bottom: 25)
                     /*EdgeInsets.only(
                         left: (MediaQuery.of(context).size.width / 5),
                         right: (MediaQuery.of(context).size.width / 5),
