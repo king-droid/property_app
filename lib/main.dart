@@ -35,6 +35,8 @@ import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import "package:universal_html/js.dart" as js;
 
 bool isFlutterLocalNotificationsInitialized = false;
 final GlobalKey<NavigatorState> navKeyRoot = GlobalKey<NavigatorState>();
@@ -167,7 +169,7 @@ saveDeviceTokenToServer(String? fcmToken) async {
 
 Future<void> setupFlutterNotifications() async {
   AwesomeNotifications().initialize(
-      // set the icon to null if you want to use the default app icon
+    // set the icon to null if you want to use the default app icon
       'resource://drawable/ic_launcher',
       [
         NotificationChannel(
@@ -187,8 +189,84 @@ Future<void> setupFlutterNotifications() async {
       debug: true);
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  MyAppState createState() {
+    return new MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    if (kIsWeb) {
+      WidgetsBinding.instance!.addPostFrameCallback((_) async {
+        final _prefs = await SharedPreferences.getInstance();
+        final _isWebDialogShownKey = "is-web-dialog-shown";
+        final _isWebDialogShown = _prefs.getBool(_isWebDialogShownKey) ?? false;
+        if (!_isWebDialogShown) {
+          final bool isDeferredNotNull =
+          js.context.callMethod("isDeferredNotNull") as bool;
+
+          if (isDeferredNotNull) {
+            debugPrint(">>> Add to HomeScreen prompt is ready.");
+            await showAddHomePageDialog(context);
+            _prefs.setBool(_isWebDialogShownKey, true);
+          } else {
+            debugPrint(">>> Add to HomeScreen prompt is not ready yet.");
+          }
+        }
+      });
+    }
+    super.initState();
+  }
+
+  Future<bool?> showAddHomePageDialog(BuildContext context) async {
+    return showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return Dialog(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20)),
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Center(
+                    child: Icon(
+                      Icons.add_circle,
+                      size: 70,
+                      color: Theme
+                          .of(context)
+                          .primaryColor,
+                    )),
+                SizedBox(height: 20.0),
+                Text(
+                  'Add to Homepage',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                ),
+                SizedBox(height: 20.0),
+                Text(
+                  'Want to add this application to home screen?',
+                  style: TextStyle(fontSize: 16),
+                ),
+                SizedBox(height: 20.0),
+                ElevatedButton(
+                    onPressed: () {
+                      js.context.callMethod("presentAddToHome");
+                      Navigator.pop(context, false);
+                    },
+                    child: Text("Yes!"))
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -246,7 +324,10 @@ class MyApp extends StatelessWidget {
 void setPageTitle(String title, BuildContext context) {
   SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
     label: title,
-    primaryColor: Theme.of(context).primaryColor.value, // This line is required
+    primaryColor: Theme
+        .of(context)
+        .primaryColor
+        .value, // This line is required
   ));
 }
 
