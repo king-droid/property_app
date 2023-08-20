@@ -55,6 +55,9 @@
 
 
 
+
+
+
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script defer="" defer src="flutter.js"></script>
@@ -156,6 +159,9 @@
 
 
 
+
+
+
     </style>
 
 
@@ -194,6 +200,9 @@
         bottom: 0;
       }
 
+
+
+
     </style>
 
     <script id="splash-screen-script">
@@ -203,6 +212,9 @@
       document.body.style.background = "transparent";
 
   }
+
+
+
 
 
     </script>
@@ -232,10 +244,10 @@
     });
 
 if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.error('Error', err));
-      }
+  window.addEventListener('load', function () {
+     navigator.serviceWorker.register('/flutter_service_worker.js');
+  });
+}
 
       function addToHomeScreen() {
         let a2hsBtn = document.querySelector(".ad2hs-prompt");  // hide our user interface that shows our A2HS button
@@ -293,6 +305,9 @@ if ('serviceWorker' in navigator) {
         // this.setState({ showInstallMessage: true });
         showIosInstall();
       }
+
+
+
 
 
 
