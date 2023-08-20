@@ -35,7 +35,6 @@ import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
-import 'package:pwa_install/pwa_install.dart';
 import "package:universal_html/js.dart" as js;
 
 bool isFlutterLocalNotificationsInitialized = false;
@@ -76,9 +75,9 @@ void main() async {
   //await handleFirebase();
   AutoSizeUtil.setStandard(360, isAutoTextSize: true);
 
-  PWAInstall().setup(installCallback: () {
+  /*PWAInstall().setup(installCallback: () {
     debugPrint('APP INSTALLED!');
-  });
+  });*/
 
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
