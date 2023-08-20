@@ -35,7 +35,7 @@ import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:pwa_install/pwa_install.dart';
 import "package:universal_html/js.dart" as js;
 
 bool isFlutterLocalNotificationsInitialized = false;
@@ -73,8 +73,12 @@ void main() async {
   HttpOverrides.global = new MyHttpOverrides();
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   //FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  await handleFirebase();
+  //await handleFirebase();
   AutoSizeUtil.setStandard(360, isAutoTextSize: true);
+
+  PWAInstall().setup(installCallback: () {
+    debugPrint('APP INSTALLED!');
+  });
 
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
@@ -169,7 +173,7 @@ saveDeviceTokenToServer(String? fcmToken) async {
 
 Future<void> setupFlutterNotifications() async {
   AwesomeNotifications().initialize(
-    // set the icon to null if you want to use the default app icon
+      // set the icon to null if you want to use the default app icon
       'resource://drawable/ic_launcher',
       [
         NotificationChannel(
@@ -201,7 +205,7 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp> {
   @override
   void initState() {
-    if (kIsWeb) {
+    /*if (kIsWeb) {
       WidgetsBinding.instance!.addPostFrameCallback((_) async {
         final _prefs = await SharedPreferences.getInstance();
         final _isWebDialogShownKey = "is-web-dialog-shown";
@@ -219,7 +223,7 @@ class MyAppState extends State<MyApp> {
           }
         }
       });
-    }
+    }*/
     super.initState();
   }
 
@@ -228,8 +232,8 @@ class MyAppState extends State<MyApp> {
       context: context,
       builder: (context) {
         return Dialog(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           child: Padding(
             padding: const EdgeInsets.all(24.0),
             child: Column(
@@ -237,12 +241,10 @@ class MyAppState extends State<MyApp> {
               children: [
                 Center(
                     child: Icon(
-                      Icons.add_circle,
-                      size: 70,
-                      color: Theme
-                          .of(context)
-                          .primaryColor,
-                    )),
+                  Icons.add_circle,
+                  size: 70,
+                  color: Theme.of(context).primaryColor,
+                )),
                 SizedBox(height: 20.0),
                 Text(
                   'Add to Homepage',
@@ -324,10 +326,7 @@ class MyAppState extends State<MyApp> {
 void setPageTitle(String title, BuildContext context) {
   SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
     label: title,
-    primaryColor: Theme
-        .of(context)
-        .primaryColor
-        .value, // This line is required
+    primaryColor: Theme.of(context).primaryColor.value, // This line is required
   ));
 }
 
