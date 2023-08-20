@@ -20,9 +20,9 @@ class SplashScreenState extends State<SplashScreen> {
   bool isDark = false;
 
   startTime() async {
-    //Future.delayed(const Duration(milliseconds: 100), () {
-    navigationPage();
-    //});
+    Future.delayed(const Duration(milliseconds: 500), () {
+      navigationPage();
+    });
   }
 
   void navigationPage() {
@@ -63,11 +63,21 @@ class SplashScreenState extends State<SplashScreen> {
         child: Container(
           color: Colors.white,
           width: double.infinity,
-          child: Column(
+          child: Center(
+            child: Container(
+              width: 25,
+              height: 25,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: AppColors.primaryColor,
+              ),
+            ),
+          )
+          /* Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 // App Logo on screen center top
-                /*Container(
+                Container(
                   margin: const EdgeInsets.only(bottom: 1.0),
                   width: 200.0,
                   height: 200.0,
@@ -107,8 +117,9 @@ class SplashScreenState extends State<SplashScreen> {
                       ),
                     ],
                   ),
-                ),*/
-              ]),
+                ),
+              ])*/
+          ,
         ),
       ),
     );
