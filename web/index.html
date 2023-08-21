@@ -52,6 +52,7 @@
 
 
 
+
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script defer="" defer src="flutter.js"></script>
@@ -126,6 +127,7 @@
 
 
 
+
     </style>
 
     <style>
@@ -196,6 +198,7 @@
         right: 1rem;
         bottom: 0;
       }
+
 
 
 
@@ -235,6 +238,7 @@
 
 
 
+
     </style>
 
     <!--<script id="splash-screen-script">
@@ -247,9 +251,9 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-<div class="container" id="loading_indicator">
+<!--<div class="container" id="loading_indicator">
     <img class="indicator" src="./assets/loading.gif"/>
-</div>
+</div>-->
 <!--<picture id="splash">
     <source media="(prefers-color-scheme: light)"
             srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x">
@@ -263,6 +267,7 @@
       navigator.serviceWorker.register('./sw.js');
     });
   }
+
 
 
 
@@ -285,16 +290,7 @@
 
 
 
-</script>
 
-window.onload = function () {
-setTimeout(function () {
-var loadingIndicator =
-document.getElementById("loading_indicator");
-if (loadingIndicator) {
-loadingIndicator.remove();
-}
-}, 10000);
-};
+</script>
 </body>
 </html>
