@@ -70,11 +70,10 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 void main() async {
   HttpOverrides.global = new MyHttpOverrides();
-  //WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  /*WidgetsBinding widgetsBinding = */
+  WidgetsFlutterBinding.ensureInitialized();
   //FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  handleFirebase().then((value) {
-
-  });
+  handleFirebase().then((value) {});
   AutoSizeUtil.setStandard(360, isAutoTextSize: true);
 
   /*PWAInstall().setup(installCallback: () {
@@ -174,7 +173,7 @@ saveDeviceTokenToServer(String? fcmToken) async {
 
 Future<void> setupFlutterNotifications() async {
   AwesomeNotifications().initialize(
-    // set the icon to null if you want to use the default app icon
+      // set the icon to null if you want to use the default app icon
       'resource://drawable/ic_launcher',
       [
         NotificationChannel(
@@ -234,7 +233,7 @@ class MyAppState extends State<MyApp> {
       builder: (context) {
         return Dialog(
           shape:
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           child: Padding(
             padding: const EdgeInsets.all(24.0),
             child: Column(
@@ -242,12 +241,10 @@ class MyAppState extends State<MyApp> {
               children: [
                 Center(
                     child: Icon(
-                      Icons.add_circle,
-                      size: 70,
-                      color: Theme
-                          .of(context)
-                          .primaryColor,
-                    )),
+                  Icons.add_circle,
+                  size: 70,
+                  color: Theme.of(context).primaryColor,
+                )),
                 SizedBox(height: 20.0),
                 Text(
                   'Add to Homepage',
@@ -329,10 +326,7 @@ class MyAppState extends State<MyApp> {
 void setPageTitle(String title, BuildContext context) {
   SystemChrome.setApplicationSwitcherDescription(ApplicationSwitcherDescription(
     label: title,
-    primaryColor: Theme
-        .of(context)
-        .primaryColor
-        .value, // This line is required
+    primaryColor: Theme.of(context).primaryColor.value, // This line is required
   ));
 }
 

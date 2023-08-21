@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _page = isFromNotification == true ? 0 : 2;
     }
     return SafeArea(
+        // bottom: true,
         child: /*kIsWeb ? _buildWebVersion() : */ _buildMobileVersion());
   }
 

@@ -311,14 +311,15 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                             end: const Alignment(0.0, 1),
                             begin: const Alignment(0.0, -1),
                             colors: <Color>[
-                              //Colors.black87.withOpacity(0.3),
+                              //Colors.black87.withOpacity(0.4),
+                              Colors.black87.withOpacity(0.3),
                               Colors.black87.withOpacity(0.2),
                               Colors.black87.withOpacity(0.1),
-                              Colors.black12.withOpacity(0.0)
+                              Colors.black87.withOpacity(0.0)
                             ],
                           ),
                         ),
-                        height: 60,
+                        height: 65,
                         child: Row(
                           children: [
                             Align(
@@ -335,9 +336,9 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                 },
                                 child: Container(
                                   alignment: Alignment.center,
-                                  margin: EdgeInsets.all(8),
-                                  height: 50,
-                                  width: 50,
+                                  margin: EdgeInsets.only(left: 5, top: 10),
+                                  height: 45,
+                                  width: 45,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: AppColors.overlayButtonColor,
@@ -364,9 +365,10 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                     },
                                     child: Container(
                                       alignment: Alignment.center,
-                                      margin: EdgeInsets.all(8),
-                                      height: 50,
-                                      width: 50,
+                                      margin:
+                                          EdgeInsets.only(right: 5, top: 10),
+                                      height: 45,
+                                      width: 45,
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: AppColors.overlayButtonColor,
@@ -1283,6 +1285,22 @@ class ShowPromotionScreenState extends State<ShowPromotionScreen> {
                                         left: 5, right: 5, bottom: 8, top: 0),
                                     child: GestureDetector(
                                       onTap: () {
+                                        if ((user?.accountType ==
+                                            "guest_account")) {
+                                          AppUtils.showNativeAlertDialog(
+                                              context: context,
+                                              title: "Registration required",
+                                              content:
+                                                  "You are currently using app as guest.\n\nYou need to create account to access all features of app.",
+                                              cancelActionText: "Cancel",
+                                              defaultActionText:
+                                                  "Create account Now",
+                                              defaultActionClick: () {
+                                                Navigator.pushNamed(context,
+                                                    AppRoutes.landingScreen);
+                                              });
+                                          return;
+                                        }
                                         promotionBloc?.handleLoader(true);
                                         promotionBloc
                                             ?.addComment(

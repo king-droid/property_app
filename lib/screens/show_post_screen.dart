@@ -165,14 +165,15 @@ class ShowPostScreenState extends State<ShowPostScreen> {
           end: const Alignment(0.0, 1),
           begin: const Alignment(0.0, -1),
           colors: <Color>[
-            //Colors.black87.withOpacity(0.3),
+            //Colors.black87.withOpacity(0.4),
+            Colors.black87.withOpacity(0.3),
             Colors.black87.withOpacity(0.2),
             Colors.black87.withOpacity(0.1),
-            Colors.black12.withOpacity(0.0)
+            Colors.black87.withOpacity(0.0)
           ],
         ),
       ),
-      height: 60,
+      height: 65,
       child: Row(
         children: [
           Align(
@@ -188,9 +189,9 @@ class ShowPostScreenState extends State<ShowPostScreen> {
               },
               child: Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                height: 50,
-                width: 50,
+                margin: EdgeInsets.only(left: 5, top: 10),
+                height: 45,
+                width: 45,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: AppColors.overlayButtonColor,
@@ -199,7 +200,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                   child: Icon(
                     Icons.arrow_back_ios_new,
                     color: Colors.black,
-                    size: 18,
+                    size: 20,
                   ),
                 ),
               ),
@@ -217,9 +218,9 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                   },
                   child: Container(
                     alignment: Alignment.center,
-                    margin: EdgeInsets.all(8),
-                    height: 50,
-                    width: 50,
+                    margin: EdgeInsets.only(right: 5, top: 10),
+                    height: 45,
+                    width: 45,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: AppColors.overlayButtonColor,
@@ -321,7 +322,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
     return Container(
       width: double.infinity,
       //color: Colors.blue,
-      margin: EdgeInsets.only(left: 10, right: 10, top: 0, bottom: 5),
+      margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 5),
       child: Text(post?.postTitle ?? "",
           style: Theme.of(context).textTheme.titleMedium!.copyWith(
               color: Colors.black.withOpacity(0.7),
@@ -714,81 +715,109 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                       aspectRatio: 4 / 3,
                       child: Container(
                         width: double.infinity,
-                        child: PageView.builder(
-                            itemCount: pictures.length,
-                            pageSnapping: true,
-                            controller: _pageController,
-                            onPageChanged: (page) {
-                              setState(() {
-                                activePosition = page;
-                              });
-                            },
-                            itemBuilder: (context, index) {
-                              return InkWell(
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                      context, AppRoutes.previewPictureScreen,
-                                      arguments: AppConstants.imagesBaseUrl +
-                                          "/post_images/" +
-                                          pictures[index]);
-                                },
-                                child: Container(
-                                  //margin: const EdgeInsets.only(left: 5, right: 5, top: 5, bottom: 5),
-                                  child: pictures[index].isNotEmpty
-                                      ? Container(
-                                          child: FadeInImage.assetNetwork(
-                                          image: AppConstants.imagesBaseUrl +
-                                              "/post_images/" +
-                                              pictures[index],
-                                          placeholder:
-                                              "assets/picture_placeholder.webp",
-                                          placeholderErrorBuilder:
-                                              (context, error, stackTrace) {
-                                            return Image.asset(
-                                                "assets/picture_error.png",
-                                                fit: BoxFit.fill);
-                                          },
-                                          imageErrorBuilder:
-                                              (context, error, stackTrace) {
-                                            return Image.asset(
-                                                "assets/picture_error.png",
-                                                fit: BoxFit.fill);
-                                          },
-                                          fit: BoxFit.cover,
-                                        ))
-                                      : Container(),
-                                ),
-                              );
-                            }),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, AppRoutes.previewPictureScreen,
+                                arguments: /*AppConstants.imagesBaseUrl +
+                                          "/post_images/" +*/
+                                    pictures);
+                          },
+                          child: Container(
+                            //margin: const EdgeInsets.only(left: 5, right: 5, top: 5, bottom: 5),
+                            child: (pictures[0] ?? "").isNotEmpty
+                                ? Container(
+                                    child: FadeInImage.assetNetwork(
+                                    image: AppConstants.imagesBaseUrl +
+                                        "/post_images/" +
+                                        pictures[0],
+                                    placeholder:
+                                        "assets/picture_placeholder.webp",
+                                    placeholderErrorBuilder:
+                                        (context, error, stackTrace) {
+                                      return Image.asset(
+                                          "assets/picture_error.png",
+                                          fit: BoxFit.fill);
+                                    },
+                                    imageErrorBuilder:
+                                        (context, error, stackTrace) {
+                                      return Image.asset(
+                                          "assets/picture_error.png",
+                                          fit: BoxFit.fill);
+                                    },
+                                    fit: BoxFit.cover,
+                                  ))
+                                : Container(),
+                          ),
+                        ),
                       ),
                     ),
                     Align(
-                      alignment: Alignment.bottomCenter,
+                      alignment: Alignment.center,
                       child: Container(
-                        padding: EdgeInsets.only(bottom: 8),
+                        //padding: EdgeInsets.only(bottom: 8),
+                        decoration: new BoxDecoration(
+                          gradient: new LinearGradient(
+                            end: const Alignment(0.0, 1),
+                            begin: const Alignment(0.0, -1),
+                            colors: <Color>[
+                              Colors.black87.withOpacity(0.4),
+                              Colors.black87.withOpacity(0.3),
+                              Colors.black87.withOpacity(0.2),
+                              Colors.black87.withOpacity(0.1),
+                              Colors.black87.withOpacity(0.0)
+                            ],
+                          ),
+                        ),
+                        //height: 20,
                         child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children:
-                                indicators(pictures.length, activePosition)),
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.only(left: 5),
+                                color: Colors.transparent,
+                                child: Text(
+                                  AppUtils.getFormattedPostDate(
+                                      post?.createdOn ?? ""),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodySmall!
+                                      .copyWith(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w500),
+                                ),
+                              ),
+                              Container(
+                                padding: EdgeInsets.only(right: 5),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      width: 25,
+                                      height: 25,
+                                      child: Image.asset(
+                                        "assets/picture_icon_transparent.png",
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    Text(
+                                      "${pictures.length} Pictures",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium!
+                                          .copyWith(
+                                              color: Colors.white,
+                                              fontSize: 12,
+                                              height: 1,
+                                              fontWeight: FontWeight.w500),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ]),
                       ),
                     ),
                   ],
-                ),
-                Container(
-                  //color: AppColors.bgColorLight,
-                  padding: EdgeInsets.only(top: 5, right: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
-                        color: Colors.transparent,
-                        child: Text(
-                          AppUtils.getFormattedPostDate(post?.createdOn ?? ""),
-                          style: Theme.of(context).textTheme.bodySmall,
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
               ],
             );
