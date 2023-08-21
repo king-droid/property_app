@@ -761,7 +761,7 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                             end: const Alignment(0.0, 1),
                             begin: const Alignment(0.0, -1),
                             colors: <Color>[
-                              Colors.black87.withOpacity(0.4),
+                              //Colors.black87.withOpacity(0.4),
                               Colors.black87.withOpacity(0.3),
                               Colors.black87.withOpacity(0.2),
                               Colors.black87.withOpacity(0.1),
@@ -793,8 +793,8 @@ class ShowPostScreenState extends State<ShowPostScreen> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Container(
-                                      width: 25,
-                                      height: 25,
+                                      width: 20,
+                                      height: 20,
                                       child: Image.asset(
                                         "assets/picture_icon_transparent.png",
                                         fit: BoxFit.cover,
