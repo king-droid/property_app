@@ -35,6 +35,7 @@ import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import "package:universal_html/js.dart" as js;
 
 bool isFlutterLocalNotificationsInitialized = false;
@@ -82,7 +83,7 @@ void main() async {
 
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => UserProvider())],
-      child: const MyApp()));
+      child: const MaterialApp(home: MyApp())));
   //FlutterNativeSplash.remove();
 }
 
@@ -205,25 +206,25 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp> {
   @override
   void initState() {
-    /*if (kIsWeb) {
+    if (kIsWeb) {
       WidgetsBinding.instance!.addPostFrameCallback((_) async {
         final _prefs = await SharedPreferences.getInstance();
         final _isWebDialogShownKey = "is-web-dialog-shown";
         final _isWebDialogShown = _prefs.getBool(_isWebDialogShownKey) ?? false;
-        if (!_isWebDialogShown) {
-          final bool isDeferredNotNull =
-          js.context.callMethod("isDeferredNotNull") as bool;
+        //if (!_isWebDialogShown) {
+        final bool isDeferredNotNull =
+            js.context.callMethod("isDeferredNotNull") as bool;
 
-          if (isDeferredNotNull) {
-            debugPrint(">>> Add to HomeScreen prompt is ready.");
-            await showAddHomePageDialog(context);
-            _prefs.setBool(_isWebDialogShownKey, true);
-          } else {
-            debugPrint(">>> Add to HomeScreen prompt is not ready yet.");
-          }
+        if (isDeferredNotNull) {
+          debugPrint(">>> Add to HomeScreen prompt is ready.");
+          await showAddHomePageDialog(context);
+          _prefs.setBool(_isWebDialogShownKey, true);
+        } else {
+          debugPrint(">>> Add to HomeScreen prompt is not ready yet.");
         }
+        //}
       });
-    }*/
+    }
     super.initState();
   }
 
@@ -239,20 +240,14 @@ class MyAppState extends State<MyApp> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Center(
-                    child: Icon(
-                  Icons.add_circle,
-                  size: 70,
-                  color: Theme.of(context).primaryColor,
-                )),
-                SizedBox(height: 20.0),
+                //SizedBox(height: 20.0),
                 Text(
-                  'Add to Homepage',
+                  'Install App',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: 20.0),
                 Text(
-                  'Want to add this application to home screen?',
+                  'Android users can click install button to get the app installed on your phone.\n\niPhone users follow below steps:-\n\n1. Click share icon at bottom\n2. Click "Add to home screen"\n3. Click "Add"',
                   style: TextStyle(fontSize: 16),
                 ),
                 SizedBox(height: 20.0),
@@ -261,7 +256,14 @@ class MyAppState extends State<MyApp> {
                       js.context.callMethod("presentAddToHome");
                       Navigator.pop(context, false);
                     },
-                    child: Text("Yes!"))
+                    child: Container(
+                        padding: EdgeInsets.only(
+                          left: 10,
+                          right: 10,
+                          top: 8,
+                          bottom: 8,
+                        ),
+                        child: Text("Install")))
               ],
             ),
           ),
