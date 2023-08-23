@@ -45,7 +45,7 @@ class LandingScreenState extends State<LandingScreen> {
         });
       });
       print(err);
-      AppUtils.showToast(
+      AppUtils.showSnackBar(context,
           "Failed to login with Gmail account. Please try mobile login");
     }
   }
