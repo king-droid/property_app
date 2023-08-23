@@ -78,52 +78,56 @@ class SplashScreenState extends State<SplashScreen> {
               ),
                 ),
           )*/
-                    Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                  // App Logo on screen center top
-                  Container(
-                    margin: const EdgeInsets.only(bottom: 1.0),
-                    width: 200.0,
-                    height: 200.0,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: ExactAssetImage('assets/app_icon.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  // App Title
-                  Container(
-                    padding: const EdgeInsets.only(top: 1.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                            Text(
-                              "Property",
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  color: AppColors.primaryColor,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "muli"),
-                            ),
-                            Text(
-                              " Feeds",
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  color: Colors.black54,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: "muli"),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ]))),
+                    kIsWeb
+                        ? Container()
+                        : Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                                // App Logo on screen center top
+                                Container(
+                                  margin: const EdgeInsets.only(bottom: 1.0),
+                                  width: 200.0,
+                                  height: 200.0,
+                                  decoration: const BoxDecoration(
+                                    image: DecorationImage(
+                                      image: ExactAssetImage(
+                                          'assets/app_icon.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                // App Title
+                                Container(
+                                  padding: const EdgeInsets.only(top: 1.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const [
+                                          Text(
+                                            "Property",
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                color: AppColors.primaryColor,
+                                                fontWeight: FontWeight.bold,
+                                                fontFamily: "muli"),
+                                          ),
+                                          Text(
+                                            " Feeds",
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                color: Colors.black54,
+                                                fontWeight: FontWeight.bold,
+                                                fontFamily: "muli"),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ]))),
       ),
     );
   }
