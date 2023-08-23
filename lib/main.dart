@@ -74,7 +74,9 @@ void main() async {
   /*WidgetsBinding widgetsBinding = */
   WidgetsFlutterBinding.ensureInitialized();
   //FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  handleFirebase().then((value) {});
+  if (!kIsWeb) {
+    handleFirebase().then((value) {});
+  }
   AutoSizeUtil.setStandard(360, isAutoTextSize: true);
 
   /*PWAInstall().setup(installCallback: () {

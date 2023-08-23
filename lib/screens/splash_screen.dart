@@ -21,9 +21,9 @@ class SplashScreenState extends State<SplashScreen> {
 
   startTime() async {
     navigationPage();
-    /*Future.delayed(const Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 500), () {
       navigationPage();
-    });*/
+    });
   }
 
   void navigationPage() {
@@ -66,13 +66,13 @@ class SplashScreenState extends State<SplashScreen> {
           width: double.infinity,
           child: Center(
             child: Container(
-                /*width: 25,
+              width: 25,
               height: 25,
               child: CircularProgressIndicator(
                 strokeWidth: 2,
                 color: AppColors.primaryColor,
-              ),*/
-                ),
+              ),
+            ),
           )
           /* Column(
               mainAxisAlignment: MainAxisAlignment.center,
