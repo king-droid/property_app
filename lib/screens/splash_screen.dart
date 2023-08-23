@@ -21,7 +21,7 @@ class SplashScreenState extends State<SplashScreen> {
   bool isDark = false;
 
   startTime() async {
-    if (!kIsWeb) {
+    if (kIsWeb) {
       navigationPage();
     } else {
       Future.delayed(const Duration(milliseconds: 100), () {
