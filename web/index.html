@@ -106,6 +106,7 @@
 
 
 
+
 </style>
 <script>
     var serviceWorkerVersion = null;
@@ -174,12 +175,13 @@
             );
             loadMainDartJs();
           }
-        }, 4000);
+        }, 1000);
       });
     } else {
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+
 
 
 
