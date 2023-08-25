@@ -109,6 +109,7 @@
      }
 
 
+
 </style>
 
 <style id="splash-screen-style">
@@ -168,6 +169,7 @@
       bottom: 0;
       right: 0;
     }
+
 
 
 
@@ -282,10 +284,11 @@
       const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
       // Checks if should display install popup notification:
-      if (isIos() && !isInStandaloneMode()) {
+      //if (isIos() && !isInStandaloneMode()) {
         // this.setState({ showInstallMessage: true });
         showIosInstall();
-      }
+      //}
+
 
 
 
