@@ -40,60 +40,73 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
       name="viewport">
 <style>
-    html, body { height: 100%; }
+    .ad2hs-prompt {
+        background-color: rgb(59, 134, 196); /* Blue */
+        border: none;
+        display: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
 
-body {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+        position: absolute;
+        margin: 0 1rem 1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 32px);
+      }
 
-// Here is where the magic happens
+      .ios-prompt {
+        background-color: #fcfcfc;
+        border: 1px solid #666;
+        display: none;
+        padding: 0.8rem 1rem 0 0.5rem;
+        text-decoration: none;
+        font-size: 16px;
+        color: #555;
 
-$offset: 187;
-$duration: 1.4s;
+        position: absolute;
+        margin: 0 auto 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+      }
 
-.spinner {
-  animation: rotator $duration linear infinite;
-}
+      .ad2hs-prompt {
+        background-color: rgb(59, 134, 196); /* Blue */
+        border: none;
+        display: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
 
-@keyframes rotator {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(270deg); }
-}
+        position: absolute;
+        margin: 0 1rem 1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 32px);
+      }
 
-.path {
-  stroke-dasharray: $offset;
-  stroke-dashoffset: 0;
-  transform-origin: center;
-  animation:
-    dash $duration ease-in-out infinite,
-    colors ($duration*4) ease-in-out infinite;
-}
+      .ios-prompt {
+        background-color: #fcfcfc;
+        border: 1px solid #666;
+        display: none;
+        padding: 0.8rem 1rem 0 0.5rem;
+        text-decoration: none;
+        font-size: 16px;
+        color: #555;
 
-@keyframes colors {
-	0% { stroke: #4286F8; }
-	25% { stroke: #4286F8; }
-	50% { stroke: #4286F8; }
-	75% { stroke: #4286F8; }
-  100% { stroke: #4286F8; }
-}
-
-@keyframes dash {
- 0% { stroke-dashoffset: $offset; }
- 50% {
-   stroke-dashoffset: $offset/4;
-   transform:rotate(135deg);
- }
- 100% {
-   stroke-dashoffset: $offset;
-   transform:rotate(450deg);
- }
-}
-
-
-
-
+        position: absolute;
+        margin: 0 auto 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+     }
 
 
 </style>
@@ -155,6 +168,8 @@ $duration: 1.4s;
       bottom: 0;
       right: 0;
     }
+
+
 
 
 
@@ -250,21 +265,27 @@ $duration: 1.4s;
       loadMainDartJs();
     }
 
+     function showIosInstall() {
+        let iosPrompt = document.querySelector(".ios-prompt");
+        iosPrompt.style.display = "block";
+        iosPrompt.addEventListener("click", () => {
+          iosPrompt.style.display = "none";
+        });
+      }
 
+      // Detects if device is on iOS
+      const isIos = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /iphone|ipad|ipod/.test( userAgent );
+      }
+      // Detects if device is in standalone mode
+      const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+      // Checks if should display install popup notification:
+      if (isIos() && !isInStandaloneMode()) {
+        // this.setState({ showInstallMessage: true });
+        showIosInstall();
+      }
 
 
 
