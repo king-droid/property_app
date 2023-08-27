@@ -1,7 +1,3 @@
-//import 'dart:html' as html;
-
-import 'dart:html';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -12,6 +8,7 @@ import 'package:property_feeds/models/user.dart';
 import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
+import 'package:universal_html/html.dart' as html;
 import "package:universal_html/js.dart" as js;
 
 class SplashScreen extends StatefulWidget {
@@ -38,7 +35,8 @@ class SplashScreenState extends State<SplashScreen> {
       /*Future.delayed(const Duration(milliseconds: 1000), () {
         AppUtils.showSnackBar(context, "$kIsWeb $defaultTargetPlatform");
       });*/
-      isStandAlone = window.matchMedia('(display-mode: standalone)').matches;
+      isStandAlone =
+          html.window.matchMedia('(display-mode: standalone)').matches;
       if (isStandAlone) {
         navigationPage();
       } else {}
