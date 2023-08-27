@@ -33,6 +33,9 @@ class SplashScreenState extends State<SplashScreen> {
         navigationPage();
       });
     } else {
+      Future.delayed(const Duration(milliseconds: 1000), () {
+        AppUtils.showSnackBar(context, "$kIsWeb $defaultTargetPlatform");
+      });
       isStandAlone = window.matchMedia('(display-mode: standalone)').matches;
       if (isStandAlone) {
         navigationPage();
