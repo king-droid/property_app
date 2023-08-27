@@ -35,7 +35,6 @@ import 'package:property_feeds/provider/user_provider.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import "package:universal_html/js.dart" as js;
 
 bool isFlutterLocalNotificationsInitialized = false;
@@ -209,7 +208,7 @@ class MyAppState extends State<MyApp> {
   @override
   void initState() {
     if (kIsWeb) {
-      WidgetsBinding.instance!.addPostFrameCallback((_) async {
+      /* WidgetsBinding.instance!.addPostFrameCallback((_) async {
         final _prefs = await SharedPreferences.getInstance();
         final _isWebDialogShownKey = "is-web-dialog-shown";
         final _isWebDialogShown = _prefs.getBool(_isWebDialogShownKey) ?? false;
@@ -225,7 +224,7 @@ class MyAppState extends State<MyApp> {
           debugPrint(">>> Add to HomeScreen prompt is not ready yet.");
         }
         //}
-      });
+      });*/
     }
     super.initState();
   }
