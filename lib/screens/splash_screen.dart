@@ -36,7 +36,9 @@ class SplashScreenState extends State<SplashScreen> {
           window.matchMedia('(display-mode: standalone)').matches;
       final bool isAppInstalled =
           js.context.callMethod("isDeferredNotNull") as bool;
-      AppUtils.showSnackBar(context, "$isStandAlone $isAppInstalled");
+      Future.delayed(const Duration(milliseconds: 100), () {
+        AppUtils.showSnackBar(context, "$isStandAlone $isAppInstalled");
+      });
       /*if (isStandAlone) {
         navigationPage();
       } else {}*/
