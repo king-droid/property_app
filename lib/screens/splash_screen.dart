@@ -30,6 +30,12 @@ class SplashScreenState extends State<SplashScreen> {
         navigationPage();
       });
     }
+    //final isStandAlone = window.matchMedia('(display-mode: standalone)').matches;
+    final bool isAppInstalled =
+        js.context.callMethod("isDeferredNotNull") as bool;
+    if (isAppInstalled) {
+      navigationPage();
+    } else {}
   }
 
   void navigationPage() {
@@ -120,7 +126,10 @@ class SplashScreenState extends State<SplashScreen> {
                     ? Container(
                         child: Column(
                         children: [
-                          buildInstallAndroidAppButton(),
+                          (kIsWeb &&
+                                  defaultTargetPlatform == TargetPlatform.iOS)
+                              ? Container()
+                              : buildInstallAndroidAppButton(),
                           buildContinueWebAppButton(),
                         ],
                       ))
