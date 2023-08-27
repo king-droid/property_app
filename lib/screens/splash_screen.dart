@@ -33,9 +33,9 @@ class SplashScreenState extends State<SplashScreen> {
         navigationPage();
       });
     } else {
-      Future.delayed(const Duration(milliseconds: 1000), () {
+      /*Future.delayed(const Duration(milliseconds: 1000), () {
         AppUtils.showSnackBar(context, "$kIsWeb $defaultTargetPlatform");
-      });
+      });*/
       isStandAlone = window.matchMedia('(display-mode: standalone)').matches;
       if (isStandAlone) {
         navigationPage();
@@ -148,12 +148,12 @@ class SplashScreenState extends State<SplashScreen> {
 
   Container buildInstallIOsAppButton() {
     return Container(
-        margin: EdgeInsets.only(top: 20),
-        padding: EdgeInsets.all(20),
+        margin: EdgeInsets.only(top: 20, bottom: 30),
+        padding: EdgeInsets.all(30),
         child: Text(
           "Install ios app by clicking on share icon at bottom and then click 'Add to Home Screen'",
           style: TextStyle(
-              fontSize: 14,
+              fontSize: 16,
               color: AppColors.buttonTextColorBlack,
               fontFamily: "Muli"),
         ));
