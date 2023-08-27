@@ -1,3 +1,5 @@
+//import 'dart:html' as html;
+
 import 'dart:html';
 
 import 'package:flutter/foundation.dart';
@@ -151,11 +153,12 @@ class SplashScreenState extends State<SplashScreen> {
         margin: EdgeInsets.only(top: 20, bottom: 30),
         padding: EdgeInsets.all(30),
         child: Text(
-          "Install ios app by clicking on share icon at bottom and then click 'Add to Home Screen'",
+          "To install app on your iPhone follow below steps:-\n\n- Click on share icon at bottom\n- Click 'Add to Home Screen'",
           style: TextStyle(
               fontSize: 16,
               color: AppColors.buttonTextColorBlack,
               fontFamily: "Muli"),
+          textAlign: TextAlign.center,
         ));
   }
 
@@ -191,7 +194,7 @@ class SplashScreenState extends State<SplashScreen> {
       child: CustomIconButton(
         text: "Continue in browser",
         color: AppColors.white,
-        elevation: 2,
+        elevation: 1,
         icon: Image.asset(
           'assets/web.png',
           height: 20,
