@@ -74,39 +74,11 @@
         bottom: 0;
       }
 
-      .ad2hs-prompt {
-        background-color: rgb(59, 134, 196); /* Blue */
-        border: none;
-        display: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;
 
-        position: absolute;
-        margin: 0 1rem 1rem;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: calc(100% - 32px);
-      }
 
-      .ios-prompt {
-        background-color: #fcfcfc;
-        border: 1px solid #666;
-        display: none;
-        padding: 0.8rem 1rem 0 0.5rem;
-        text-decoration: none;
-        font-size: 16px;
-        color: #555;
 
-        position: absolute;
-        margin: 0 auto 1rem;
-        left: 1rem;
-        right: 1rem;
-        bottom: 0;
-     }
+
+
 
 
 
@@ -192,11 +164,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {
+     //showIosInstall();
       if (scriptLoaded) {
         return;
       }
@@ -268,6 +255,9 @@
     }
 
      function showIosInstall() {
+     console.warn(
+              'inside ios install popup',
+            );
         let iosPrompt = document.querySelector(".ios-prompt");
         iosPrompt.style.display = "block";
         iosPrompt.addEventListener("click", () => {
@@ -292,12 +282,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 <body>
 <div class="center" id="splash">
-    <img class="indicator" src="./assets/loading.gif"/>
+    <img class="indicator" height="60" src="./assets/loader.gif" width="90"/>
 </div>
+<!--<button class="ad2hs-prompt" type="button">Install Web App</button>
+<div class="ios-prompt">
+    <span style="color: rgb(187, 187, 187); float: right; margin-top: -14px; margin-right: -11px;">&times;</span>
+    <img src="assets/imgs/add2home.svg"
+         style="float: left; height: 80px; width: auto; margin-top: -8px; margin-right: 1rem;">
+    <p style="margin-top: -3px; line-height: 1.3rem;">To install this Web App in your iPhone/iPad
+        press <img src="assets/imgs/share.svg"
+                   style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;">
+        and then Add to Home Screen.</p>
+</div>-->
 <!--<picture id="splash">
     <source media="(prefers-color-scheme: light)"
             srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x">
