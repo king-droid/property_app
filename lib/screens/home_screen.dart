@@ -38,7 +38,12 @@ class _HomeScreenState extends State<HomeScreen> {
     }
     return SafeArea(
         // bottom: true,
-        child: /*kIsWeb ? _buildWebVersion() : */ _buildMobileVersion());
+        child: /*kIsWeb ? _buildWebVersion() : */ Container(
+            padding: EdgeInsets.only(
+                bottom: (kIsWeb && defaultTargetPlatform == TargetPlatform.iOS)
+                    ? 20
+                    : 0),
+            child: _buildMobileVersion()));
   }
 
   Widget _buildMobileVersion() {

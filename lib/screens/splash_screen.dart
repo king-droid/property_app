@@ -23,6 +23,7 @@ class SplashScreen extends StatefulWidget {
 
 class SplashScreenState extends State<SplashScreen> {
   bool isDark = false;
+  bool isStandAlone = false;
 
   startTime() async {
     if (!kIsWeb) {
@@ -32,12 +33,7 @@ class SplashScreenState extends State<SplashScreen> {
         navigationPage();
       });
     } else {
-      final isStandAlone =
-          window.matchMedia('(display-mode: standalone)').matches;
-      //final bool isAppInstalled = js.context.callMethod("isDeferredNotNull") as bool;
-      /* Future.delayed(const Duration(milliseconds: 1000), () {
-        AppUtils.showSnackBar(context, "$isStandAlone $isAppInstalled");
-      });*/
+      isStandAlone = window.matchMedia('(display-mode: standalone)').matches;
       if (isStandAlone) {
         navigationPage();
       } else {}
@@ -129,19 +125,35 @@ class SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
                 kIsWeb
-                    ? Container(
-                        child: Column(
-                        children: [
-                          (kIsWeb &&
-                                  defaultTargetPlatform == TargetPlatform.iOS)
-                              ? Container()
-                              : buildInstallAndroidAppButton(),
-                          buildContinueWebAppButton(),
-                        ],
-                      ))
+                    ? isStandAlone
+                        ? Container()
+                        : Container(
+                            child: Column(
+                            children: [
+                              (kIsWeb &&
+                                      defaultTargetPlatform ==
+                                          TargetPlatform.iOS)
+                                  ? buildInstallIOsAppButton()
+                                  : buildInstallAndroidAppButton(),
+                              buildContinueWebAppButton(),
+                            ],
+                          ))
                     : Container()
               ])),
     );
+  }
+
+  Container buildInstallIOsAppButton() {
+    return Container(
+        margin: EdgeInsets.only(top: 20),
+        padding: EdgeInsets.all(20),
+        child: Text(
+          "Install ios app by clicking on share icon at bottom and then click 'Add to Home Screen'",
+          style: TextStyle(
+              fontSize: 14,
+              color: AppColors.buttonTextColorBlack,
+              fontFamily: "Muli"),
+        ));
   }
 
   Container buildInstallAndroidAppButton() {
