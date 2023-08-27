@@ -31,14 +31,16 @@ class SplashScreenState extends State<SplashScreen> {
       Future.delayed(const Duration(milliseconds: 500), () {
         navigationPage();
       });
+    } else {
+      final isStandAlone =
+          window.matchMedia('(display-mode: standalone)').matches;
+      final bool isAppInstalled =
+          js.context.callMethod("isDeferredNotNull") as bool;
+      AppUtils.showSnackBar(context, "$isStandAlone $isAppInstalled");
+      /*if (isStandAlone) {
+        navigationPage();
+      } else {}*/
     }
-    final isStandAlone =
-        window.matchMedia('(display-mode: standalone)').matches;
-    final bool isAppInstalled =
-        js.context.callMethod("isDeferredNotNull") as bool;
-    if (isStandAlone) {
-      navigationPage();
-    } else {}
   }
 
   void navigationPage() {
