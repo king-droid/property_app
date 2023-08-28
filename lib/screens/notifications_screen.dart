@@ -3,15 +3,15 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:property_feeds/blocs/notifications_bloc.dart';
 import 'package:property_feeds/configs/app_routes.dart';
 import 'package:property_feeds/constants/appColors.dart';
 import 'package:property_feeds/models/notification.dart';
+import 'package:property_feeds/models/notifications_response.dart';
 import 'package:property_feeds/models/post.dart';
 import 'package:property_feeds/models/promotion.dart';
 import 'package:property_feeds/screens/notification_item.dart';
 import 'package:property_feeds/utils/AdHelper.dart';
-import 'package:property_feeds/utils/app_storage.dart';
-import 'package:property_feeds/utils/app_utils.dart';
 import 'package:property_feeds/widgets/native_add_widget_notifications_listing.dart';
 
 class NotificationsScreen extends StatefulWidget {
@@ -22,16 +22,30 @@ class NotificationsScreen extends StatefulWidget {
 class _NotificationsScreenState extends State<NotificationsScreen> {
   List<AppNotification>? notifications = [];
   BannerAd? _ad;
+  NotificationsBloc notificationsBloc = NotificationsBloc();
+  bool isLoading = true;
 
   @override
   void initState() {
     SchedulerBinding.instance.addPostFrameCallback((_) {
-      AppUtils.getAllNotifications().then((value) {
+      notificationsBloc.getAllNotifications().then((value) {
+        List<NotificationData>? notificationsList = value ?? [];
+        for (NotificationData data in notificationsList) {
+          notifications!.add(AppNotification(
+              title: data.notificationTitle ?? "",
+              message: data.notificationMessage ?? "",
+              type: data.notificationType ?? "",
+              createdDate: data.createdOn ?? "",
+              post: data.notificationData ?? ""));
+        }
         setState(() {
+          isLoading = false;
+        });
+        /*setState(() {
           notifications = value;
           notifications!
               .sort((a, b) => b.createdDate!.compareTo(a.createdDate!));
-        });
+        });*/
       });
     });
 
@@ -67,7 +81,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         elevation: 1,
         centerTitle: true,
         actions: <Widget>[
-          (notifications ?? []).isEmpty
+          /*(notifications ?? []).isEmpty
               ? Container()
               : IconButton(
                   icon: Icon(
@@ -93,94 +107,112 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                       },
                     );
                   },
-                ),
+                ),*/
         ],
       ),
-      body: Column(
-        children: [
-          Expanded(
-            flex: 1,
-            child: Container(
-              color: AppColors.whiteLight,
-              child: NotificationListener<OverscrollIndicatorNotification>(
-                onNotification: (overscroll) {
-                  overscroll.disallowIndicator();
-                  return true;
-                },
-                child: (notifications ?? []).isEmpty
-                    ? Center(
-                        child: Text(
-                          "No notifications",
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleSmall!
-                              .copyWith(
-                                  color: AppColors.lineBorderColor,
-                                  fontWeight: FontWeight.w500),
-                        ),
-                      )
-                    : ListView.builder(
-                        padding: EdgeInsets.symmetric(horizontal: 0),
-                        itemCount: (notifications ?? []).length,
-                        itemBuilder: (BuildContext context, int index) {
-                          AppNotification notification = notifications![index];
-                          /* String title = notification.post["title"] ?? "";
+      body: isLoading
+          ? Center(
+              child: Container(
+                margin: const EdgeInsets.only(
+                    left: 35.0, right: 35.0, top: 30.0, bottom: 10),
+                width: 30,
+                height: 30,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  color: AppColors.primaryColor,
+                ),
+              ),
+            )
+          : Column(
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    color: AppColors.whiteLight,
+                    child:
+                        NotificationListener<OverscrollIndicatorNotification>(
+                      onNotification: (overscroll) {
+                        overscroll.disallowIndicator();
+                        return true;
+                      },
+                      child: (notifications ?? []).isEmpty
+                          ? Center(
+                              child: Text(
+                                "No notifications",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .titleSmall!
+                                    .copyWith(
+                                        color: AppColors.lineBorderColor,
+                                        fontWeight: FontWeight.w500),
+                              ),
+                            )
+                          : ListView.builder(
+                              padding: EdgeInsets.symmetric(horizontal: 0),
+                              itemCount: (notifications ?? []).length,
+                              itemBuilder: (BuildContext context, int index) {
+                                AppNotification notification =
+                                    notifications![index];
+                                /* String title = notification.post["title"] ?? "";
                           String msg = notification.post["msg"] ?? "";
                           String profilePic = notification.post["profilePic"] ?? "";
                           String createdOn = notification.post["created_on"] ?? "";*/
-                          String type = notification.type ?? "";
+                                String type = notification.type ?? "";
 
-                          return Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  if (type == "post_interest" ||
-                                      type == "post_comment") {
-                                    Post? post = Post.fromJson(
-                                        jsonDecode(notification.post));
-                                    await Navigator.pushNamed(
-                                        context, AppRoutes.showPostScreen,
-                                        arguments: {
-                                          "post": post,
-                                        });
-                                  } else if (type == "promotion_interest" ||
-                                      type == "promotion_comment") {
-                                    Promotion? promotion = Promotion.fromJson(
-                                        jsonDecode(notification.post));
-                                    await Navigator.pushNamed(
-                                        context, AppRoutes.showPromotionScreen,
-                                        arguments: {
-                                          "promotion": promotion,
-                                        });
-                                  }
-                                },
-                                child: NotificationItem(
-                                    notification: notification, type: type),
-                              ),
-                              index != 0 && index % 4 == 0
-                                  ? NativeAdWidgetNotificationsListing()
-                                  : Container()
-                            ],
-                          );
-                        },
-                      ),
-              ),
+                                return Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    GestureDetector(
+                                      onTap: () async {
+                                        if (type == "post_interest" ||
+                                            type == "post_comment") {
+                                          Post? post = Post.fromJson(
+                                              jsonDecode(notification.post));
+                                          await Navigator.pushNamed(
+                                              context, AppRoutes.showPostScreen,
+                                              arguments: {
+                                                "post": post,
+                                              });
+                                        } else if (type ==
+                                                "promotion_interest" ||
+                                            type == "promotion_comment") {
+                                          Promotion? promotion =
+                                              Promotion.fromJson(jsonDecode(
+                                                  notification.post));
+                                          await Navigator.pushNamed(context,
+                                              AppRoutes.showPromotionScreen,
+                                              arguments: {
+                                                "promotion": promotion,
+                                              });
+                                        }
+                                      },
+                                      child: NotificationItem(
+                                          notification: notification,
+                                          type: type),
+                                    ),
+                                    index != 0 && index % 4 == 0
+                                        ? NativeAdWidgetNotificationsListing()
+                                        : Container()
+                                  ],
+                                );
+                              },
+                            ),
+                    ),
+                  ),
+                ),
+                _ad != null
+                    ? Container(
+                        color: Colors.white,
+                        width: _ad!.size.width.toDouble(),
+                        height: 50.0,
+                        alignment: Alignment.center,
+                        child: AdWidget(ad: _ad!),
+                      )
+                    : Container(
+                        height: 0,
+                      )
+              ],
             ),
-          ),
-          _ad != null
-              ? Container(
-                  color: Colors.white,
-                  width: _ad!.size.width.toDouble(),
-                  height: 50.0,
-                  alignment: Alignment.center,
-                  child: AdWidget(ad: _ad!),
-                )
-              : Container(
-                  height: 0,
-                )
-        ],
-      ),
     );
   }
 }

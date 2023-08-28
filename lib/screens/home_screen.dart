@@ -11,6 +11,7 @@ import 'package:property_feeds/screens/profile_screen.dart';
 import 'package:property_feeds/screens/promotions_screen.dart';
 import 'package:property_feeds/utils/app_storage.dart';
 import 'package:property_feeds/utils/app_utils.dart';
+import 'package:universal_html/html.dart' as html;
 
 class HomeScreen extends StatefulWidget {
   static String routeName = "/main";
@@ -25,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   late PageController _pageController;
   int _page = 2;
   bool? isFromNotification;
+  bool? isStandAlone;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
         // bottom: true,
         child: /*kIsWeb ? _buildWebVersion() : */ Container(
             padding: EdgeInsets.only(
-                bottom: (kIsWeb && defaultTargetPlatform == TargetPlatform.iOS)
+                bottom: (kIsWeb &&
+                        defaultTargetPlatform == TargetPlatform.iOS &&
+                        isStandAlone!)
                     ? 20
                     : 0),
             child: _buildMobileVersion()));
@@ -193,6 +197,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+    if (kIsWeb) {
+      isStandAlone =
+          html.window.matchMedia('(display-mode: standalone)').matches;
+    } else {
+      isStandAlone = false;
+    }
     _pageController = PageController(initialPage: 2);
     Future<InitializationStatus> _initGoogleMobileAds() {
       // TODO: Initialize Google Mobile Ads SDK
