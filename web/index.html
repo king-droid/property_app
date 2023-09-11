@@ -25,7 +25,7 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="Property Feeds" name="apple-mobile-web-app-title">
     <link href="icons/Icon-192.png" rel="apple-touch-icon">
-
+    <link href="icons/Icon-192.png" rel="apple-touch-startup-image">
     <!-- Favicon -->
     <link href="favicon.png" rel="icon" type="image/png">
 
@@ -73,6 +73,14 @@
         right: 1rem;
         bottom: 0;
       }
+
+
+
+
+
+
+
+
 
 
 
@@ -184,6 +192,14 @@
 
 
 
+
+
+
+
+
+
+
+
 </style>
 <script>
     var serviceWorkerVersion = null;
@@ -208,7 +224,8 @@
         // potentially different versions.
 
         var customServiceWorkerUrl = './sw.js';
-        navigator.serviceWorker.register(customServiceWorkerUrl, { scope: '.' }).then(function (registration) {
+        navigator.serviceWorker.register(customServiceWorkerUrl, { scope: '.' }).then(function (registration)
+        {
           // Registration was successful
           console.log('CustomServiceWorker registration successful with scope: ', registration.scope);
         }, function (err) {
@@ -219,7 +236,8 @@
         var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
-            function waitForActivation(serviceWorker) {
+            function waitForActivation(serviceWorker)
+            {
               serviceWorker.addEventListener('statechange', () => {
                 if (serviceWorker.state == 'activated') {
                   console.log('Installed new service worker.');
@@ -247,13 +265,14 @@
         // If service worker doesn't succeed in a reasonable amount of time,
         // fallback to plaint <script> tag.
         setTimeout(() => {
-          if (!scriptLoaded) {
+          if (!scriptLoaded)
+          {
             console.warn(
               'Failed to load app from service worker. Falling back to plain <script> tag.',
             );
             loadMainDartJs();
           }
-        }, 500);
+        }, 100);
       });
     } else {
       // Service workers not supported. Just drop the <script> tag.
@@ -282,8 +301,16 @@
       // Checks if should display install popup notification:
       //if (isIos() && !isInStandaloneMode()) {
         // this.setState({ showInstallMessage: true });
-        showIosInstall();
+        //showIosInstall();
       //}
+
+
+
+
+
+
+
+
 
 
 

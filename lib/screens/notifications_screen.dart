@@ -190,7 +190,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                                           notification: notification,
                                           type: type),
                                     ),
-                                    index != 0 && index % 4 == 0
+                                    index != 0 && index % 5 == 0
                                         ? NativeAdWidgetNotificationsListing()
                                         : Container()
                                   ],

@@ -24,7 +24,7 @@ class SplashScreenState extends State<SplashScreen> {
   bool isDark = false;
   bool isStandAlone = false;
 
-  startTime() async {
+  startTime() {
     if (!kIsWeb) {
       // navigationPage();
       //} else {
@@ -82,67 +82,69 @@ class SplashScreenState extends State<SplashScreen> {
       body: Container(
           color: Colors.white,
           width: double.infinity,
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                // App Logo on screen center top
-                Container(
-                  margin: const EdgeInsets.only(bottom: 1.0),
-                  width: 180.0,
-                  height: 180.0,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: ExactAssetImage('assets/app_icon.png'),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                // App Title
-                Container(
-                  padding: const EdgeInsets.only(top: 1.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Property",
-                            style: TextStyle(
-                                fontSize: 25,
-                                color: AppColors.primaryColor,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "muli"),
+          child: isStandAlone
+              ? Container()
+              : Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                      // App Logo on screen center top
+                      Container(
+                        margin: const EdgeInsets.only(bottom: 1.0),
+                        width: 180.0,
+                        height: 180.0,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: ExactAssetImage('assets/app_icon.png'),
+                            fit: BoxFit.cover,
                           ),
-                          Text(
-                            " Feeds",
-                            style: TextStyle(
-                                fontSize: 25,
-                                color: Colors.black54,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: "muli"),
-                          ),
-                        ],
+                        ),
                       ),
-                    ],
-                  ),
-                ),
-                kIsWeb
-                    ? isStandAlone
-                        ? Container()
-                        : Container(
-                            child: Column(
-                            children: [
-                              (kIsWeb &&
-                                      defaultTargetPlatform ==
-                                          TargetPlatform.iOS)
-                                  ? buildInstallIOsAppButton()
-                                  : buildInstallAndroidAppButton(),
-                              buildContinueWebAppButton(),
-                            ],
-                          ))
-                    : Container()
-              ])),
+                      // App Title
+                      Container(
+                        padding: const EdgeInsets.only(top: 1.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Text(
+                                  "Property",
+                                  style: TextStyle(
+                                      fontSize: 25,
+                                      color: AppColors.primaryColor,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "muli"),
+                                ),
+                                Text(
+                                  " Feeds",
+                                  style: TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.black54,
+                                      fontWeight: FontWeight.bold,
+                                      fontFamily: "muli"),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      kIsWeb
+                          ? isStandAlone
+                              ? Container()
+                              : Container(
+                                  child: Column(
+                                  children: [
+                                    (kIsWeb &&
+                                            defaultTargetPlatform ==
+                                                TargetPlatform.iOS)
+                                        ? buildInstallIOsAppButton()
+                                        : buildInstallAndroidAppButton(),
+                                    buildContinueWebAppButton(),
+                                  ],
+                                ))
+                          : Container()
+                    ])),
     );
   }
 
