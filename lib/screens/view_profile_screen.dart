@@ -276,7 +276,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
                           userProfile?.user?.companyName ?? "",
                           style: TextStyle(
                             color: AppColors.headingsColor.withOpacity(0.7),
-                            fontFamily: "Roboto_Medium",
+                            fontFamily: "muli",
                             fontWeight: FontWeight.w500,
                             fontSize: 13,
                           ),
@@ -288,7 +288,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
                     "${AppConstants.userTypes[userProfile?.user?.userType ?? ""] ?? ""}",
                     style: TextStyle(
                       color: AppColors.headingsColor,
-                      fontFamily: "Roboto_Medium",
+                      fontFamily: "muli",
                       fontSize: 14,
                     ),
                   ),
@@ -372,7 +372,7 @@ class ViewProfileScreenState extends State<ViewProfileScreen> {
                                 style: TextStyle(
                                   color:
                                       AppColors.headingsColor.withOpacity(0.7),
-                                  fontFamily: "Roboto_Medium",
+                                  fontFamily: "muli",
                                   fontWeight: FontWeight.w500,
                                   fontSize: 14,
                                 ),

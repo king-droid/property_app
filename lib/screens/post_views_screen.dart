@@ -153,7 +153,7 @@ class PostViewsScreenState extends State<PostViewsScreen> {
             trailing: Text(
               AppUtils.getFormattedPostDate(postView?.postViewdate ?? ""),
               style: TextStyle(
-                fontFamily: "Roboto_Medium",
+                fontFamily: "muli",
                 color: AppColors.subTitleColor,
                 fontSize: 11,
               ),

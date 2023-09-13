@@ -347,7 +347,7 @@ class AddPromotionScreenState extends State<AddPromotionScreen> {
                       child: Text(
                           'This picture will be shown as banner in promotion',
                           style: TextStyle(
-                              fontFamily: "Roboto_Regular",
+                              fontFamily: "muli",
                               color: AppColors.buttonTextColorLight,
                               fontSize: 12))),*/
                 ],

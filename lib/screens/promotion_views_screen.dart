@@ -155,7 +155,7 @@ class PromotionViewsScreenState extends State<PromotionViewsScreen> {
               AppUtils.getFormattedPostDate(
                   promotionView?.promotionViewdate ?? ""),
               style: TextStyle(
-                fontFamily: "Roboto_Medium",
+                fontFamily: "muli",
                 color: AppColors.subTitleColor,
                 fontSize: 11,
               ),

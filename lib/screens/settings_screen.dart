@@ -144,7 +144,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ? 'Others can see your mobile number from your profile'
                     : "Mobile number not shown in your profile for others",
                 style: TextStyle(
-                    fontFamily: "Roboto_Regular",
+                    fontFamily: "muli",
                     color: AppColors.headingsColor,
                     fontSize: 12),
               ),

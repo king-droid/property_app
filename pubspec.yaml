@@ -145,11 +145,8 @@ flutter:
         - asset: fonts/Roboto-Bold.ttf
     - family: Muli
       fonts:
-        - asset: fonts/muli/Muli.ttf
-        - asset: fonts/muli/Muli-Bold.ttf
-          weight: 700
-        - asset: fonts/muli/Muli-Light.ttf
-          weight: 300
+        - asset: fonts/poppins/Poppins-Medium.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

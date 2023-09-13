@@ -155,7 +155,7 @@ class PromotionInterestsScreenState extends State<PromotionInterestsScreen> {
               AppUtils.getFormattedPostDate(
                   postInterest?.postInterestDate ?? ""),
               style: TextStyle(
-                fontFamily: "Roboto_Medium",
+                fontFamily: "muli",
                 color: AppColors.subTitleColor,
                 fontSize: 11,
               ),

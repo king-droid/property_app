@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: Colors.black54,
                       fontSize: 12,
-                      fontWeight: FontWeight.w600),
+                      fontWeight: FontWeight.w700),
                 ),
               ),
               NavigationRailDestination(
@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: Colors.black54,
                         fontSize: 12,
-                        fontWeight: FontWeight.w600)),
+                        fontWeight: FontWeight.w700)),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.timeline),
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: Colors.black54,
                         fontSize: 12,
-                        fontWeight: FontWeight.w600)),
+                        fontWeight: FontWeight.w700)),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.account_box),
@@ -168,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: Colors.black54,
                         fontSize: 12,
-                        fontWeight: FontWeight.w600)),
+                        fontWeight: FontWeight.w700)),
               ),
             ],
           ),
