@@ -133,7 +133,7 @@ class _FeedsState extends State<Feeds> {
     user = Provider.of<UserProvider>(context, listen: false).userData;
     return Scaffold(
       body: Container(
-        color: AppColors.whiteLight,
+        color: AppColors.bgColorLight,
         child: Column(
           children: [
             _buildSearchBarWidget(),

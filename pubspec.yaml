@@ -145,7 +145,7 @@ flutter:
         - asset: fonts/Roboto-Bold.ttf
     - family: Muli
       fonts:
-        - asset: fonts/poppins/Poppins-Medium.ttf
+        - asset: fonts/poppins/Poppins-Regular.ttf
 
   #
   # For details regarding fonts from package dependencies,

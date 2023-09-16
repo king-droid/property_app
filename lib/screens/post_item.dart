@@ -247,8 +247,8 @@ class _PostItemState extends State<PostItem> {
                                           .textTheme
                                           .titleMedium!
                                           .copyWith(
-                                              color:
-                                                  Colors.black.withOpacity(0.7),
+                                              color: Colors.black
+                                                  .withOpacity(0.65),
                                               fontSize: 15,
                                               fontWeight: FontWeight.bold)),
                                 ),
@@ -276,7 +276,7 @@ class _PostItemState extends State<PostItem> {
                                           .titleMedium!
                                           .copyWith(
                                               color: Colors.black87
-                                                  .withOpacity(0.7),
+                                                  .withOpacity(0.6),
                                               fontSize: 14,
                                               fontWeight: FontWeight.w500)),
                                 ),

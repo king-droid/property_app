@@ -62,8 +62,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ][_page],
       bottomNavigationBar: BottomNavigationBar(
         //key: navKeyHomeScreen,
+        elevation: 1,
         selectedItemColor: AppColors.primaryColor,
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.bgColor,
         type: BottomNavigationBarType.fixed,
         selectedFontSize: 13,
         unselectedFontSize: 13,
